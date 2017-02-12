@@ -27,6 +27,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Devise is used for secure account creation
 gem 'devise', '~> 4.2'
 
+gem 'haml', '~> 4.0', '>= 4.0.7'
+gem 'simple_form', '~> 3.4'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
