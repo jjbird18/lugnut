@@ -3875,3 +3875,2763 @@ Processing by WelcomeController#homepage as HTML
   Rendered welcome/homepage.html.erb within layouts/application (2.4ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 122ms (Views: 121.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 11:48:10 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (5.3ms)
+  Rendered welcome/homepage.html.erb within layouts/application (25.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 487ms (Views: 483.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 11:48:53 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered welcome/homepage.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3126ms (Views: 3125.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b531f3540665a522c52a51db06ff956579536061a4c6d0fce08e94a38d4a1d1e.css?body=1" for ::1 at 2017-02-12 11:48:56 -0500
+
+
+Started GET "/" for ::1 at 2017-02-12 11:52:05 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered welcome/homepage.html.erb within layouts/application (21.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2990ms (Views: 2989.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-64fc5290292198a5b6db3e1822fc74c14f4e93c452f2ea1e5f639a5eeda4f094.css?body=1" for ::1 at 2017-02-12 11:52:08 -0500
+
+
+Started GET "/" for ::1 at 2017-02-12 11:56:31 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered welcome/homepage.html.erb within layouts/application (21.4ms)
+Completed 500 Internal Server Error in 2346ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: font-awesome-sprockets.
+Load paths:
+  /Users/lewis/Documents/Projects/lugnut/app/assets/javascripts
+  /Users/lewis/Documents/Projects/lugnut/app/assets/stylesheets
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/turbolinks-source-5.0.0/lib/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/fonts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/images
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/stylesheets):
+    2: <html>
+    3: <head>
+    4:   <title>Forum</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width">
+  app/assets/stylesheets/application.scss:16
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3607802337639083639_70167803424540'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (110.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (79.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (205.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 11:56:34 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 1523ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: font-awesome-sprockets.
+Load paths:
+  /Users/lewis/Documents/Projects/lugnut/app/assets/javascripts
+  /Users/lewis/Documents/Projects/lugnut/app/assets/stylesheets
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/turbolinks-source-5.0.0/lib/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/fonts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/images
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/stylesheets):
+    2: <html>
+    3: <head>
+    4:   <title>Forum</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width">
+  app/assets/stylesheets/application.scss:16
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3607802337639083639_70167803424540'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (160.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 11:56:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (6.1ms)
+  Rendered welcome/homepage.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 5901ms (Views: 5886.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-61637d3f9e0065e78eae2a07181e26ac83045a867fa98ece00c5f0c9dc4fc700.css?body=1" for ::1 at 2017-02-12 11:56:57 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 11:57:00 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 100ms (Views: 99.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 11:57:19 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered welcome/homepage.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 120ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2?v=4.7.0" for ::1 at 2017-02-12 11:57:19 -0500
+
+
+Started GET "/" for ::1 at 2017-02-12 11:58:01 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered welcome/homepage.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 11:59:47 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered welcome/homepage.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 54ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 11:59:53 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 104ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 12:01:03 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2650ms (Views: 2649.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2fddc83a7dfb5baf74a7b397006b1e662de935a85960e134c7b3ef13e3fa33a7.css?body=1" for ::1 at 2017-02-12 12:01:06 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-12 12:06:09 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (579.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (53.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1072ms (Views: 1022.6ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 12:07:13 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 234ms (Views: 233.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 12:08:07 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3624ms (Views: 3623.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-458a7985c350b80e344f0226fd4842685a3b1cc29afed5c9a0508a8727a9b134.css?body=1" for ::1 at 2017-02-12 12:08:11 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 12:08:17 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2762ms (Views: 2761.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-be53647f99e5253781c6e20408afc8cdc768dd8aeeae88c3fd4798724b440cad.css?body=1" for ::1 at 2017-02-12 12:08:20 -0500
+
+
+Started GET "/" for ::1 at 2017-02-12 12:08:31 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered welcome/homepage.html.erb within layouts/application (18.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 176ms (Views: 175.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 12:09:31 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered welcome/homepage.html.erb within layouts/application (18.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3800ms (Views: 3799.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9d9e3addb2ab67f8e1f248f39c85972b1036480b1419f81929210c6e519b630f.css?body=1" for ::1 at 2017-02-12 12:09:34 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 12:09:42 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 106ms (Views: 105.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 12:13:11 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 500 Internal Server Error in 320ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_header.html.erb:4: syntax error, unexpected ')', expecting '='
+...r.append=( link_to, root_path );@output_buffer.safe_append='...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_header.html.erb:23: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_header.html.erb:25: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/_header.html.erb:4: syntax error, unexpected ')', expecting '='
+  app/views/layouts/_header.html.erb:23: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/_header.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1476890447476122445_70280862120800'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (157.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 12:13:20 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_header.html.erb:4: syntax error, unexpected ';', expecting '='
+..."'.freeze; link_to, root_path ;@output_buffer.safe_append='">
+...                               ^):
+  app/views/layouts/_header.html.erb:4: syntax error, unexpected ';', expecting '='
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1476890447476122445_70280862120800'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.8ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 12:15:35 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (38.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 400ms (Views: 399.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 12:15:35 -0500
+
+ActionController::RoutingError (No route matches [GET] "/pages/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (316.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (517.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (217.5ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 12:17:25 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (40.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 210ms (Views: 209.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 12:18:20 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (63.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 210ms (Views: 209.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:20:57 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (16.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 310ms (Views: 309.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:23:24 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_header.html.erb:22: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_header.html.erb:24: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/_header.html.erb:22: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/_header.html.erb:24: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1476890447476122445_70280862120800'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.1ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:23:39 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (9.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 70ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 13:23:39 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (164.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (110.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (228.1ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:23:56 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (6.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 13:23:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (170.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (109.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (236.8ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:24:18 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (6.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 70ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 13:24:18 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (161.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (109.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (232.1ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:24:52 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 73ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 13:24:52 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (176.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (137.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (278.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:25:04 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (85.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 147ms (Views: 146.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo-lugnut.png" for ::1 at 2017-02-12 13:25:05 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (165.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (96.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (231.1ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:29:48 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (29.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 368ms (Views: 366.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 13:29:49 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (153.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (190.5ms)
+
+
+Started GET "/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 13:30:05 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (129.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (171.8ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:33:53 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_header.html.erb:4: syntax error, unexpected ',', expecting ')'
+...assets/images/logo-lugnut.png', alt: "Lugnut Logo")), root_p...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_header.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+...gnut.png', alt: "Lugnut Logo")), root_path );@output_buffer....
+...                               ^):
+  app/views/layouts/_header.html.erb:4: syntax error, unexpected ',', expecting ')'
+  app/views/layouts/_header.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1476890447476122445_70280862120800'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (187.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:34:04 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 13:34:04 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (185.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (122.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (255.4ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:34:45 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_header.html.erb:4: syntax error, unexpected ',', expecting ')'
+...assets/images/logo-lugnut.png', alt: 'Lugnut Logo')), root_p...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_header.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+...gnut.png', alt: 'Lugnut Logo')), root_path );@output_buffer....
+...                               ^):
+  app/views/layouts/_header.html.erb:4: syntax error, unexpected ',', expecting ')'
+  app/views/layouts/_header.html.erb:4: syntax error, unexpected ')', expecting keyword_end
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1476890447476122445_70280862120800'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.2ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:34:59 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 13:34:59 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (173.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (123.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (235.5ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:36:26 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (99.1ms)
+Completed 500 Internal Server Error in 261ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `check_for_image_tag_errors' for #<#<Class:0x007fd71be8fea0>:0x007fd71be8c0c0>):
+    1: <nav class="navbar navbar-default" role="navigation">
+    2:   <div class="container clearfix">
+    3:     <div class="logo col-xs-8 col-sm-4" id="logo-wrap">
+    4:     	<%= link_to (image_tag('/assets/images/logo-lugnut.png', alt: 'Lugnut Logo')), root_path %>
+    5:     </div>
+    6:     <div class="navbar-header">
+    7:       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+  app/helpers/application_helper.rb:5:in `image_tag'
+  app/views/layouts/_header.html.erb:4:in `_app_views_layouts__header_html_erb__2411618242613127353_70280893216180'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1476890447476122445_70280862120800'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (89.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (169.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:36:53 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (68.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 168ms (Views: 167.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 13:36:53 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (192.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (102.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (220.4ms)
+
+
+Started GET "/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 13:36:58 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (114.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (151.8ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:37:27 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 13:37:27 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (178.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (113.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (239.6ms)
+
+
+Started GET "/images/logo-lugnut.png" for ::1 at 2017-02-12 13:37:38 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (108.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (147.0ms)
+
+
+Started GET "/logo-lugnut.png" for ::1 at 2017-02-12 13:37:44 -0500
+
+ActionController::RoutingError (No route matches [GET] "/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (108.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.3ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:42:15 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (no implicit conversion of String into Hash):
+    1: <nav class="navbar navbar-default" role="navigation">
+    2:   <div class="container clearfix">
+    3:     <div class="logo col-xs-8 col-sm-4" id="logo-wrap">
+    4:     	<%= link_to image_url '/assets/images/logo-lugnut.png', root_path %>
+    5:     	<img src="/assets/images/logo-lugnut.png">
+    6:     </div>
+    7:     <div class="navbar-header">
+  app/views/layouts/_header.html.erb:4:in `_app_views_layouts__header_html_erb__2411618242613127353_70280959002020'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1476890447476122445_70280862120800'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (158.1ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:42:22 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (18.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 229ms (Views: 227.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/images/logo-lugnut.png" for ::1 at 2017-02-12 13:42:23 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (171.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (101.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (236.7ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:43:40 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (55.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo-lugnut.png" for ::1 at 2017-02-12 13:43:40 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/logo-lugnut.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (173.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (98.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (225.8ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:44:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_nav.html.erb (3.9ms)
+  Rendered layouts/_header.html.erb (6.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 5085ms (Views: 5070.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo-lugnut-733bfc70625c5cfa88edbc1e492371c42d37912ea3219080c8c65d3f94051d2e.png" for ::1 at 2017-02-12 13:44:12 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:45:49 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (6.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2706ms (Views: 2705.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d916b8cd15541835e7719c5de4a53107490dc299aa5599574efbaecee030b7d6.css?body=1" for ::1 at 2017-02-12 13:45:52 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:46:03 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 62ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:47:27 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (49.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4722ms (Views: 4721.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f421642a1e2c99b320bbfbe7dc5f8e7c0734a1bc34ed216992e327962e84f5c7.css?body=1" for ::1 at 2017-02-12 13:47:32 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:48:24 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2722ms (Views: 2721.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0ed073b6a0533849748b8e47a5e03f142ccefa5b640c5daf3f179a4f69aad658.css?body=1" for ::1 at 2017-02-12 13:48:27 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:51:27 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (16.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3901ms (Views: 3900.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:51:53 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2798ms (Views: 2797.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8f3f0b1ef8b947d1950f5f18baf10e2cb62481242c38baa71f1af18c41930c8a.css?body=1" for ::1 at 2017-02-12 13:51:55 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 13:52:13 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2738ms (Views: 2737.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4186f8de710046e20703de50d7b31ebdecfb5ca6f8d2eaaf0964f0c56a5c5e20.css?body=1" for ::1 at 2017-02-12 13:52:16 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 14:24:02 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_nav.html.erb (6.1ms)
+  Rendered layouts/_header.html.erb (34.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 5412ms (Views: 5363.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6faf8d560c115548935310cb71e336b944ccb8c18029f6fd2f7a08db5430a2a6.css?body=1" for ::1 at 2017-02-12 14:24:08 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 14:24:24 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2879ms (Views: 2878.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-55033b0424d586465eb276ff2a2f86a66d300cbaf5318da8a9ba65b013f5a92b.css?body=1" for ::1 at 2017-02-12 14:24:27 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 14:24:59 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3135ms (Views: 3134.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-668ee2ca477129d3c2bbf302efa42d767d7efe15f3f8ddbb19c6047ed275a0e3.css?body=1" for ::1 at 2017-02-12 14:25:02 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 14:27:26 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (16.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3843ms (Views: 3842.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5d261b591c221ae8682ae3c5576dbfa538a95e3af0346e774167fc19215891fc.css?body=1" for ::1 at 2017-02-12 14:27:30 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 14:28:00 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2681ms (Views: 2680.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f0cea589f6290b941bd779c493ab6e5186ba4456f43f58e9ef727bb81c02ec8f.css?body=1" for ::1 at 2017-02-12 14:28:03 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 14:28:12 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2695ms (Views: 2694.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6394d7f0bbea97423e0a58d8f5d6eb92ea75cd0358fcd59a73b599c1680ca2f4.css?body=1" for ::1 at 2017-02-12 14:28:15 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:05:28 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (50.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 490ms (Views: 489.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:06:47 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (50.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 444ms (Views: 443.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:07:27 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_header.html.erb (162.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3865ms (Views: 3864.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-023a408d3790b40d132c0a7ad0287ef2e6b1e4ed90cfe62534f27fdea347fcb7.css?body=1" for ::1 at 2017-02-12 15:07:31 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:08:30 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2894ms (Views: 2893.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9f555cac746ceeaedd7a2ac1d89b71e4312d3852ee4a9e5901518005448bfae9.css?body=1" for ::1 at 2017-02-12 15:08:33 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:08:42 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2901ms (Views: 2899.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-29ce3e75b9505cbb8edc1ab9862865ee1b1083926fe0d6925abe81a851536669.css?body=1" for ::1 at 2017-02-12 15:08:45 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:10:24 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (61.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 378ms (Views: 377.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:10:33 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (15.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 166ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:11:28 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:13:00 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4343ms (Views: 4342.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-01a6e9a569a8e1724500457086e44dfc6a74d9aa8b996260551d4a075edc3533.css?body=1" for ::1 at 2017-02-12 15:13:04 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:13:13 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2810ms (Views: 2810.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-419a9e7a1318f702e272bcb11d791837bfb84f9f6f01838a6548e43d59b22b1b.css?body=1" for ::1 at 2017-02-12 15:13:16 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:18:08 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (84.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 613ms (Views: 612.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:18:46 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:19:13 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:20:26 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:20:48 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:21:46 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3512ms (Views: 3511.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a0df48a09d3804bfe0ed7d8563efab1fc1349a2def04151b463d7ebfd0b598c2.css?body=1" for ::1 at 2017-02-12 15:21:49 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:22:26 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2800ms (Views: 2799.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c93e689e3cd62d0f1edf84cd79d1eb6c0e80a1ba1d75d670ef1fea4d0f6205c3.css?body=1" for ::1 at 2017-02-12 15:22:29 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:24:32 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2766ms (Views: 2765.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5a7418cd30e469ffa63ae141bdcdc0d484c26a01c2ea58cdcb9f6dcf5fbe3b30.css?body=1" for ::1 at 2017-02-12 15:24:35 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:28:29 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:32:26 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (16.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4213ms (Views: 4212.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8b1e137e10b831a2a319e0227a6659665dde4d51e007b8882b56c8e8ddc1121d.css?body=1" for ::1 at 2017-02-12 15:32:30 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:32:53 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 80ms (Views: 79.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:33:08 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:33:21 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 66ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:33:45 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (50.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 297ms (Views: 296.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:33:58 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (94.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 347ms (Views: 345.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:34:17 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (5.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 71ms (Views: 70.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:34:45 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (346.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 411ms (Views: 410.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/img-x-marketing-bf48a578a4a7a45c989c774933f1c1f93339c49b5dd45b3a5e5ba8c6f0e5e472.jpg" for ::1 at 2017-02-12 15:34:46 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:35:15 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 60ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:35:45 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3630ms (Views: 3630.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-280cba4df2d99ee5e6cf0470657377f773b2e06751f0452ce092b8161df5aa63.css?body=1" for ::1 at 2017-02-12 15:35:48 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:36:28 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3149ms (Views: 3148.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6c3110dfc6730eb1f70c074bbdc9a3a51e93c74cce03791bf222282e48dfe40b.css?body=1" for ::1 at 2017-02-12 15:36:31 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:39:03 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2874ms (Views: 2873.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-edd438c3fe85f4b182625563f2ed097f87a691288c897926cc2606a539ae9280.css?body=1" for ::1 at 2017-02-12 15:39:06 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:40:48 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2842ms (Views: 2841.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2d0864afc993c801523c1c18569bcc08f3bb656982c4f230031931d4c920e1f1.css?body=1" for ::1 at 2017-02-12 15:40:51 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:42:11 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (50.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 106ms (Views: 105.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo-lugnut-e6c1542b8398a29674f41ffbaceeb7bbc1450d23e71b70510ae87b512727d50e.png" for ::1 at 2017-02-12 15:42:11 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:45:59 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "	linkTransition": expected "{", was ";"):
+    2: <html>
+    3: <head>
+    4:   <title>Forum</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width">
+  app/assets/stylesheets/application.scss:44
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__2661657957235428409_70220000158940'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (178.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (268.6ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:46:15 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "...ansition(500ms)": expected "{", was ";"):
+    2: <html>
+    3: <head>
+    4:   <title>Forum</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width">
+  app/assets/stylesheets/application.scss:44
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__2661657957235428409_70220000158940'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (158.2ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:48:44 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 1944ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (@content may only be used within a mixin.):
+    2: <html>
+    3: <head>
+    4:   <title>Forum</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width">
+  app/assets/stylesheets/_mixins.scss:11
+  app/assets/stylesheets/application.scss:20
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__2661657957235428409_70220000158940'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (142.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:49:10 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (28.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2782ms (Views: 2781.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3d4ec8eec52053ae95bf9b1cf962e96eba2f929c2d9eeacd23f4ebfb24a5c3de.css?body=1" for ::1 at 2017-02-12 15:49:13 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:49:39 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:53:27 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (18.7ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (28.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3960ms (Views: 3959.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab74feab0afa8ae40465e86fd94ce586bc5491854162c4f6d0667d7910c56374.css?body=1" for ::1 at 2017-02-12 15:53:31 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:55:43 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (17.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3004ms (Views: 3003.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4a29a32a3e6be770a526cdbe076223920f5f9da61bd55cdfdaa41a017bab7a66.css?body=1" for ::1 at 2017-02-12 15:55:46 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:57:24 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (40.9ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (94.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4088ms (Views: 4088.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a97afa972484082feb97423025ffb2956221a671f430307d92929ce5b3fdc3ae.css?body=1" for ::1 at 2017-02-12 15:57:28 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:58:26 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2761ms (Views: 2760.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b3486b241247a0c3a9d4ee457ee731cbc677ca86ef5e5d5441d90145182e80eb.css?body=1" for ::1 at 2017-02-12 15:58:28 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 15:59:44 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2754ms (Views: 2753.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a3cdafe3a4de3d1d48c6a5d24fc9d507e5dec10f339e6f340cedd9f2dc481712.css?body=1" for ::1 at 2017-02-12 15:59:47 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:02:33 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (18.8ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_header.html.erb (18.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3488ms (Views: 3487.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-11b17390b33ec41ca89ea378a89345b0930f4381980db76dc39ade688a44b54e.css?body=1" for ::1 at 2017-02-12 16:02:36 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:03:08 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2736ms (Views: 2735.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5d2730dccc2efc8b13958426747c63428fff96021cfec086681a4c90e0879845.css?body=1" for ::1 at 2017-02-12 16:03:11 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:04:01 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 2814ms (Views: 2813.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-de0f8793841ad22ec6b200e18e9fda88147a1c9814d0625fde8752781c7abfbc.css?body=1" for ::1 at 2017-02-12 16:04:04 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:04:44 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (6.5ms)
+  Rendered layouts/_header.html.erb (9.2ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `icon' for "Log in ":String):
+     8:       <li><%= link_to "Account", edit_user_registration_path %></li>
+     9:       <li><%= link_to('Log out', destroy_user_session_path, :method => :delete) %></li>
+    10:     <% else %>
+    11:       <li><%= link_to "Log in ". icon('user-circle'), new_user_session_path, class: "active" %> <%= icon('user-circle') %></li>
+    12:     <% end %>
+    13: </ul>
+  app/views/layouts/_nav.html.erb:11:in `_app_views_layouts__nav_html_erb__823043129011398843_70220063120080'
+  app/views/layouts/_header.html.erb:15:in `_app_views_layouts__header_html_erb__4389411120857219912_70220063298140'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2661657957235428409_70220000158940'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (146.9ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:04:56 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:05:15 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_nav.html.erb:11: syntax error, unexpected '<'
+....append=( link_to "Log in " + <%= icon('user-circle') );@out...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_nav.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_nav.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lewis/Documents/Projects/lugnut/app/views/layouts/_nav.html.erb:16: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/layouts/_nav.html.erb:11: syntax error, unexpected '<'
+  app/views/layouts/_nav.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/_nav.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/layouts/_nav.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+  app/views/layouts/_header.html.erb:15:in `_app_views_layouts__header_html_erb__4389411120857219912_70220063298140'
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2661657957235428409_70220000158940'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (150.9ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:05:40 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 83ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:07:11 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (18.3ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (35.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3887ms (Views: 3886.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-380ca4db26fa0c94423dd4c5cd68f925d756653d1e6a53cc34fe9d6aca3abd84.css?body=1" for ::1 at 2017-02-12 16:07:15 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:08:16 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (18.6ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (17.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2876ms (Views: 2875.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d7d30f49d45d47d29f7c743305c08954cd22a7e31d43ad93f38a3214e92b7ea8.css?body=1" for ::1 at 2017-02-12 16:08:19 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:08:51 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (31.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3452ms (Views: 3451.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1ce2b8ecabd013bd008dae1568a8c0ee4baea2fae16eeb90a10a3f2a1dad609b.css?body=1" for ::1 at 2017-02-12 16:08:55 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:10:09 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (18.2ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "			$": expected identifier, was ":hover {"):
+    2: <html>
+    3: <head>
+    4:   <title>Forum</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width">
+  app/assets/stylesheets/application.scss:82
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__2661657957235428409_70220000158940'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.2ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:10:31 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3096ms (Views: 3095.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a649a08aef9ea52cdea14d7b7300e0f942f79f0e61e4b7ff69d9301237b661c4.css?body=1" for ::1 at 2017-02-12 16:10:34 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:11:22 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (18.1ms)
+Completed 500 Internal Server Error in 1821ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Undefined variable: "$lightblue".):
+    2: <html>
+    3: <head>
+    4:   <title>Forum</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width">
+  app/assets/stylesheets/application.scss:126
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__2661657957235428409_70220000158940'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (74.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (173.4ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:12:04 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (30.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2782ms (Views: 2781.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8b8b75226b0065a0f78bb178c5b6c0667401bc8ef7eae84926de033c437e110c.css?body=1" for ::1 at 2017-02-12 16:12:07 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:17:12 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (41.8ms)
+  Rendered layouts/_footer.html.erb (125.1ms)
+Completed 500 Internal Server Error in 3212ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `nav' for #<#<Class:0x007fbabe953e38>:0x007fbac328fd90>):
+    2: 	<div class="container">
+    3: 		<div class="row clearfix">
+    4: 			<div class="hidden-xs col-sm-5" id="footer-navigation">
+    5: 				<%= render nav %>
+    6: 			</div><!-- /footer-navigation -->
+    7: 			<div class="col-xs-12 col-sm-2 pull-right" id="social">
+    8: 				Social
+  app/views/layouts/_footer.html.erb:5:in `_app_views_layouts__footer_html_erb___3168907887191162815_70220060710020'
+  app/views/layouts/application.html.erb:20:in `_app_views_layouts_application_html_erb__2661657957235428409_70220000158940'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (143.7ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:17:30 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 67ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5a6136d3351ab852bffb71ce66d6450acc8e95429de9dfbd53b4878b34d6a1d8.css?body=1" for ::1 at 2017-02-12 16:17:31 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:18:31 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 16:19:55 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered welcome/homepage.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (4.5ms)
+Completed 200 OK in 123ms (Views: 121.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:22:35 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 3520ms (Views: 3519.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8032147d7334002cb51e4bf2290fcaaafb3dfbe8f48e0ad0f4f087d912795906.css?body=1" for ::1 at 2017-02-12 16:22:39 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:22:49 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (5.2ms)
+Completed 200 OK in 2792ms (Views: 2791.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-770b00c44b133cc5945fdfb8fe41895fc3a7691ee68141b0d4884ab4af74d013.css?body=1" for ::1 at 2017-02-12 16:22:52 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:22:55 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 2728ms (Views: 2727.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7fedd5255ac560930183ae48f8ceb4710a26ebc45a37dce9bf9230f73684f965.css?body=1" for ::1 at 2017-02-12 16:22:58 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:24:23 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (3.1ms)
+Completed 200 OK in 2695ms (Views: 2694.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e19642fc9a1b08917b8540b37fd31cc277781e5e5289c13ecaf1e59825dc1abd.css?body=1" for ::1 at 2017-02-12 16:24:26 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:25:25 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 2701ms (Views: 2700.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8cfe30a64cee0d586accbc20fb93464d0ab3c525fc2e74364ac265ca707d03f1.css?body=1" for ::1 at 2017-02-12 16:25:28 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:27:31 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (6.2ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (5.3ms)
+Completed 200 OK in 2664ms (Views: 2663.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-91b25df165a71d9881feac9411af487857d6e5146a20af0d52979fcf2b611563.css?body=1" for ::1 at 2017-02-12 16:27:33 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:28:13 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 2811ms (Views: 2810.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-17690e5f694dbdcdc86ceba7207e19da99ea3438cb445c268602b20599e29a5e.css?body=1" for ::1 at 2017-02-12 16:28:15 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:29:20 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 2702ms (Views: 2701.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0d0b666d14ec89b8fd65683bcdb85b6aa65fc35848d42e96b3c5724430a0ab11.css?body=1" for ::1 at 2017-02-12 16:29:22 -0500
+
+
+Started GET "/" for ::1 at 2017-02-12 16:29:31 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered welcome/homepage.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 105ms (Views: 104.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-12 16:29:33 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (36.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.haml within layouts/application (325.0ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 689ms (Views: 367.5ms | ActiveRecord: 58.6ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:29:36 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.5ms)
+Completed 200 OK in 150ms (Views: 148.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-12 16:29:39 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (234.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 340ms (Views: 337.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:48:41 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.8ms)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:49:57 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 71ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:50:17 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 2900ms (Views: 2899.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b0d3e86d4ec9f88bcc23aaca29cac4c3e0ef2c2ab99816e57113650cb051f61a.css?body=1" for ::1 at 2017-02-12 16:50:20 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-12 16:50:46 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (94.7ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.7ms)
+Completed 200 OK in 187ms (Views: 186.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:51:26 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 2644ms (Views: 2643.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6456448c3c39ad604a8103788649e98a21c3cdfefaa7cb2aa580d89d83c2b832.css?body=1" for ::1 at 2017-02-12 16:51:29 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:52:44 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 2699ms (Views: 2698.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9361ed096afc860d4442f49eaa93442eb1879b785f7c1352a1e1b4865feef6cf.css?body=1" for ::1 at 2017-02-12 16:52:46 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:57:59 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (62.6ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (33.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 4889ms (Views: 4888.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-203bbee0506e0f3fd6f93baa2d1def812abbd1d50cb64e9c4ef19ed5cf98aa3d.css?body=1" for ::1 at 2017-02-12 16:58:04 -0500
+
+
+Started GET "/assets/application.self-23ac7d7a62dac1c9459e8d96d14968f2e4e16834d7753a259d2ec09e37dfb2bb.js?body=1" for ::1 at 2017-02-12 16:58:04 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 16:59:53 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "	#copyright": expected "{", was "}"):
+    2: <html>
+    3: <head>
+    4:   <title>Forum</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width">
+  app/assets/stylesheets/application.scss:174
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__2661657957235428409_70220000158940'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (82.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (177.9ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 17:00:04 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 2864ms (Views: 2863.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-84c68ff784143870f4921807471e2dae49850347de327c4901969f5ffb33fe30.css?body=1" for ::1 at 2017-02-12 17:00:07 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 17:00:47 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 2736ms (Views: 2735.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9eedb1b4121a72c97ec93a58f9723f7d6b35cdc43008ef022cd14f7e6e7a46b8.css?body=1" for ::1 at 2017-02-12 17:00:50 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 17:01:35 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 2733ms (Views: 2732.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b83536a86d9b3efe2c40ec7257bf3c68de99e48ad800eee7abadcf408c7aa515.css?body=1" for ::1 at 2017-02-12 17:01:38 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 17:04:57 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (52.3ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (56.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 4845ms (Views: 4844.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bf3e05324fd6fe09ccac2b66318d0116b041400dbc484bd9215c699c2c463013.css?body=1" for ::1 at 2017-02-12 17:05:02 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 17:06:19 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (19.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 3193ms (Views: 3192.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0d54a90d4c00894f1228959057f1d7eb42674b77619cdcc3b281ddcb57787976.css?body=1" for ::1 at 2017-02-12 17:06:22 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 17:06:55 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (6.3ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.4ms)
+Completed 200 OK in 2948ms (Views: 2947.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-591a3ddf040cc492e3f9262723888e4ce31dff8bc03b750fbc00fde8b50748e8.css?body=1" for ::1 at 2017-02-12 17:06:58 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 17:07:45 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.8ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 2854ms (Views: 2853.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4fb919ebcee79c4cc8404d5ec7b83afc45a1ea6b38be08334ce8f2bfdef83136.css?body=1" for ::1 at 2017-02-12 17:07:48 -0500

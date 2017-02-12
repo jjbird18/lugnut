@@ -8,7 +8,6 @@
       <li><%= link_to "Account", edit_user_registration_path %></li>
       <li><%= link_to('Log out', destroy_user_session_path, :method => :delete) %></li>
     <% else %>
-      <li><%= link_to "Sign up", new_user_registration_path, class: "active" %></li>
-      <li><%= link_to "Log in", new_user_session_path, class: "active" %></li>
+      <li><%= link_to "Log in", new_user_session_path, class: "active" %> <%= icon('user-circle') %></li>
     <% end %>
 </ul>

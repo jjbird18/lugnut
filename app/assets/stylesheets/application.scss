@@ -12,3 +12,173 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import "variables";
+@import "mixins";
+
+html {
+	background: $white;
+	margin: 0 auto;
+	font: 16px $fontFamily;
+}
+
+h1 {
+    color: $darkBlue;
+    font:700 3rem/1em $fontFamily;
+}
+h2 {
+    color: $darkBlue;
+    font:600 2rem/1.5em $fontFamily;
+	margin: 0 0 1rem;
+}
+h6 {
+	color: $lightBlue;
+	font:0.75rem $fontFamily;
+}
+p {
+	color: $medGray;
+	font: 1rem/1.5em $fontFamily;
+	margin-bottom: 1.25rem;
+}
+a {
+	color: orangeRed;
+	@include transition(all 500ms ease-in-out);
+
+	&:hover {
+		color:$darkBlue;
+		text-decoration: none;
+	}
+	&:active, &:visited, &:focus {
+		background: none;
+		text-decoration: none;
+	}
+}
+* {
+	img {
+		max-width: 100%;
+		display: block;
+	}
+}
+/******************************/
+.icon-bar {
+    background-color: $darkBlue;
+    box-shadow: 5px 5px 5px $white;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+
+    #homepage & {
+    	height:10px;
+    	width:100%;
+    }
+}
+nav {
+	&.navbar-default {
+	    background: $darkGray;
+	    padding: 1.5rem 0;
+
+		.navbar-nav > li > a {
+			color: $lightGray;
+			font: 1.25rem/5rem $fontFamily;
+			display: inline-block;
+			padding: 0 0 0 2rem;
+
+			&:hover {
+				color:$darkBlue;
+			}
+
+			&:hover + .fa {
+				color:$darkBlue;
+				@include transition(all 500ms ease-in-out);
+			}
+		}
+		.fa {
+			color: $lightGray;
+			font-size: 1.125rem;
+		}
+	}
+}
+.container-fluid {
+	margin: 0 auto;
+	padding:0;
+
+	&#content-main {
+		padding-bottom: 2rem;
+	}
+
+	&#x-marketing {
+		background: $medGray;
+		padding:3rem 0;
+		margin-bottom: 3rem;
+		p {
+			color: $lightGray;
+		}
+	}
+}
+.cta {
+	display: inline-block;
+	color: $white;
+	font:1.5rem $fontFamily;
+	background: $orangeRed;
+	padding: 0.75rem 3rem;
+
+	.fa {
+		padding-left: 0.5rem;
+		font-size: 1rem;
+	}
+
+	&:hover {
+		background: $lightBlue;
+	}
+}
+footer {
+	background: $footerBlue;
+	padding: 2rem 0;
+
+	.nav {
+
+		a {
+			color: $white;
+			font:1.25rem $fontFamily;
+			display: inline;
+			&:hover {
+				background: none;
+				color: $lightBlue;
+			}
+			&:hover + .fa {
+				color:$lightBlue;
+				@include transition(all 500ms ease-in-out);
+			}
+		}
+		li:first-of-type a {
+			padding-left:0;
+		}
+		li:last-of-type a {
+			padding-right:0;
+		}
+		.fa {
+			font-size: 1rem;
+		}
+	}
+	.fa {
+		display: inline;
+		color: $white;
+		font-size: 2rem;
+    	margin-left: 0.5rem;
+    	@include transition(all 500ms ease-in-out);
+
+    	&:hover {
+    		color: $lightBlue;
+    	}
+	}
+	#footer-wrap {
+		padding-bottom: 1rem;
+	}
+	#copyright {
+		border-top: 2px solid $medGray;
+		padding-top: 0.75rem;
+	}
+}

@@ -15,3 +15,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(function () {
+	var $today = new Date();
+	var $Year = $today.getFullYear();
+	$('footer #year').text($Year);
+})

@@ -1,1 +1,20 @@
-FOOTER
+<footer>
+	<div class="container">
+		<div class="row clearfix" id="footer-wrap">
+			<div class="hidden-xs col-sm-5" id="footer-navigation">
+				<%= render 'layouts/nav' %>
+			</div><!-- /footer-navigation -->
+			<div class="col-xs-12 col-sm-2 pull-right" id="social">
+				<%= link_to icon('twitter'), 'https://twitter.com', target: "_blank" %>
+				<%= link_to icon('facebook'), 'https://facebook.com', target: "_blank" %>
+				<%= link_to icon('linkedin'), 'https://linkedin.com', target: "_blank" %>
+				<%= link_to icon('youtube-play'), 'https://youtube.com', target: "_blank" %>
+			</div><!-- /social  -->
+		</div><!-- /row -->
+		<div class="row clearfix" id="copyright">
+			<div class="col-xs-12 col-sm-5">
+				<h6>&copy; <span id="year"></span>. Lugnut Automotive Services.</h6>
+			</div><!-- /footer-navigation -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+</footer>
