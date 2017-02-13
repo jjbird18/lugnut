@@ -86,12 +86,8 @@ nav {
 			display: inline-block;
 			padding: 0 0 0 2rem;
 
-			&:hover {
-				color:$darkBlue;
-			}
-
-			&:hover + .fa {
-				color:$darkBlue;
+			&:hover, &:hover + .fa {
+				color:$medGray;
 				@include transition(all 500ms ease-in-out);
 			}
 		}
@@ -104,6 +100,15 @@ nav {
 .container-fluid {
 	margin: 0 auto;
 	padding:0;
+
+	&#hero {
+		background: url(bg-hero.jpg) center top;
+		background-size: cover;
+		#
+		.row-fluid {
+			max-width: 1600px;
+		}
+	}
 
 	&#content-main {
 		padding-bottom: 2rem;
@@ -120,10 +125,13 @@ nav {
 }
 .cta {
 	display: inline-block;
+	width: 100%;
+	text-align: center;
 	color: $white;
 	font:1.5rem $fontFamily;
 	background: $orangeRed;
-	padding: 0.75rem 3rem;
+	padding: 0.75rem 0;
+	@include transition(all 500ms ease-in-out);
 
 	.fa {
 		padding-left: 0.5rem;
@@ -131,7 +139,13 @@ nav {
 	}
 
 	&:hover {
-		background: $lightBlue;
+		opacity: 0.7;
+		color: $lightGray;
+	}
+
+	@include desktop {
+		width: auto;
+		padding: 0.75rem 3rem;
 	}
 }
 footer {

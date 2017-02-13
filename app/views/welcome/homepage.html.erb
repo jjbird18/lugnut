@@ -1,17 +1,37 @@
+<% content_for(:title, "Welcome") %>
 <section id="homepage">
-	<nav id="homepage-navigation">
-		<div class="navbar-header">
-			<button type="button" class="collapsed" data-toggle="collapse" data-target="#navbar-collapse-home">
-				<span class="sr-only">Toggle navigation</span>
-				<%= icon('navicon') %>
-			</button>
-		</div><!-- /navbar-header-->
 
-		<div class="collapse" id="navbar-collapse-home">
-			<%= render 'layouts/nav' %>
-		</div><!-- /navbar-collapse-home-->
-	</nav><!-- /homepage-navigation-->
+	<div class="container-fluid" id="hero">
+		<div id="hero-hombre">
+			<div class="row-fluid clearfix">
+				<div class="col-xs-12 col-sm-6" id="nav-logo-wrap">
+					<nav id="homepage-navigation">
+						<div class="navbar-header">
+							<button type="button" class="collapsed" data-toggle="collapse" data-target="#navbar-collapse-home">
+								<span class="sr-only">Toggle navigation</span>
+								<%= icon('navicon') %>
+							</button>
+						</div><!-- /navbar-header-->
 
-	<h1>Welcome Yo</h1>
-	<p>Lugnut</p>
+						<div class="collapse" id="navbar-collapse-home">
+							<%= render 'layouts/nav' %>
+						</div><!-- /navbar-collapse-home-->
+					</nav><!-- /homepage-navigation-->
+
+					<div id="logo">
+						<%= link_to (image_tag('logo-lugnut.png', alt: 'Lugnut')), root_path %>
+					</div><!-- /logo -->
+				</div><!-- /nav-logo-wrap -->
+
+				<main class="col-xs-12 col-sm-6" id="headline">
+					<h3>Connect to your world</h3>
+					<h4>We offer today's most innovative and desired connected car products. Learn how they can can save you time and money.</h4>
+					<div id="hero-cta">
+						<a href="/" title="Learn more"><%= icon('play') %></a>
+					</div><!-- /hero-cta -->
+				</main><!-- /headline -->
+			</div><!-- row -->
+		</div><!--/hero-hombre -->
+	</div><!-- /hero -->
+
 </section><!-- /homepage-->

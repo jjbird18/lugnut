@@ -1,8 +1,8 @@
 <ul class="nav navbar-nav">
 	<% if !current_page?(root_path) %>
-		<li><%= link_to "Welcome", root_path %></li>
+		<li><%= link_to "Home", root_path %></li>
 	<% end %>
-	<li><%= link_to "Posts", posts_path %></li>
+	<li><%= link_to "Lugnut Connect", posts_path %></li>
 	<li><%= link_to "About Us", pages_aboutus_path %></li>
 	<% if user_signed_in? %>
       <li><%= link_to "Account", edit_user_registration_path %></li>

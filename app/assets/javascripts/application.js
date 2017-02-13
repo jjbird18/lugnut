@@ -20,4 +20,4 @@ $(function () {
 	var $today = new Date();
 	var $Year = $today.getFullYear();
 	$('footer #year').text($Year);
-})
+});
