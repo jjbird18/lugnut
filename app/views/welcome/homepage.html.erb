@@ -3,35 +3,61 @@
 
 	<div class="container-fluid" id="hero">
 		<div id="hero-hombre">
-			<div class="row-fluid clearfix">
-				<div class="col-xs-12 col-sm-6" id="nav-logo-wrap">
-					<nav id="homepage-navigation">
-						<div class="navbar-header">
-							<button type="button" class="collapsed" data-toggle="collapse" data-target="#navbar-collapse-home">
-								<span class="sr-only">Toggle navigation</span>
-								<%= icon('navicon') %>
-							</button>
-						</div><!-- /navbar-header-->
+			<nav id="homepage-navigation">
+				<div class="navbar-header">
+					<button id="home-nav-btn" type="button" class="collapsed" data-toggle="collapse" data-target="#navbar-collapse-home">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+					</button>
+				</div><!-- /navbar-header-->
 
-						<div class="collapse" id="navbar-collapse-home">
-							<%= render 'layouts/nav' %>
-						</div><!-- /navbar-collapse-home-->
-					</nav><!-- /homepage-navigation-->
+				<div class="collapse" id="navbar-collapse-home">
+					<%= render 'layouts/nav' %>
+				</div><!-- /navbar-collapse-home-->
+			</nav><!-- /homepage-navigation-->
 
-					<div id="logo">
-						<%= link_to (image_tag('logo-lugnut.png', alt: 'Lugnut')), root_path %>
-					</div><!-- /logo -->
-				</div><!-- /nav-logo-wrap -->
+			<div id="logo-wrap">
+				<div id="logo">
+					<%= link_to (image_tag('logo-lugnut-home.png', alt: 'Lugnut')), root_path %>
+				</div><!-- /logo -->
+			</div><!-- /nav-logo-wrap -->
 
-				<main class="col-xs-12 col-sm-6" id="headline">
-					<h3>Connect to your world</h3>
-					<h4>We offer today's most innovative and desired connected car products. Learn how they can can save you time and money.</h4>
-					<div id="hero-cta">
-						<a href="/" title="Learn more"><%= icon('play') %></a>
-					</div><!-- /hero-cta -->
-				</main><!-- /headline -->
-			</div><!-- row -->
+			<div class="container">
+				<div class="row clearfix">
+					<main class="col-xs-12 col-sm-5 pull-right clearfix" id="headline">
+						<div class="col-xs-12 col-sm-11 pull-right">
+							<h3>Connect to your world</h3>
+						</div>
+						<div class="col-xs-10 col-sm-9 pull-right">
+							<h4>We offer today's most innovative</h4> 
+							<h4>and desired connected car</h4> 
+							<h4>products. Learn how they can can</h4> 
+							<h4>save you time and money.</h4>
+						</div><!-- /h4 wrapper -->
+						<div class="col-xs-4 pull-right" id="hero-cta">
+							<a href="/" title="Learn more"><%= icon('play') %></a>
+						</div><!-- /hero-cta -->
+					</main><!-- /headline -->
+				</div><!-- row -->
+			</div><!-- /container -->
 		</div><!--/hero-hombre -->
 	</div><!-- /hero -->
+
+	<div class="container-fluid" id="content-main">
+		<div class="row-fluid">
+			<div class="container">	
+				<div class="row-fluid clearfix">
+					<div class="col-xs-12">
+						<h1><%= yield(:title) %></h1>
+						<p>Cras mattis sit amet mi sit amet varius. Donec tincidunt lectus justo, ut maximus metus lobortis quis. Duis ipsum eros, interdum eu ultricies in, euismod ut metus. Mauris lobortis ullamcorper erat at molestie. Aliquam eget erat congue, eleifend nunc vel, tempor nulla. Nam sit amet felis urna. In non ex et urna faucibus suscipit at quis dui. Donec in hendrerit nisl. </p>
+
+						<p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ac turpis a enim euismod scelerisque eu at tellus. Nulla iaculis est nulla, et commodo eros venenatis a. Integer pharetra sem vitae porttitor rutrum. Mauris pulvinar urna vel felis fermentum, vel tempor eros congue. Etiam consectetur tempus lacus, quis tristique erat fermentum nec. <a href="/">In hac habitasse platea dictumst</a>.</p>
+					</div><!-- /col-xs-12 -->
+				</div><!-- /row -->
+			</div><!-- /container -->
+		</div><!-- /row -->
+	</div><!-- /content-main -->
 
 </section><!-- /homepage-->

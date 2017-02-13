@@ -21,7 +21,13 @@
 html {
 	background: $white;
 	margin: 0 auto;
-	font: 16px $fontFamily;
+	font: 14px $fontFamily;
+	@include tablet {
+		font-size: 16px;
+	}
+	@include desktop {
+		font-size: 16px;
+	}
 }
 
 h1 {
@@ -32,6 +38,19 @@ h2 {
     color: $darkBlue;
     font:600 2rem/1.5em $fontFamily;
 	margin: 0 0 1rem;
+}
+h3 {
+	color: $medBlue;
+	font:300 2.5rem/2.5rem $fontFamily;
+	background: $lightBlue;
+	padding:0.5rem;
+}
+h4 {
+	color: $medGray;
+	font:300 1.25rem/1rem $fontFamily;
+	background: $lightGray;
+	text-align: right;
+	padding:0 0.5rem;
 }
 h6 {
 	color: $lightBlue;
@@ -64,11 +83,12 @@ a {
 /******************************/
 .icon-bar {
     background-color: $darkBlue;
-    box-shadow: 5px 5px 5px $white;
+    box-shadow: 1px 1px 1px $white;
     display: block;
     width: 22px;
     height: 2px;
     border-radius: 1px;
+    margin-bottom: 8px;
 
     #homepage & {
     	height:10px;
@@ -85,6 +105,7 @@ nav {
 			font: 1.25rem/5rem $fontFamily;
 			display: inline-block;
 			padding: 0 0 0 2rem;
+			@include transition(all 500ms ease-in-out);
 
 			&:hover, &:hover + .fa {
 				color:$medGray;
@@ -94,8 +115,70 @@ nav {
 		.fa {
 			color: $lightGray;
 			font-size: 1.125rem;
+			@include transition(all 500ms ease-in-out);
 		}
 	}
+}
+#homepage-navigation {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+
+	ul.navbar-nav {
+	    width: 100%;
+
+	    li {
+		    display: block;
+		    width: 100%;
+		    text-align: center;
+		}
+	}
+	a {
+		color: $lightGray;
+		font:700 2.5rem/5.5rem $fontFamily;
+		display: inline;
+
+		&:hover, &:focus, &:hover + .fa {
+			color:$lightBlue;
+			background:none;
+			@include transition(all 500ms ease-in-out);
+		}
+	}
+    .fa {
+    	font-size: 2.75rem;
+    	color: $lightGray;
+    	@include transition(all 500ms ease-in-out);
+    }
+    div#navbar-collapse-home {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    margin: 0 auto;
+	    width: 100%;
+	    height: 100%;
+		background: rgba(78,101,115,0.75);
+
+		li:first-of-type {
+			padding-top: 8%;
+		}
+	}
+}
+#logo-wrap {
+	position: absolute;
+    z-index: 9;
+    width: 72%;
+    top: -5%;
+    margin: 0 auto;
+    right: 0;
+    @include desktop {
+    	top:auto;
+    	bottom: 10%;
+    	left: 0;
+    }
 }
 .container-fluid {
 	margin: 0 auto;
@@ -104,10 +187,69 @@ nav {
 	&#hero {
 		background: url(bg-hero.jpg) center top;
 		background-size: cover;
-		#
+		position: relative;
+
+		#hero-hombre {
+			@include heroHombre(rgba(30,87,153,0) 0%, rgba(52,70,82,1) 100%);
+		}
 		.row-fluid {
 			max-width: 1600px;
 		}
+		.fa-play {
+		    color: $lightGray;
+		    font-size: 6rem;
+		    @include transition(all 500ms ease-in-out);
+
+		    &:hover {
+		    	color:$lightBlue;
+		    }
+		}
+		button#home-nav-btn {
+		    background: none;
+		    border: none;
+		    width: 5.5rem;
+		    position: relative;
+		    margin-top:3%;
+		    top: 10%;
+		    z-index: 12;
+
+		    @include tablet {
+		    	position: absolute;
+		    	left: 16%;
+		    	width: 6rem;
+		    }
+		    @include desktop {
+		    	position: absolute;
+		    	left: 16%;
+		    	width: 6rem;
+		    }
+			
+			.icon-bar {
+				background-color: $darkBlue;
+			    box-shadow: 1px 1px 1px $white;
+			    display: block;
+			    width:100%;
+			    height: 8px;
+			    border-radius: 1px;
+			    margin-bottom: 8px;
+    		}
+    		&[aria-expanded="false"] .icon-bar {
+    			background-color: $darkBlue;
+    		}
+    		&[aria-expanded="true"] .icon-bar {
+    			background-color: $lightGray;
+    			box-shadow: 1px 1px 1px $darkBlue;
+    		}
+    	}
+    	#headline {
+    		padding: 25% 0;
+    		@include tablet {
+    			padding: 8% 0;
+    		}
+    		@include desktop {
+    			padding: 8% 0;
+    		}
+    	}
 	}
 
 	&#content-main {
