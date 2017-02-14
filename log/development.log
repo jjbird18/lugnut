@@ -8316,3 +8316,1695 @@ Started GET "/assets/application.self-6950c398c6179eb27c6174ab4187d119f8e937a5dd
 
 
 Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-12 22:24:16 -0500
+
+
+Started GET "/" for ::1 at 2017-02-12 22:38:21 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (7.6ms)
+  Rendered welcome/homepage.html.erb within layouts/application (70.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.5ms)
+Completed 200 OK in 4471ms (Views: 4466.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2de10e1455ec8de894b1a4b56fffd6a02b1287c6324dd0aa7968fd475e281360.css?body=1" for ::1 at 2017-02-12 22:38:26 -0500
+
+
+Started GET "/assets/assets/images/bg-hero.jpg" for ::1 at 2017-02-12 22:38:26 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/images/bg-hero.jpg"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (277.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (444.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (190.6ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 22:40:06 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered welcome/homepage.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/welcome/homepage.html.erb:64: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lewis/Documents/Projects/lugnut/app/views/welcome/homepage.html.erb:66: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/welcome/homepage.html.erb:64: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/welcome/homepage.html.erb:66: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (154.6ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 22:41:01 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered welcome/homepage.html.erb within layouts/application (45.7ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 3699ms (Views: 3698.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1c5aefcab8ec0590a0069653e2ff6380ff4cfc3eb32d683fcbd3a4d38c346c7c.css?body=1" for ::1 at 2017-02-12 22:41:05 -0500
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-12 22:41:05 -0500
+
+
+Started GET "/" for ::1 at 2017-02-12 22:51:28 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered welcome/homepage.html.erb within layouts/application (41.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.5ms)
+Completed 200 OK in 4185ms (Views: 4184.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b52a7b02ed47d2851d0e725415a06a16bf8b7d2544ae662490682015303fcaa1.css?body=1" for ::1 at 2017-02-12 22:51:33 -0500
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-12 22:51:33 -0500
+
+
+Started GET "/" for ::1 at 2017-02-12 22:52:00 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered welcome/homepage.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 2888ms (Views: 2887.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0a0f94e0af22e16f21eebc6798cfc2c1e217ad6794484ae5539e5cd7383a3f76.css?body=1" for ::1 at 2017-02-12 22:52:03 -0500
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-12 22:52:03 -0500
+
+
+Started GET "/" for ::1 at 2017-02-12 22:52:24 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered welcome/homepage.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 2926ms (Views: 2925.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6039447ffa585929bfa01e4c28e6100a11065302836d32a411f626a134465199.css?body=1" for ::1 at 2017-02-12 22:52:27 -0500
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-12 22:52:28 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-12 22:52:35 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.haml within layouts/application (9.2ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (22.2ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 137ms (Views: 133.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2017-02-12 22:52:37 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered welcome/homepage.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 171ms (Views: 170.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 22:52:40 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.1ms)
+Completed 200 OK in 192ms (Views: 191.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-12 22:53:50 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (15.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (45.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 3515ms (Views: 3514.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0b51c5d30482cecfc4964d865835ed3c789cf57cc4367c8b537aa154fa36039f.css?body=1" for ::1 at 2017-02-12 22:53:53 -0500
+
+
+Started GET "/" for ::1 at 2017-02-12 22:56:04 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered welcome/homepage.html.erb within layouts/application (35.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.8ms)
+Completed 200 OK in 153ms (Views: 152.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-12 22:56:04 -0500
+
+
+Started GET "/" for ::1 at 2017-02-13 18:47:11 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered welcome/homepage.html.erb within layouts/application (74.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 615ms (Views: 613.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 18:47:12 -0500
+
+
+Started GET "/" for ::1 at 2017-02-13 18:52:16 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered welcome/homepage.html.erb within layouts/application (40.8ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (4.9ms)
+Completed 200 OK in 743ms (Views: 742.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 18:52:17 -0500
+
+
+Started GET "/images/assets/favicon.ico" for ::1 at 2017-02-13 18:52:18 -0500
+
+ActionController::RoutingError (No route matches [GET] "/images/assets/favicon.ico"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+  puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+  puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+  puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (118.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (87.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (178.1ms)
+
+
+Started GET "/" for ::1 at 2017-02-13 18:52:35 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered welcome/homepage.html.erb within layouts/application (49.4ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 203ms (Views: 202.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 18:52:36 -0500
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2017-02-13 18:52:36 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-13 18:54:35 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (92.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 314ms (Views: 312.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/img-x-marketing.jpg" for ::1 at 2017-02-13 18:54:35 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-13 18:54:52 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-13 18:56:42 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered welcome/homepage.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 134ms (Views: 133.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 18:56:42 -0500
+
+
+Started GET "/" for ::1 at 2017-02-13 19:01:57 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered welcome/homepage.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.1ms)
+Completed 200 OK in 4997ms (Views: 4996.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b32f68841ed8a1de0ccc16e8f262b304dced9954a0778c4efe784e63ac96e90d.css?body=1" for ::1 at 2017-02-13 19:02:02 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-13 19:02:41 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_nav.html.erb (4.1ms)
+  Rendered layouts/_header.html.erb (9.5ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.6ms)
+Completed 200 OK in 170ms (Views: 169.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-13 19:02:45 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (4.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.haml within layouts/application (16.7ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (5.8ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (9.1ms)
+Completed 200 OK in 165ms (Views: 158.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-13 19:08:06 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:5: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:7: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/posts/index.html.erb:5: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/posts/index.html.erb:7: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (103.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.2ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-13 19:09:08 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (47.0ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 426ms (Views: 424.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-13 19:12:01 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.8ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 3709ms (Views: 3707.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-1389da227f0badf1937bfd706612d610e9b2e71e4c8417f6bc8bac9334037edd.css?body=1" for ::1 at 2017-02-13 19:12:05 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-13 19:13:03 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 2900ms (Views: 2898.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-a004531d36646d6dcdead29542a588832e26b5e35037ed17f82c2c3e0b4aa065.css?body=1" for ::1 at 2017-02-13 19:13:06 -0500
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2017-02-13 19:13:06 -0500
+
+
+Started GET "/posts/new" for ::1 at 2017-02-13 19:13:28 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 19:13:28 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 135ms (Views: 132.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-13 19:13:31 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 124ms (Views: 121.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-13 19:14:04 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 139ms (Views: 138.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 19:14:05 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (34.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 137ms (Views: 136.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 19:15:59 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 87ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 19:16:16 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 19:16:37 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 2869ms (Views: 2867.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-195805e29576971fd9fe4be547ac6ecda415ecd1a505bcbdd6adbbe1a8db8f0b.css?body=1" for ::1 at 2017-02-13 19:16:40 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 19:18:51 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/devise/sessions/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+...f devise_mapping.rememberable?, class: 'cta' );@output_buffe...
+...                               ^):
+  app/views/devise/sessions/new.html.erb:17: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (173.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 19:19:07 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (49.3ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (68.6ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 4161ms (Views: 4160.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d63f4200744d0bdd616a5ef9362a7c0a2bdc66d66d5d2f56d12c804d1c388e84.css?body=1" for ::1 at 2017-02-13 19:19:11 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 19:20:10 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (57.6ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (21.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 456ms (Views: 454.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 19:24:54 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.7ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (68.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 521ms (Views: 520.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:14:29 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (41.4ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (57.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 4924ms (Views: 4911.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bdc7f2971761f9b1203788ac7ebe50f5cb6a37e46891021f211a19757ebebd03.css?body=1" for ::1 at 2017-02-13 20:14:34 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:15:30 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 118ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:16:35 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (46.1ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 4607ms (Views: 4606.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f8086fb3ff07115a16d232e9b8276037d56ef1cad368077e69492ec9dd621ed9.css?body=1" for ::1 at 2017-02-13 20:16:40 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:17:29 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 86ms (Views: 84.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:17:51 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 2949ms (Views: 2947.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-27f91b511142c686bfd3f4b3f790f1aa5ab7f84e83d504c552854e020a61effa.css?body=1" for ::1 at 2017-02-13 20:17:54 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:19:41 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 3143ms (Views: 3141.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8401107916a67384f41ff6ebae140c2489652a52e6a900817059f0c4fe18cc22.css?body=1" for ::1 at 2017-02-13 20:19:44 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:19:57 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.7ms)
+Completed 200 OK in 102ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:20:08 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 2960ms (Views: 2959.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3afdc3c1d9b6dfa0710cb61fe6d3310cad024b20cd0fe267a4df9a423085d155.css?body=1" for ::1 at 2017-02-13 20:20:11 -0500
+
+
+Started POST "/users/sign_in" for ::1 at 2017-02-13 20:21:49 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+GJw4ODDZUux0z6wToC9lU+zmf5lyRzz+iMt2bt9nbwzNjzsi+v7HOLwf0mNWZ1NsrrbDKpuxAX4EmoOSCfsZg==", "user"=>{"email"=>"dlewis39@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (76.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "dlewis39@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (51.7ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2017-02-13 01:11:50.654291"], ["current_sign_in_at", "2017-02-14 01:21:49.824355"], ["sign_in_count", 3], ["updated_at", "2017-02-14 01:21:49.828370"], ["id", 1]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 429ms (ActiveRecord: 129.7ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-02-13 20:21:49 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mUser Load (15.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.haml (8.9ms)
+  Rendered posts/new.html.haml within layouts/application (28.9ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.3ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 3229ms (Views: 2938.3ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/assets/application.self-bf45cda1e84673eb5258e4472878ea0fe593a86763a805e4cd500ec8201ef2e1.css?body=1" for ::1 at 2017-02-13 20:21:53 -0500
+
+
+Started GET "/users/edit" for ::1 at 2017-02-13 20:21:56 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (43.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 118ms (Views: 115.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for ::1 at 2017-02-13 20:25:17 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/devise/registrations/edit.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+...Password Confirmation" required: false );@output_buffer.safe...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/devise/registrations/edit.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+...holder: "Current Password" hint: "we need your current passw...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/devise/registrations/edit.html.erb:21: syntax error, unexpected ',', expecting ')'
+...sword to confirm your changes", required: true );@output_buf...
+...                               ^):
+  app/views/devise/registrations/edit.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/devise/registrations/edit.html.erb:21: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/devise/registrations/edit.html.erb:21: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (165.6ms)
+
+
+Started GET "/users/edit" for ::1 at 2017-02-13 20:25:28 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 3144ms (Views: 3142.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-63e5017bcac73fc609c7e8a527caa2cb2cc7652f8d1d0219db68f013daed9f45.css?body=1" for ::1 at 2017-02-13 20:25:31 -0500
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2017-02-13 20:25:32 -0500
+
+
+Started GET "/users/edit" for ::1 at 2017-02-13 20:26:40 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 71ms (Views: 69.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2017-02-13 20:26:41 -0500
+
+
+Started GET "/users/edit" for ::1 at 2017-02-13 20:27:50 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (23.8ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 136ms (Views: 134.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for ::1 at 2017-02-13 20:29:01 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 3657ms (Views: 3654.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-fdd197fbfc3c44b1811248ee27da94b2ce65c2c875ebab064128d2317f39fae3.css?body=1" for ::1 at 2017-02-13 20:29:04 -0500
+
+
+Started GET "/users/edit" for ::1 at 2017-02-13 20:29:17 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 3015ms (Views: 3012.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-009bbf11c4b46bbc3319cee5689711d94c80058b8cb1b7afb493e271f5ce0b05.css?body=1" for ::1 at 2017-02-13 20:29:20 -0500
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-02-13 20:29:24 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qRnBQD/2gIKyGL4lEpkKo4FPND0MiQ635TeKjeQxYSudpIFtLlVjfHNF2iqfjQ9c9NovyCbQCeXmnL7csAP66w=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-02-13 20:29:24 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered welcome/homepage.html.erb within layouts/application (60.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 153ms (Views: 152.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 20:29:25 -0500
+
+
+Started GET "/" for ::1 at 2017-02-13 20:29:56 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered welcome/homepage.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 206ms (Views: 205.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-73c783a18a9194730cc7cbe67b5cf9270a3fb7007456b3a17aee7bc833b52da1.js?body=1" for ::1 at 2017-02-13 20:29:56 -0500
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 20:29:57 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:30:00 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (19.4ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.7ms)
+Completed 200 OK in 154ms (Views: 151.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-02-13 20:30:04 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FljnSuG2YcN8+h6gV/lYzvjjkDo5t8ydLAp5lkwoUkyjC6clblknqoF2K8ePDgsC2mvq2FWanaCNDmqgs2M4hA==", "user"=>{"email"=>"dlewis39@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "dlewis39@gmail.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2017-02-14 01:21:49.824355"], ["current_sign_in_at", "2017-02-14 01:30:04.554259"], ["sign_in_count", 4], ["updated_at", "2017-02-14 01:30:04.556472"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 171ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2017-02-13 20:30:04 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered welcome/homepage.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 127ms (Views: 125.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 20:30:05 -0500
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-02-13 20:31:16 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xshyOeYBzxU5wPxmcgA5KXTaURwKCaaiFVc45yg9mZkbDlDrLExmKtqWJMpTdvxWEVHc+i8kblpd447zNChcyw=="}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-02-13 20:31:16 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered welcome/homepage.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.3ms)
+Completed 200 OK in 3559ms (Views: 3558.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2beb08c22ff8ff1f1ee62769c0122ea3e461f6efd0efbb19a5032f9ec2836e2c.css?body=1" for ::1 at 2017-02-13 20:31:20 -0500
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 20:31:20 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:31:38 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (26.7ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (20.7ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (6.5ms)
+Completed 200 OK in 3542ms (Views: 3540.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-91ab5b9cd5c88fadc87854e723dc93bee5ea6d79603f12f4c1c0bd09117c34e5.css?body=1" for ::1 at 2017-02-13 20:31:42 -0500
+
+
+Started POST "/users/sign_in" for ::1 at 2017-02-13 20:31:45 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wzcAbRN9K1amCP4rkO/vO9f6tqhtcaQWLQz/G2+z0j3M5g2RpOW6Wif6qPLkg+OuvzOYlJR5eyY9Wj3BDFh5+A==", "user"=>{"email"=>"dlewis39@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "dlewis39@gmail.com"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2017-02-14 01:30:04.554259"], ["current_sign_in_at", "2017-02-14 01:31:45.795580"], ["sign_in_count", 5], ["updated_at", "2017-02-14 01:31:45.797938"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 168ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2017-02-13 20:31:45 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered welcome/homepage.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 93ms (Views: 92.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 20:31:46 -0500
+
+
+Started GET "/" for ::1 at 2017-02-13 20:32:40 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.3ms)
+  Rendered welcome/homepage.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 2873ms (Views: 2871.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-de56a954cb077dae4ee15d86a0cbbf674b32f471f32485b3fc6fb34f666ff049.css?body=1" for ::1 at 2017-02-13 20:32:43 -0500
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 20:32:43 -0500
+
+
+Started GET "/users/edit" for ::1 at 2017-02-13 20:32:56 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (19.6ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 170ms (Views: 167.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for ::1 at 2017-02-13 20:53:35 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (45.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.5ms)
+Completed 200 OK in 517ms (Views: 513.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-13 20:53:43 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (57.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.1ms)
+  Rendered layouts/_header.html.erb (7.6ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 165ms (Views: 163.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for ::1 at 2017-02-13 20:53:46 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (17.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 159ms (Views: 156.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-02-13 20:53:53 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LDStSC+Absatks0kpgZOePmOMcM9fpbTs7UBBjVAKA/j/olwvy3pd/lpea8lNOSzLC+GgXXf8+irZah1FqGu2A=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-02-13 20:53:53 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered welcome/homepage.html.erb within layouts/application (15.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 126ms (Views: 125.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 20:53:53 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:53:57 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.4ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 140ms (Views: 138.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-02-13 20:53:59 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 160ms (Views: 158.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-02-13 20:56:09 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/devise/registrations/new.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+...Password Confirmation" required: true );@output_buffer.safe_...
+...                               ^):
+  app/views/devise/registrations/new.html.erb:15: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.3ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-02-13 20:56:21 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 3583ms (Views: 3582.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d741677f8e21a0e1942f73b8bf192921f9e0d14addd879589b3206493ddca678.css?body=1" for ::1 at 2017-02-13 20:56:24 -0500
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2017-02-13 20:56:25 -0500
+
+
+Started GET "/users/sign_up" for ::1 at 2017-02-13 20:57:26 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.6ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:57:35 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.6ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.4ms)
+Completed 200 OK in 142ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2017-02-13 20:57:39 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.5ms)
+Completed 200 OK in 109ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2017-02-13 20:58:45 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 71ms (Views: 70.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2017-02-13 20:59:19 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2017-02-13 20:59:20 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:59:29 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (34.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 138ms (Views: 136.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-13 20:59:31 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 117ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:59:35 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (28.6ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 173ms (Views: 171.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2017-02-13 20:59:38 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 171ms (Views: 169.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-02-13 20:59:39 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.8ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (4.6ms)
+Completed 200 OK in 123ms (Views: 121.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/password" for ::1 at 2017-02-13 20:59:45 -0500
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/f8oH3Z4ZqUWOVovFfqroh63GdC4gh98SBlRmIXXSqBNwyuuUOz9TTduZMCErCWr6CyIccpikTq/NkxQ2ZgCWQ==", "user"=>{"email"=>"dlewis39@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "dlewis39@gmail.com"]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."reset_password_token" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["reset_password_token", "8ca97fa57fa0f4dd56437854e039ef468f9bd6d84c4e320d8e9198897c10c4f2"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (80.0ms)[0m  [1mUPDATE "users" SET "reset_password_token" = $1, "reset_password_sent_at" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["reset_password_token", "8ca97fa57fa0f4dd56437854e039ef468f9bd6d84c4e320d8e9198897c10c4f2"], ["reset_password_sent_at", "2017-02-14 01:59:45.271468"], ["updated_at", "2017-02-14 01:59:45.272543"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  Rendered devise/mailer/reset_password_instructions.html.erb (1.1ms)
+
+Devise::Mailer#reset_password_instructions: processed outbound mail in 284.9ms
+
+Sent mail to dlewis39@gmail.com (60.0ms)
+Date: Mon, 13 Feb 2017 20:59:45 -0500
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: dlewis39@gmail.com
+Message-ID: <58a26491e2e77_15ef13fe74502007868d0@Davids-Mac-mini.local.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello dlewis39@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=UxbF3yCQy6C9cAS7sP56">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 944ms (ActiveRecord: 82.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:59:45 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (6.2ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-13 20:59:57 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered welcome/homepage.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (8.6ms)
+Completed 200 OK in 132ms (Views: 131.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 20:59:57 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 20:59:59 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (49.6ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 153ms (Views: 151.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2017-02-13 21:00:02 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 140ms (Views: 138.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-02-13 21:00:03 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 122ms (Views: 121.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 21:00:06 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (9.3ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 170ms (Views: 168.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-02-13 21:00:07 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x/yuI9u4HRSr7XzGq6chRdksMVqKUw0aU1jJ1n54QZp3wK2S/SyG/Iq6Qik68a9ML7eg+/izg1ykd9QeIjcJYw==", "user"=>{"email"=>"dlewis39@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "dlewis39@gmail.com"]]
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2017-02-14 01:31:45.795580"], ["current_sign_in_at", "2017-02-14 02:00:08.064459"], ["sign_in_count", 6], ["updated_at", "2017-02-14 02:00:08.068620"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 175ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2017-02-13 21:00:08 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered welcome/homepage.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 81ms (Views: 79.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 21:00:08 -0500
+
+
+Started GET "/users/edit" for ::1 at 2017-02-13 21:00:11 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 109ms (Views: 106.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-02-13 21:00:26 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered welcome/homepage.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 144ms (Views: 143.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-13 21:00:30 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (11.0ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (21.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (7.6ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 135ms (Views: 122.3ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-02-13 21:01:02 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.haml (8.0ms)
+  Rendered posts/new.html.haml within layouts/application (24.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.8ms)
+Completed 200 OK in 148ms (Views: 144.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-02-13 21:02:19 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.haml (7.8ms)
+  Rendered posts/new.html.erb within layouts/application (16.9ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (45.7ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 245ms (Views: 241.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-02-13 21:05:31 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.erb (1.8ms)
+  Rendered posts/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/_form.html.erb:5: syntax error, unexpected ',', expecting :: or '[' or '.'
+...er.append=( f.submit, "Log in", class: 'cta' );@output_buffe...
+...                               ^):
+  app/views/posts/_form.html.erb:5: syntax error, unexpected ',', expecting :: or '[' or '.'
+  app/views/posts/new.html.erb:12:in `_app_views_posts_new_html_erb__1162716884895817272_70262467601080'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (146.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-02-13 21:05:52 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (5.5ms)
+  Rendered posts/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (45.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 231ms (Views: 228.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2017-02-13 21:05:53 -0500
+
+
+Started GET "/posts/new" for ::1 at 2017-02-13 21:07:39 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.erb (6.3ms)
+  Rendered posts/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.1ms)
+Completed 200 OK in 78ms (Views: 75.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2017-02-13 21:07:40 -0500
+
+
+Started GET "/posts/new" for ::1 at 2017-02-13 21:08:43 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (7.4ms)
+  Rendered posts/new.html.erb within layouts/application (21.9ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (68.3ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 4530ms (Views: 4526.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-c3c4f6d963f065649ca84bdc5722ad790d5fa69df2dabb6995d04c2acc2ae7dd.css?body=1" for ::1 at 2017-02-13 21:08:48 -0500
+
+
+Started GET "/assets/favicon.ico" for ::1 at 2017-02-13 21:08:49 -0500
+
+
+Started GET "/posts/new" for ::1 at 2017-02-13 21:10:10 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.erb (7.7ms)
+  Rendered posts/new.html.erb within layouts/application (44.9ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (46.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 3608ms (Views: 3605.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-1cf45da32289d1a262b291902b3f391c467db2593542e18544be2a5099c23955.css?body=1" for ::1 at 2017-02-13 21:10:14 -0500
+
+
+Started GET "/posts/new" for ::1 at 2017-02-13 21:10:31 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered posts/_form.html.erb (4.4ms)
+  Rendered posts/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 2827ms (Views: 2823.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-811df60ef6771049dbbd75809f9cb4e3b2a9034f0cf1a904ac5d783c672fa70e.css?body=1" for ::1 at 2017-02-13 21:10:34 -0500
+
+
+Started GET "/users/edit" for ::1 at 2017-02-13 21:10:43 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (9.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 191ms (Views: 179.1ms | ActiveRecord: 9.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-02-13 21:10:51 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KiUzZHTQ4k8ViLm4Tnm2ZYe8p3TmK2bsHc9wDp7sHoMn9G5RHeAswRuwCDfL+SR7EY/dLnpJrpLjvtFEYJErjg=="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-02-13 21:10:51 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered welcome/homepage.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.4ms)
+Completed 200 OK in 138ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 21:10:51 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 21:10:54 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (30.4ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.6ms)
+Completed 200 OK in 165ms (Views: 163.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2017-02-13 21:10:56 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (6.2ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 135ms (Views: 134.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-02-13 21:10:58 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.5ms)
+Completed 200 OK in 139ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-13 21:11:00 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 148ms (Views: 147.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-02-13 21:11:01 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FQ9e2rhI6tblMwnvd6lQVe0UIvzMUxiSDYUZ/zoEXGT2t0vQquhCmwmScBLUMdeZkB5l7fN3+2tL6KWUMrYvJA==", "user"=>{"email"=>"dlewis39@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "dlewis39@gmail.com"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2017-02-14 02:00:08.064459"], ["current_sign_in_at", "2017-02-14 02:11:01.619407"], ["sign_in_count", 7], ["updated_at", "2017-02-14 02:11:01.622011"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 169ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2017-02-13 21:11:01 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered welcome/homepage.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-13 21:11:01 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-13 21:11:08 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (1.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (12.7ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_header.html.erb (7.3ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 143ms (Views: 139.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-02-13 21:11:09 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.erb (6.3ms)
+  Rendered posts/new.html.erb within layouts/application (20.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 139ms (Views: 135.9ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAdminToUsers (20170214021806)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (130.4ms)[0m  [1mALTER TABLE "users" ADD "admin" integer[0m
+  [1m[35mSQL (67.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20170214021806"]]
+  [1m[36m (27.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (6.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m

@@ -33,6 +33,7 @@ html {
 h1 {
     color: $darkBlue;
     font:700 3rem/1em $fontFamily;
+    margin-bottom: 30px;
 }
 h2 {
     color: $darkBlue;
@@ -41,9 +42,16 @@ h2 {
 }
 h3 {
 	color: $medBlue;
-	font:300 2.5rem/2.5rem $fontFamily;
-	background: $lightBlue;
-	padding:0.5rem;
+	font:700 2rem/2.5rem $fontFamily;
+	#hero & {
+		font-size: 2.5rem;
+		font-weight: 300;
+		background: $lightBlue;
+		padding:0.5rem;
+	}
+	a {
+		color: $medBlue;
+	}
 }
 h4 {
 	color: $medGray;
@@ -72,6 +80,14 @@ a {
 	&:active, &:visited, &:focus {
 		background: none;
 		text-decoration: none;
+	}
+	.shared-login-links & {
+		color: $medBlue;
+		font-size: 1.25rem;
+
+		&:hover {
+			color: $darkBlue;
+		}
 	}
 }
 * {
@@ -121,7 +137,6 @@ nav {
 }
 #homepage-navigation {
 	position: absolute;
-	z-index: 10;
 	width: 100%;
 	height: 100%;
 	top: 0%;
@@ -154,6 +169,7 @@ nav {
     }
     div#navbar-collapse-home {
 	    position: absolute;
+	    z-index: 13;
 	    top: 0;
 	    right: 0;
 	    left: 0;
@@ -163,11 +179,11 @@ nav {
 		background: rgba(78,101,115,0.75);
 
 		li:first-of-type {
-			padding-top: 8%;
+			padding-top: 5%;
 		}
 	}
 }
-#logo-wrap {
+#logo-wrap-home {
 	position: absolute;
     z-index: 9;
     width: 72%;
@@ -185,7 +201,7 @@ nav {
 	padding:0;
 
 	&#hero {
-		background: url(bg-hero.jpg) center top;
+		background: url(/assets/bg-hero.jpg) center top;
 		background-size: cover;
 		position: relative;
 
@@ -195,14 +211,17 @@ nav {
 		.row-fluid {
 			max-width: 1600px;
 		}
-		.fa-play {
-		    color: $lightGray;
-		    font-size: 6rem;
-		    @include transition(all 500ms ease-in-out);
+		#hero-cta {
+			padding-top:2%;
+			.fa-play {
+			    color: $lightGray;
+			    font-size: 6rem;
+			    @include transition(all 500ms ease-in-out);
 
-		    &:hover {
-		    	color:$lightBlue;
-		    }
+			    &:hover {
+			    	color:$lightBlue;
+			    }
+			}
 		}
 		button#home-nav-btn {
 		    background: none;
@@ -211,7 +230,7 @@ nav {
 		    position: relative;
 		    margin-top:3%;
 		    top: 10%;
-		    z-index: 12;
+		    z-index: 100;
 
 		    @include tablet {
 		    	position: absolute;
@@ -243,6 +262,7 @@ nav {
     	}
     	#headline {
     		padding: 25% 0;
+    		z-index: 12;
     		@include tablet {
     			padding: 8% 0;
     		}
@@ -337,4 +357,30 @@ footer {
 		border-top: 2px solid $medGray;
 		padding-top: 0.75rem;
 	}
+}
+/*FORMS*/
+.user_remember_me, .form-inputs label {
+	@extend %visuallyhidden;
+}
+.form-inputs input, .form-inputs textarea {
+    width: 100%;
+    display: block;
+    padding: 15px;
+    font: 400 1.5rem $fontFamily;
+    margin-top: 1.5rem;
+    border: 1px solid $lightGray;
+}
+input.btn.cta {
+    border-radius: 0px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.alert.alert-info {
+	position: fixed;
+	z-index: 101;
+	width: 100%;
+	margin: 0 auto;
+	top: 0;
+	right: 0;
+	left: 0;
 }

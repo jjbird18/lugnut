@@ -1,0 +1,21 @@
+<% content_for(:title, "Lugnut Connect") %>
+<div class="container-fluid" id="content-main">
+	<div class="row-fluid">
+		<div class="container">	
+			<div class="row-fluid clearfix">
+				<div class="col-xs-12 text-left">
+					<h1><%= yield(:title) %></h1>
+				</div><!-- /col-xs-12 -->
+			</div><!-- /row -->
+			<div class="row-fluid clearfix">
+				<div class="col-xs-12 text-left">
+					<% @posts.each do |post| %>
+						<h3><%= link_to post.title, post %></h3>
+						<p><small>Published at <%= time_ago_in_words(post.created_at) %> by <%= post.user.email %></small></p>
+						<%= link_to "Comment", new_post_path, class: 'btn cta'  %>
+					<% end %>
+				</div><!-- /col-xs-12 -->
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /row -->
+</div><!-- /content-main -->

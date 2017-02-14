@@ -21,3 +21,5 @@ $(function () {
 	var $Year = $today.getFullYear();
 	$('footer #year').text($Year);
 });
+
+$(function() { $('.alert.alert-info').fadeOut(10000); });

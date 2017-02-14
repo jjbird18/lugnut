@@ -1,15 +1,31 @@
-<h2>Log in</h2>
+<% content_for(:title, "Log In") %>
+<div class="container-fluid" id="content-main">
+	<div class="row-fluid">
+		<div class="container">	
+			<div class="row-fluid clearfix">
+				<div class="col-xs-12 text-left">
+					<h1><%= yield(:title) %></h1>
+					<p>Cras mattis sit amet mi sit amet varius. Donec tincidunt lectus justo, ut maximus metus lobortis quis. Duis ipsum eros, interdum eu ultricies in, euismod ut metus. Mauris lobortis ullamcorper erat at molestie. Aliquam eget erat congue, eleifend nunc vel, tempor nulla. Nam sit amet felis urna. In non ex et urna faucibus suscipit at quis dui. Donec in hendrerit nisl.</p>
+				</div><!-- /col-xs-12 -->
+			</div><!-- /row -->
+			<div class="row-fluid clearfix">
+				<div class="col-xs-12 col-sm-9 text-left">
+					<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+					  <div class="form-inputs">
+					    <%= f.input :email, required: false, autofocus: true, class: 'login-input', placeholder: 'Email' %>
+					    <%= f.input :password, required: false, class: 'login-input', placeholder: 'Password' %>
+					  </div>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email, required: false, autofocus: true %>
-    <%= f.input :password, required: false %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-  </div>
+					  <div class="form-actions">
+					    <%= f.button :submit, "Log in", class: 'cta' %>
+					  </div>
+					<% end %>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+					<div class="shared-login-links">
+						<%= render "devise/shared/links" %>
+					</div><!--/shared-login-link -->
+				</div><!-- /col-xs-12 -->
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /row -->
+</div><!-- /content-main -->
