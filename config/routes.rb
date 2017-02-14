@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   get 'welcome/homepage'
 
   devise_for :users
-  resources :posts, expect: [:show, :index, :edit]
+  resources :posts, expect: [:show, :index, :edit] do
+  	resources :comments
+  end
 
   root 'welcome#homepage'
 
