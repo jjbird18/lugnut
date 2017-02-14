@@ -5,17 +5,33 @@
 			<div class="row-fluid clearfix">
 				<div class="col-xs-12 text-left">
 					<h1><%= yield(:title) %></h1>
+					<p>Looking for answers to those looming car questions? Can't figure out which connected device is right for look? Check out our forum below for answers to all of your questions. Can't find an answer? Bring your topic to the community by starting a new thread.</p>
 				</div><!-- /col-xs-12 -->
 			</div><!-- /row -->
-			<div class="row-fluid clearfix">
+			<div class="row-fluid clearfix" id="posts-wrap">
 				<div class="col-xs-12 text-left">
 					<% @posts.each do |post| %>
-						<h3><%= link_to post.title, post %></h3>
-						<p><small>Published at <%= time_ago_in_words(post.created_at) %> by <%= post.user.email %></small></p>
-						<%= link_to "Comment", new_post_path, class: 'btn cta'  %>
+						<h2><%= link_to post.title, post %></h2>
+						<p><%= link_to truncate(post.content, :length => 200, :separator => ' '), post %></p>
+						<div class="row-fluid post-strip clearfix">
+							<div class="post-link post-info text-center">
+								<%= link_to "Visit post", post, class: 'cta'  %>
+							</div>
+							<div class="col-xs-2 post-info text-center">
+								<p>Comments (<%= post.comments.count %>)</p>
+							</div>
+							<div class="col-xs-3 post-info text-center">
+								<p>Last updated: <%= time_ago_in_words(post.updated_at) %></p>
+							</div>
+						</div>
 					<% end %>
 				</div><!-- /col-xs-12 -->
 			</div><!-- /row -->
+			<div class="row-fluid">
+			<div class="col-xs-12 col-sm-4">
+				<%= link_to "Start a new thread", new_post_path, class: 'cta'  %>
+			</div>
+			</div>
 		</div><!-- /container -->
 	</div><!-- /row -->
 </div><!-- /content-main -->

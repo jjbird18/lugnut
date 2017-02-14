@@ -39,6 +39,14 @@ h2 {
     color: $darkBlue;
     font:600 2rem/1.5em $fontFamily;
 	margin: 0 0 1rem;
+	#posts-wrap & {
+		font-size: 1.5rem;
+		margin-bottom: 0.25rem;
+
+	}
+	a {
+		color: $footerBlue;
+	}
 }
 h3 {
 	color: $medBlue;
@@ -48,9 +56,6 @@ h3 {
 		font-weight: 300;
 		background: $lightBlue;
 		padding:0.5rem;
-	}
-	a {
-		color: $medBlue;
 	}
 }
 h4 {
@@ -72,6 +77,9 @@ h5 {
 h6 {
 	color: $lightBlue;
 	font:0.75rem $fontFamily;
+	#content-main & {
+		color: $medBlue;
+	}
 }
 p {
 	color: $medGray;
@@ -318,6 +326,11 @@ nav {
 		width: auto;
 		padding: 0.75rem 3rem;
 	}
+	#posts-wrap & {
+		font-size: 1rem;
+	    padding: 3px 0px;
+	    width: 100%;
+	}
 }
 footer {
 	background: $footerBlue;
@@ -395,7 +408,35 @@ input.btn.cta {
 }
 /*COMMENTS*/
 .comment {
-    border: 1px solid $lightGray;
+    border: 1px solid $medGray;
     padding: 2%;
     margin-bottom: 2%;
+}
+#posts-wrap {
+	.post-strip {
+		margin-bottom: 2%;
+	}
+	.post-info {
+		border: 1px solid $lightGray;
+		border-left: 0px;
+		&:first-of-type {
+			border-left: 1px;
+		}
+	}
+	.post-link {
+		float: left;
+		width: 100px;
+		margin-bottom: 0 auto;
+		padding:0px;
+	}
+	p {
+		margin: 0;
+	    padding: 3px 0;
+	    line-height: 1.4rem;
+	    a {
+	    	color: $medGray;
+	    	margin-bottom: 1%;
+    		display: block;
+	    }
+	}
 }

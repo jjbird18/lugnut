@@ -1,12 +1,4 @@
-<!-- <h1><%= @post.title %></h1>
-<p><%= @post.content %></p>
-	<% if user_signed_in? && @post.user_id == current_user.id %>
-		<%= link_to "Edit", edit_post_path(@post) %>
-		<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
-		<%= link_to "Home", root_path %>
-	<% end %>
-
-	<% content_for(:title, @post.title) %> -->
+<% content_for(:title, @post.title) %>
 <div class="container-fluid" id="content-main">
 	<div class="row-fluid">
 		<div class="container">	
@@ -15,20 +7,20 @@
 					<h1><%= @post.title %></h1>
 					<p><%= @post.content %></p>
 					<% if user_signed_in? && @post.user_id == current_user.id %>
-						<%= link_to "Edit", edit_post_path(@post) %>
-						<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
+						<h6>This is your post, so you may... <%= link_to "Edit", edit_post_path(@post) %> or 
+						<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %></h6>
 					<% end %>
 				</div><!-- /col-xs-12 -->
 			</div><!-- /row -->
 			<div class="row-fluid clearfix">
 				<div class="col-xs-12 text-left" id="comments">
-					<h2><%= @post.comments.count %></h2>
+					<h4>Comments (<%= @post.comments.count %>)</h4>
 					<%= render @post.comments%>
 				</div><!-- /col-xs-12 -->
 			</div><!-- /row -->
 			<div class="row-fluid clearfix">
 				<div class="col-xs-12 text-left" id="comments">
-					<h3>Reply to thread</h3>
+					<h4>Reply to thread</h4>
 					<%= render 'comments/form' %>
 				</div><!-- /col-xs-12 -->
 			</div><!-- /row -->

@@ -11545,3 +11545,1445 @@ Completed 200 OK in 2935ms (Views: 2931.0ms | ActiveRecord: 1.7ms)
 
 
 Started GET "/assets/application.self-7f87559f04de8e5a20a4b121bac1b5bc7be3c07f1b275ae3bdbbfd277bf538fd.css?body=1" for ::1 at 2017-02-13 22:17:18 -0500
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 08:27:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (18.7ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_comment.html.erb (23.6ms)
+  Rendered comments/_form.html.erb (0.5ms)
+  Rendered posts/show.html.erb within layouts/application (268.8ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (24.9ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 6075ms (Views: 5977.3ms | ActiveRecord: 33.6ms)
+
+
+Started GET "/assets/application.self-e9c3ac903a26dbd7aa1d643ead10f400112b45cf47323462e9631d75714e9f2a.css?body=1" for ::1 at 2017-02-14 08:27:50 -0500
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 08:30:44 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (3.7ms)
+  Rendered comments/_form.html.erb (408.3ms)
+  Rendered posts/show.html.erb within layouts/application (440.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (45.8ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 983ms (Views: 977.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 08:31:20 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_comment.html.erb (4.0ms)
+  Rendered comments/_form.html.erb (3.3ms)
+  Rendered posts/show.html.erb within layouts/application (17.3ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 84ms (Views: 78.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 08:32:18 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (2.7ms)
+  Rendered comments/_form.html.erb (3.0ms)
+  Rendered posts/show.html.erb within layouts/application (43.6ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (46.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 620ms (Views: 615.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/posts/4/edit" for ::1 at 2017-02-14 08:33:01 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (1.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.erb (62.3ms)
+  Rendered posts/edit.html.haml within layouts/application (77.8ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (101.7ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 822ms (Views: 675.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/4/edit" for ::1 at 2017-02-14 08:34:37 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.erb (5.6ms)
+  Rendered posts/edit.html.erb within layouts/application (20.6ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (21.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 358ms (Views: 354.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/4/edit" for ::1 at 2017-02-14 08:35:21 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/edit.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/posts/4" for ::1 at 2017-02-14 08:36:18 -0500
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cZfKtq5eHrhR40so1uyzakmDrgSSeAqknbW1nW7Ohl6jOkkPs3Zn8w/oCuRMcCjhkjX7sYsl2PxjbLnvvJuAdQ==", "post"=>{"title"=>"Fixing a '64 Mustang", "content"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mauris dui. Proin pretium posuere nisl et porta. Vestibulum congue imperdiet purus et rutrum. Ut scelerisque blandit felis. Sed tempor diam sagittis augue rhoncus, vitae bibendum diam sollicitudin. Duis non elementum elit. Proin eu mauris in ante vulputate fermentum non et nulla."}, "commit"=>"Update post", "expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE "posts" SET "title" = $1, "content" = $2, "updated_at" = $3 WHERE "posts"."id" = $4[0m  [["title", "Fixing a '64 Mustang"], ["content", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae mauris dui. Proin pretium posuere nisl et porta. Vestibulum congue imperdiet purus et rutrum. Ut scelerisque blandit felis. Sed tempor diam sagittis augue rhoncus, vitae bibendum diam sollicitudin. Duis non elementum elit. Proin eu mauris in ante vulputate fermentum non et nulla."], ["updated_at", "2017-02-14 13:36:18.776853"], ["id", 4]]
+  [1m[35m (40.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 49ms (ActiveRecord: 42.3ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 08:36:18 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (5.7ms)
+  Rendered comments/_form.html.erb (3.8ms)
+  Rendered posts/show.html.erb within layouts/application (65.6ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 158ms (Views: 153.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:36:23 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (2.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (10.8ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (4.5ms)
+  Rendered layouts/_header.html.erb (9.8ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.1ms)
+Completed 200 OK in 137ms (Views: 132.4ms | ActiveRecord: 3.7ms)
+  [1m[36mComment Load (1.4ms)[0m  [1mSELECT  "comments".* FROM "comments"  ORDER BY "comments"."id" DESC LIMIT 1[0m
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:40:12 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (10.8ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_header.html.erb (59.0ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 622ms (Views: 619.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:40:29 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (9.9ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_header.html.erb (7.3ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 81ms (Views: 77.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:40:46 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (9.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.1ms)
+  Rendered layouts/_header.html.erb (6.6ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 79ms (Views: 76.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-14 08:41:08 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (15.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.3ms)
+  Rendered layouts/_header.html.erb (7.5ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 181ms (Views: 179.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for ::1 at 2017-02-14 08:41:12 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (119.4ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 288ms (Views: 284.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-14 08:41:16 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.9ms)
+  Rendered welcome/homepage.html.erb within layouts/application (29.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 188ms (Views: 186.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-14 08:41:16 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-14 08:41:23 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (13.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 102ms (Views: 100.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:41:26 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (5.7ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (15.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mCACHE (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (43.4ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_header.html.erb (7.4ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (5.1ms)
+Completed 200 OK in 189ms (Views: 165.2ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 08:41:27 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (19.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mComment Load (1.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (4.1ms)
+  Rendered comments/_form.html.erb (3.6ms)
+  Rendered posts/show.html.erb within layouts/application (62.2ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 215ms (Views: 189.8ms | ActiveRecord: 23.6ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:41:41 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (16.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_header.html.erb (7.1ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 153ms (Views: 148.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:44:35 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (11.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.1ms)
+  Rendered layouts/_header.html.erb (48.4ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 4058ms (Views: 4055.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.self-43d81a6ceb3c6aa002ced113643cd115f2a8f9a2fdd941881c6df9170e678530.css?body=1" for ::1 at 2017-02-14 08:44:39 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:45:11 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (6.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.4ms)
+Completed 200 OK in 69ms (Views: 66.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:47:59 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (6.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_header.html.erb (48.3ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 3930ms (Views: 3928.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.self-1eba9a79a80dd36dcb3a4f7ba14bb916769a18ec857b8f2f36da1f17a4ebf3c3.css?body=1" for ::1 at 2017-02-14 08:48:03 -0500
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 08:48:05 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (9.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (1.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mComment Load (1.0ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_comment.html.erb (5.2ms)
+  Rendered comments/_form.html.erb (6.1ms)
+  Rendered posts/show.html.erb within layouts/application (68.4ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.8ms)
+Completed 200 OK in 173ms (Views: 158.5ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:53:23 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (8.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (103.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 4752ms (Views: 4749.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.self-f315203dfb84bca275ebb4a081463ff55fcb2ad0a97e5cb98e430de6d8f1dbd4.css?body=1" for ::1 at 2017-02-14 08:53:28 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:55:42 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (8.9ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (21.7ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 3121ms (Views: 3118.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.self-201045411e46e9360b719ac3fbaf9adb11d587060028e5d425caa8939598a9cd.css?body=1" for ::1 at 2017-02-14 08:55:45 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:56:09 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (7.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (36.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 210ms (Views: 207.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:57:26 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.6ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (6.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (7.5ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 4052ms (Views: 4050.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.self-dd900f21f719f4d00c90ed809a7af30f63dd6bdb4ac306c5cddc93d9ae4069a3.css?body=1" for ::1 at 2017-02-14 08:57:30 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-14 08:59:28 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (7.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_header.html.erb (48.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 3788ms (Views: 3785.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.self-03d598865e7a42348ee5d2096183e21c4aae9abbf269fc65757d252f6f3fe77f.css?body=1" for ::1 at 2017-02-14 08:59:32 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:00:34 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+...ppend=( truncate(post.content), post );@output_buffer.safe_a...
+...                               ^):
+  app/views/posts/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (118.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (152.8ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:01:27 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+...ppend=( truncate(post.content), post );@output_buffer.safe_a...
+...                               ^):
+  app/views/posts/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (140.3ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:07:11 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+...ppend=( truncate(post.content), post );@output_buffer.safe_a...
+...                               ^):
+  app/views/posts/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (28.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (93.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (170.0ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:07:31 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+...r.append=( post.content, post );@output_buffer.safe_append='...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;					 end 
+         					    ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+  app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (152.4ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:07:56 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+...r.append=( post.content, post );@output_buffer.safe_append='...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;					 end 
+         					    ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+  app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (139.6ms)
+
+
+Started GET "/" for ::1 at 2017-02-14 09:08:24 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (15.7ms)
+  Rendered welcome/homepage.html.erb within layouts/application (60.8ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 428ms (Views: 421.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-14 09:08:25 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:08:29 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+...r.append=( post.content, post );@output_buffer.safe_append='...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;					 end 
+         					    ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+  app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (182.9ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:09:28 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+...r.append=( post.content, post );@output_buffer.safe_append='...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;					 end 
+         					    ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+  app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (157.9ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:09:39 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (39.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_header.html.erb (23.8ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 133ms (Views: 126.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:10:03 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+...r.append=( post.content, post );@output_buffer.safe_append='...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;					 end 
+         					    ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+  app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.4ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:11:38 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (6.5ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (4.2ms)
+  Rendered layouts/_header.html.erb (8.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:11:40 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (4.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (3.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (10.0ms)
+  Rendered comments/_form.html.erb (4.3ms)
+  Rendered posts/show.html.erb within layouts/application (109.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (9.3ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 281ms (Views: 267.7ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:12:06 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (6.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.6ms)
+  Rendered layouts/_header.html.erb (8.3ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 74ms (Views: 71.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:12:15 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+...r.append=( post.content, post );@output_buffer.safe_append='...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;					 end 
+         					    ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+  app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (150.1ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:12:27 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+...buffer.append=( (post.content), post );@output_buffer.safe_a...
+...                               ^):
+  app/views/posts/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.5ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:12:37 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+...buffer.append=( 'post.content', post );@output_buffer.safe_a...
+...                               ^):
+  app/views/posts/index.html.erb:14: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (147.8ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:12:53 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+...r.append=( post.content, post );@output_buffer.safe_append='...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;					 end 
+         					    ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/index.html.erb:14: syntax error, unexpected ')', expecting '='
+  app/views/posts/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/index.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/index.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (140.3ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:13:11 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (6.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 69ms (Views: 66.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:14:30 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (6.3ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.3ms)
+  Rendered layouts/_header.html.erb (8.3ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 3844ms (Views: 3841.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.self-57f5719f042475a55318f9f963e28e3b6d17adf6429adea4106ba573be1302ae.css?body=1" for ::1 at 2017-02-14 09:14:34 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:16:16 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (7.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.1ms)
+  Rendered layouts/_header.html.erb (7.3ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:16:27 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.1ms)
+  Rendered layouts/_header.html.erb (7.4ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 80ms (Views: 77.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-02-14 09:19:51 -0500
+Processing by PostsController#new as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mUser Load (5.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered posts/_form.html.erb (8.2ms)
+  Rendered posts/new.html.erb within layouts/application (25.3ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 3700ms (Views: 3621.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/application.self-d778247fe49636ff6c08a7177820c6c75b09a2bd52766e0fac3b8b79170c8a6d.css?body=1" for ::1 at 2017-02-14 09:19:54 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:20:50 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (8.6ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.3ms)
+Completed 200 OK in 73ms (Views: 70.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:21:02 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (8.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_header.html.erb (6.8ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 80ms (Views: 77.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:21:05 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (4.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (1.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mUser Load (16.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (5.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_comment.html.erb (26.4ms)
+  Rendered comments/_form.html.erb (6.0ms)
+  Rendered posts/show.html.erb within layouts/application (52.7ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 215ms (Views: 185.0ms | ActiveRecord: 28.2ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:21:36 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (2.9ms)
+  Rendered comments/_form.html.erb (3.0ms)
+  Rendered posts/show.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 2784ms (Views: 2780.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.self-d3e50da1da76c9e4056250a79e5ea75ce7de9de603c828b4bcd8ab875b59bd28.css?body=1" for ::1 at 2017-02-14 09:21:39 -0500
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:23:34 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_comment.html.erb (3.0ms)
+  Rendered comments/_form.html.erb (3.4ms)
+  Rendered posts/show.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 96ms (Views: 92.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:24:54 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (3.4ms)
+  Rendered comments/_form.html.erb (3.2ms)
+  Rendered posts/show.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 93ms (Views: 89.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:25:19 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_comment.html.erb (3.4ms)
+  Rendered comments/_form.html.erb (3.1ms)
+  Rendered posts/show.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (5.1ms)
+Completed 200 OK in 93ms (Views: 89.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:25:46 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (2.5ms)
+  Rendered comments/_form.html.erb (3.0ms)
+  Rendered posts/show.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 78ms (Views: 75.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:26:11 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_comment.html.erb (2.9ms)
+  Rendered comments/_form.html.erb (3.1ms)
+  Rendered posts/show.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 87ms (Views: 83.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:26:32 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (3.7ms)
+  Rendered comments/_form.html.erb (3.7ms)
+  Rendered posts/show.html.erb within layouts/application (16.5ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (14.9ms)
+Completed 200 OK in 110ms (Views: 106.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:27:09 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_comment.html.erb (2.9ms)
+  Rendered comments/_form.html.erb (4.5ms)
+  Rendered posts/show.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 3136ms (Views: 3133.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.self-06301980b4b540c7725e18cab9b128a1923b31930c877702b99247bda0a07f4d.css?body=1" for ::1 at 2017-02-14 09:27:13 -0500
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:27:19 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (2.8ms)
+  Rendered comments/_form.html.erb (2.8ms)
+  Rendered posts/show.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 3240ms (Views: 3236.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.self-bb02699a4f5b092751aef279fd6a43b98d9a50114fc42192a681e67ec9d1425e.css?body=1" for ::1 at 2017-02-14 09:27:22 -0500
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:27:33 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_comment.html.erb (3.6ms)
+  Rendered comments/_form.html.erb (3.1ms)
+  Rendered posts/show.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 3562ms (Views: 3558.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.self-e393cb1e51b51b3edd427e3b933b56c26df8d1c60fa16e25a59278f32f4acaa3.css?body=1" for ::1 at 2017-02-14 09:27:37 -0500
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:28:36 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (4.1ms)
+  Rendered comments/_form.html.erb (2.7ms)
+  Rendered posts/show.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 75ms (Views: 72.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:30:00 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_comment.html.erb (2.3ms)
+  Rendered comments/_form.html.erb (2.9ms)
+  Rendered posts/show.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (4.4ms)
+Completed 200 OK in 72ms (Views: 68.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:30:04 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (4.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (3.6ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (20.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_header.html.erb (7.6ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 134ms (Views: 122.8ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:30:16 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:15: syntax error, unexpected ')', expecting =>
+...200), :separator => ' ', post );@output_buffer.safe_append='...
+...                               ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;					 end 
+         					    ^
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:38: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/lewis/Documents/Projects/lugnut/app/views/posts/index.html.erb:40: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/index.html.erb:15: syntax error, unexpected ')', expecting =>
+  app/views/posts/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/index.html.erb:38: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/index.html.erb:40: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (137.3ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:30:33 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 70ms (Views: 67.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:31:51 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (6.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-14 09:31:53 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mComment Load (1.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_comment.html.erb (4.8ms)
+  Rendered comments/_form.html.erb (6.3ms)
+  Rendered posts/show.html.erb within layouts/application (25.7ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 132ms (Views: 126.8ms | ActiveRecord: 3.5ms)
