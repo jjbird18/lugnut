@@ -59,6 +59,15 @@ h4 {
 	background: $lightGray;
 	text-align: right;
 	padding:0 0.5rem;
+
+	#comments & {
+		text-align: left;
+	}
+}
+h5 {
+	color: $darkGray;
+	font: 1rem/1.5em $fontFamily;
+	margin-bottom: 1.25rem;
 }
 h6 {
 	color: $lightBlue;
@@ -383,4 +392,10 @@ input.btn.cta {
 	top: 0;
 	right: 0;
 	left: 0;
+}
+/*COMMENTS*/
+.comment {
+    border: 1px solid $lightGray;
+    padding: 2%;
+    margin-bottom: 2%;
 }

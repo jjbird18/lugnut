@@ -1,0 +1,9 @@
+<div class="comment">
+	<h5><%= comment.comment %></h5>
+	<p><small><em>Comment from:</em> <%= comment.user.email %></small></p>
+
+	<% if user_signed_in? && comment.user.id == current_user.id %>
+		<%= link_to "Edit", edit_post_comment_path(comment.post, comment) %>
+		<%= link_to "Delete", [comment.post, comment], method: :delete, data: {confirm: "Are you sure?"} %>
+	<% end %>
+</div><!-- /comment-->
