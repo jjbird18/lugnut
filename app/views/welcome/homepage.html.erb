@@ -48,13 +48,24 @@
 	<div class="container-fluid" id="content-main">
 		<div class="row-fluid">
 			<div class="container">	
-				<div class="row-fluid text-left clearfix">
-					<div class="col-xs-12">
-						<h1><%= yield(:title) %></h1>
-						<p>Cras mattis sit amet mi sit amet varius. Donec tincidunt lectus justo, ut maximus metus lobortis quis. Duis ipsum eros, interdum eu ultricies in, euismod ut metus. Mauris lobortis ullamcorper erat at molestie. Aliquam eget erat congue, eleifend nunc vel, tempor nulla. Nam sit amet felis urna. In non ex et urna faucibus suscipit at quis dui. Donec in hendrerit nisl. </p>
-
-						<p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ac turpis a enim euismod scelerisque eu at tellus. Nulla iaculis est nulla, et commodo eros venenatis a. Integer pharetra sem vitae porttitor rutrum. Mauris pulvinar urna vel felis fermentum, vel tempor eros congue. Etiam consectetur tempus lacus, quis tristique erat fermentum nec. <a href="/">In hac habitasse platea dictumst</a>.</p>
-					</div><!-- /col-xs-12 -->
+				<div class="row-fluid text-left clearfix" id="homepage-x">
+						<% @blogs.take(3).each do |blog| %>
+						    <div class="col-xs-12 col-sm-4 text-left">
+						    	<%= link_to image_tag(blog.image.url(:large), alt: blog.title), blog_path(blog), class: 'blog-img' %>
+								<div class="row-fluid clearfix">
+									<div class="icon-wrap">
+										<%= image_tag('favicon.png', alt: 'Lugnut Logo') %>
+									</div>
+									<div class="text-wrap text-left">
+										<h5><%= link_to blog.title, blog_path(blog) %></h5>
+										<p><%= truncate(blog.description, length: 100) %></p>
+										<div class="pull-right">
+											<%= link_to "Learn more" , blog_path(blog), class: 'cta' %>
+										</div>
+									</div>
+								</div>
+						    </div><!-- /col-xs-6 -->
+						<% end %>
 				</div><!-- /row -->
 			</div><!-- /container -->
 		</div><!-- /row -->

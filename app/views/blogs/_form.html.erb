@@ -1,0 +1,15 @@
+<%= simple_form_for @blog, html: { multipart: true } do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :title, placeholder: "Title" %>
+    <%= f.input :description, placeholder: "Description/Teaser" %>
+    <%= f.input :main_content, placeholder: "Content" %>
+    <%= f.label :image %><br />
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Save", class: 'cta' %>
+  </div>
+<% end %>

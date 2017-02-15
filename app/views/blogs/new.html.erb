@@ -1,0 +1,37 @@
+<% content_for(:title, "New Listing") %>
+<% if user_signed_in? && current_user.admin == 1 %>
+<div class="container-fluid" id="content-main">
+  <div class="row-fluid">
+    <div class="container"> 
+      <div class="row-fluid clearfix">
+        <div class="col-xs-12 text-left">
+          <h1><%= yield(:title) %></h1>
+        </div><!-- /col-xs-12 -->
+      </div><!-- /row --> 
+      <div class="row-fluid clearfix">
+        <div class="col-xs-12 text-left">
+          <%= render 'form' %>
+        </div><!-- /col-xs-12 -->
+      </div><!-- /row -->
+      <div class="row-fluid clearfix">
+        <div class="col-xs-12 text-left">
+			<%= link_to 'Back', blogs_path %>
+        </div><!-- /col-xs-6 -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /row -->
+</div><!-- /content-main -->
+<% else %>
+  <div class="container-fluid" id="content-main">
+    <div class="row-fluid">
+      <div class="container"> 
+        <div class="row-fluid clearfix">
+          <div class="col-xs-12 text-left">
+            <h3>What are you doing here Dave?</h3>
+          </div><!-- /col-xs-6 -->
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- /row -->
+  </div><!-- /content-main -->
+<% end %>
+
