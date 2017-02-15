@@ -12987,3 +12987,213 @@ Processing by PostsController#show as HTML
   Rendered layouts/_nav.html.erb (0.6ms)
   Rendered layouts/_footer.html.erb (3.9ms)
 Completed 200 OK in 132ms (Views: 126.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:38:31 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35m (3.7ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (1.8ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (15.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (4.1ms)
+  Rendered layouts/_header.html.erb (11.5ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 220ms (Views: 211.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:40:14 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (8.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.1ms)
+  Rendered layouts/_header.html.erb (6.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 2870ms (Views: 2867.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.self-42a1467594be244847558e05622c03d7900131c1eb5ddc28eddebd9a1583e2ab.css?body=1" for ::1 at 2017-02-14 09:40:17 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-14 09:40:21 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (7.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_header.html.erb (7.3ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 2855ms (Views: 2852.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.self-daf276b781094a9b821bc0ef075db152e9b1336c634c6336fe6cd4a668b826d2.css?body=1" for ::1 at 2017-02-14 09:40:24 -0500
+
+
+Started GET "/posts" for ::1 at 2017-02-14 19:46:08 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (1.1ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (29.3ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_header.html.erb (81.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 5426ms (Views: 5415.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.self-46ab67894791184a16d67ba3a4d031f5a8079df152f3f8448d51d1b0cdda30be.css?body=1" for ::1 at 2017-02-14 19:46:14 -0500
+
+
+Started GET "/" for ::1 at 2017-02-14 20:40:06 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (5.1ms)
+  Rendered welcome/homepage.html.erb within layouts/application (47.6ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 5400ms (Views: 5399.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-12934146383011500491243ee048986094b2f490ca9668ac38cd698e8d2cc242.css?body=1" for ::1 at 2017-02-14 20:40:12 -0500
+
+
+Started GET "/assets/bg-hero.jpg" for ::1 at 2017-02-14 20:40:12 -0500
+
+
+Started GET "/" for ::1 at 2017-02-14 20:47:13 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (7.0ms)
+  Rendered welcome/homepage.html.erb within layouts/application (47.0ms)
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (couldn't find file 'images/bg-hero' with type 'text/css'
+Checked in these paths: 
+  /Users/lewis/Documents/Projects/lugnut/app/assets/images
+  /Users/lewis/Documents/Projects/lugnut/app/assets/javascripts
+  /Users/lewis/Documents/Projects/lugnut/app/assets/stylesheets
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/turbolinks-source-5.0.0/lib/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/fonts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/images
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/font-awesome-sass-4.7.0/assets/stylesheets
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/font-awesome-sass-4.7.0/assets/fonts):
+    3: <head>
+    4:   <title><%= yield(:title) %> | Lugnut Connect</title>
+    5:   <%= favicon_link_tag '/assets/favicon.ico' %>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9:   <meta name="viewport" content="width=device-width">
+  app/assets/stylesheets/application.scss:12
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__916173706567049508_70138396779400'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.9ms)
+
+
+Started GET "/" for ::1 at 2017-02-14 20:47:26 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered welcome/homepage.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (couldn't find file 'images/bg-hero' with type 'text/css'
+Checked in these paths: 
+  /Users/lewis/Documents/Projects/lugnut/app/assets/images
+  /Users/lewis/Documents/Projects/lugnut/app/assets/javascripts
+  /Users/lewis/Documents/Projects/lugnut/app/assets/stylesheets
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/jquery-rails-4.2.2/vendor/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/turbolinks-source-5.0.0/lib/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/fonts
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/bootstrap-sass-3.3.7/assets/images
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/font-awesome-sass-4.7.0/assets/stylesheets
+  /Users/lewis/.rvm/gems/ruby-2.2.5/gems/font-awesome-sass-4.7.0/assets/fonts):
+    3: <head>
+    4:   <title><%= yield(:title) %> | Lugnut Connect</title>
+    5:   <%= favicon_link_tag '/assets/favicon.ico' %>
+    6:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8:   <%= csrf_meta_tags %>
+    9:   <meta name="viewport" content="width=device-width">
+  app/assets/stylesheets/application.scss:12
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__916173706567049508_70138396779400'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.8ms)
+
+
+Started GET "/" for ::1 at 2017-02-14 20:47:44 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered welcome/homepage.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 4063ms (Views: 4062.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-effaa165742b01abedb97cae85a8cdd15f72a9a4764a5ed12635a0da0c71a6dc.css?body=1" for ::1 at 2017-02-14 20:47:48 -0500
+
+
+Started GET "/assets/bg-hero-9cd25f976b8b86823a38a4398a80b63ab73ae92bffe89abf962e8896253a36ca.jpg" for ::1 at 2017-02-14 20:47:48 -0500
+
+
+Started GET "/" for ::1 at 2017-02-14 20:48:34 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered welcome/homepage.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 79ms (Views: 77.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/favicon-e460716cfdaf45934388e514168426e4b143ede211a7d98aac078511befd841f.ico" for ::1 at 2017-02-14 20:48:35 -0500

@@ -218,7 +218,7 @@ nav {
 	padding:0;
 
 	&#hero {
-		background: url(/assets/bg-hero.jpg) center top;
+		background: image-url("bg-hero.jpg") center top;
 		background-size: cover;
 		position: relative;
 
@@ -439,4 +439,7 @@ input.btn.cta {
     		display: block;
 	    }
 	}
+}
+#new-thread-btn {
+	padding: 3% 0;
 }
