@@ -17091,3 +17091,29 @@ Completed 200 OK in 1187ms (Views: 1186.5ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/img-x-marketing-679fd61e38b8d054335620631f7e1c5c68e9110afa4fbe579565956f0cb091aa.jpg" for ::1 at 2017-02-15 22:01:25 -0500
+
+
+Started GET "/" for ::1 at 2017-02-15 22:10:29 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.7ms)
+  [1m[36mBlog Load (1.3ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (65.3ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.7ms)
+Completed 200 OK in 4492ms (Views: 4490.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-aafac726dd798977e943fd5c7252f162fc049f61ffe983439ac666c2920e6773.css?body=1" for ::1 at 2017-02-15 22:10:33 -0500
+
+
+Started GET "/" for ::1 at 2017-02-15 22:10:42 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.9ms)
+  [1m[35mBlog Load (0.5ms)[0m  SELECT  "blogs".* FROM "blogs" LIMIT 3
+  Rendered welcome/homepage.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.8ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/favicon-e460716cfdaf45934388e514168426e4b143ede211a7d98aac078511befd841f.ico" for ::1 at 2017-02-15 22:10:43 -0500

@@ -49,6 +49,10 @@
 		<div class="row-fluid">
 			<div class="container">	
 				<div class="row-fluid text-left clearfix" id="homepage-x">
+					<div class="col-xs-12 col-sm-12 text-left">
+						<h1><%= yield (:title) %></h1>
+						<p>Nulla iaculis est nulla, et commodo eros venenatis a. Integer pharetra sem vitae porttitor rutrum. Mauris pulvinar urna vel felis fermentum, vel tempor eros congue. Etiam consectetur tempus lacus, quis tristique erat fermentum nec. <a href="/">In hac habitasse platea dictumst</a>.</p>
+					</div>
 						<% @blogs.take(3).each do |blog| %>
 						    <div class="col-xs-12 col-sm-4 text-left">
 						    	<%= link_to image_tag(blog.image.url(:large), alt: blog.title), blog_path(blog), class: 'blog-img' %>

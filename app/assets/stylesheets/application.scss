@@ -148,7 +148,8 @@ nav {
 			padding: 0 0 0 2rem;
 			@include transition(all 500ms ease-in-out);
 
-			&:hover, &:hover + .fa {
+			&:focus, &:hover, &:hover + .fa {
+				background: none;
 				color:$medGray;
 				@include transition(all 500ms ease-in-out);
 			}
