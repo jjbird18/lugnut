@@ -5,6 +5,7 @@ ruby '2.2.5'
 gem 'rails', '4.2.6'
 # Use pg as the database for Active Record
 gem 'pg'
+gem 'passenger', '~> 5.1', '>= 5.1.2'
 gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

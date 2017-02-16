@@ -16702,3 +16702,16 @@ Processing by WelcomeController#homepage as HTML
   Rendered layouts/_nav.html.erb (0.6ms)
   Rendered layouts/_footer.html.erb (4.6ms)
 Completed 200 OK in 79ms (Views: 77.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/1" for ::1 at 2017-02-15 21:00:41 -0500
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBlog Load (1.2ms)[0m  SELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered blogs/show.html.erb within layouts/application (24.2ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_header.html.erb (80.8ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (5.0ms)
+Completed 200 OK in 860ms (Views: 843.2ms | ActiveRecord: 1.7ms)

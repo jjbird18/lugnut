@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: lugnut_production
-  username: lugnut
-  password: <%= ENV['LUGNUT_DATABASE_PASSWORD'] %>
+  database: ENV['DATABASE_URL']
