@@ -141,23 +141,28 @@ nav {
 	    background: $darkGray;
 	    padding: 1.5rem 0;
 
-		.navbar-nav > li > a {
-			color: $lightGray;
-			font: 1.125rem/4rem $fontFamily;
-			display: inline-block;
-			padding: 0 0 0 2rem;
-			@include transition(all 500ms ease-in-out);
+	    ul.navbar-nav {
+	    	padding-top: 1.25rem;
+	    	max-width: 720px;
 
-			&:focus, &:hover, &:hover + .fa {
-				background: none;
-				color:$medGray;
+			& > li > a {
+				color: $lightGray;
+				font: 1.125rem/2rem $fontFamily;
+				display: inline-block;
+				padding: 0 0 0 2rem;
+				@include transition(all 500ms ease-in-out);
+
+				&:focus, &:hover, &:hover + .fa {
+					background: none;
+					color:$medGray;
+					@include transition(all 500ms ease-in-out);
+				}
+			}
+			.fa {
+				color: $lightGray;
+				font-size: 1.1rem;
 				@include transition(all 500ms ease-in-out);
 			}
-		}
-		.fa {
-			color: $lightGray;
-			font-size: 1.1rem;
-			@include transition(all 500ms ease-in-out);
 		}
 	}
 }

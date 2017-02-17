@@ -17437,3 +17437,385 @@ Processing by PagesController#contactus as HTML
   Rendered layouts/_nav.html.erb (0.8ms)
   Rendered layouts/_footer.html.erb (4.7ms)
 Completed 200 OK in 194ms (Views: 192.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 20:53:28 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (18.1ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (20.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 554ms (Views: 553.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-16 20:53:30 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.7ms)
+  [1m[36mBlog Load (0.9ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (57.5ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 159ms (Views: 138.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 20:53:33 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 138ms (Views: 137.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-16 20:53:35 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 316ms (Views: 315.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-16 20:54:05 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (2.3ms)
+  Rendered layouts/_header.html.erb (6.7ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-16 20:54:30 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_header.html.erb (7.1ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (4.5ms)
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-16 20:54:33 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (176.9ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.3ms)
+Completed 200 OK in 343ms (Views: 292.6ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-02-16 20:54:35 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iyEeDResPSMXVWZmM6rsVL473qnGhfUUm3c81aJlyZmJAj0kunCjWEdgBilmX0sRxf6V30fpeq9mt0iJke4HsQ==", "user"=>{"email"=>"dlewis39@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "dlewis39@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2017-02-15 03:45:03.974817"], ["current_sign_in_at", "2017-02-17 01:54:36.279386"], ["sign_in_count", 12], ["updated_at", "2017-02-17 01:54:36.283010"], ["id", 1]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 845ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2017-02-16 20:54:36 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  [1m[36mBlog Load (0.6ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (23.3ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (5.4ms)
+Completed 200 OK in 115ms (Views: 107.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/blogs" for ::1 at 2017-02-16 20:54:39 -0500
+Processing by BlogsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBlog Load (0.4ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (6.3ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 159ms (Views: 156.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for ::1 at 2017-02-16 20:58:13 -0500
+Processing by BlogsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBlog Load (0.6ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (53.5ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_header.html.erb (7.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.5ms)
+Completed 200 OK in 4252ms (Views: 4240.5ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/application.self-1046885e19bb2c3e7e0743a6510dfef456c854c39b9af461d0c6e8fb3c26979c.css?body=1" for ::1 at 2017-02-16 20:58:17 -0500
+
+
+Started GET "/blogs" for ::1 at 2017-02-16 21:00:49 -0500
+Processing by BlogsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBlog Load (0.4ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (138.6ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (7.3ms)
+Completed 200 OK in 15207ms (Views: 15205.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-e170e9661f11803a82eb99be9a617304bc0429bec63ad1aa57aa3b7e9661bb0c.css?body=1" for ::1 at 2017-02-16 21:01:04 -0500
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-02-16 21:01:12 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"I/c2s6sKN63bOY7JD9bRmobutGz3eiQycfCWuxXmELX/3bCjwI+mW7VEPbKjnxTZrWnFBe40uKMIutp04iDIkA=="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 84ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-16 21:01:12 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.7ms)
+  [1m[36mBlog Load (0.6ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (100.5ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 999ms (Views: 997.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-16 21:01:16 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (34.6ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (40.4ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (2.7ms)
+Completed 200 OK in 315ms (Views: 314.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-16 21:01:21 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.9ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (27.8ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.5ms)
+Completed 200 OK in 261ms (Views: 259.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-02-16 21:01:23 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JiNnUIfaFYxi4hUMJBVP3nK7CuS9YcifoVU74hxpYxQNWTsEzxaFWmXCsxJJZlDEdiopEVuG0+G1nGLLQqp/GA==", "user"=>{"email"=>"dlewis39@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "dlewis39@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2017-02-17 01:54:36.279386"], ["current_sign_in_at", "2017-02-17 02:01:23.724860"], ["sign_in_count", 13], ["updated_at", "2017-02-17 02:01:23.728744"], ["id", 1]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 419ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/" for ::1 at 2017-02-16 21:01:23 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.2ms)
+  [1m[36mBlog Load (0.5ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 136ms (Views: 133.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for ::1 at 2017-02-16 21:01:27 -0500
+Processing by BlogsController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBlog Load (0.6ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.4ms)
+Completed 200 OK in 165ms (Views: 163.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs" for ::1 at 2017-02-16 21:02:48 -0500
+Processing by BlogsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBlog Load (0.7ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.3ms)
+Completed 200 OK in 3454ms (Views: 3451.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-5e9e72559e7a642c6ca1178a06b667dc4b38b3431de5185dce5bf2039c3ec0b4.css?body=1" for ::1 at 2017-02-16 21:02:51 -0500
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-02-16 21:02:55 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eFAh+GNOtjIxIVUNZELq5vM5XGv1HQZgnumiDcqPlQY8V2vFvQMyuj/N6EchEHK3HHejp8KOaMvW49CRlZK+Rw=="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2017-02-16 21:02:55 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.0ms)
+  [1m[36mBlog Load (0.6ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.3ms)
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-16 21:02:57 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 136ms (Views: 135.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-16 21:03:12 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 3096ms (Views: 3095.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9127f23a7adb9e2e294178cfd7b2e5cf48f2c78de28bc616fccccb2a44c1e6dd.css?body=1" for ::1 at 2017-02-16 21:03:15 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-16 21:03:57 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 3060ms (Views: 3059.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5268248769494a61d3055ce12212602bca259eef114e3f3a705fec5c6fb41867.css?body=1" for ::1 at 2017-02-16 21:04:00 -0500
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-16 21:04:23 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.6ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 3032ms (Views: 3032.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5a8f80433fb8ea84c55002a3b97a467e80836f94b82892e59c3b81b568292627.css?body=1" for ::1 at 2017-02-16 21:04:26 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-16 21:04:30 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.6ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (9.2ms)
+Completed 200 OK in 133ms (Views: 132.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-02-16 21:04:32 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MuU0LaZCAKr/4DbFVrIw+sgLtww60TaDRz52L8BXUg7OuqaOSGsWdJKQL79gUjr3V3uFByH76Bj6rA3L3HKH1g==", "user"=>{"email"=>"dlewis39@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "dlewis39@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2017-02-17 02:01:23.724860"], ["current_sign_in_at", "2017-02-17 02:04:32.476912"], ["sign_in_count", 14], ["updated_at", "2017-02-17 02:04:32.480160"], ["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 266ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-16 21:04:32 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (2.2ms)
+  [1m[36mBlog Load (0.5ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-16 21:04:35 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (105.5ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.5ms)
+  Rendered layouts/_header.html.erb (7.7ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.3ms)
+Completed 200 OK in 211ms (Views: 187.8ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/" for ::1 at 2017-02-16 21:05:13 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.5ms)
+  [1m[36mBlog Load (18.1ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (37.9ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (7.8ms)
+Completed 200 OK in 197ms (Views: 177.8ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-16 21:05:17 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (2.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (58.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.4ms)
+  Rendered layouts/_header.html.erb (8.6ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.9ms)
+Completed 200 OK in 177ms (Views: 159.5ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/blogs" for ::1 at 2017-02-16 21:05:19 -0500
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mBlog Load (1.1ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered blogs/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 109ms (Views: 106.7ms | ActiveRecord: 1.7ms)
