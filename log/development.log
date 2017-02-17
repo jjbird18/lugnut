@@ -17117,3 +17117,323 @@ Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.5ms)
 
 
 Started GET "/assets/favicon-e460716cfdaf45934388e514168426e4b143ede211a7d98aac078511befd841f.ico" for ::1 at 2017-02-15 22:10:43 -0500
+
+
+Started GET "/" for ::1 at 2017-02-16 07:16:42 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (6.5ms)
+  [1m[36mBlog Load (1.1ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (134.3ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 840ms (Views: 832.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-02-16 19:47:56 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[35mBlog Load (0.8ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered layouts/_nav.html.erb (147.2ms)
+  Rendered welcome/homepage.html.erb within layouts/application (149.3ms)
+Completed 500 Internal Server Error in 237ms (ActiveRecord: 6.0ms)
+
+ActionView::Template::Error (undefined local variable or method `pages_contactus_path' for #<#<Class:0x007fabb2d2ab08>:0x007fabb49021f0>):
+     6: 	<li><%= link_to "Lugnut Connect", posts_path %></li>
+     7: 	<% end %>
+     8: 	<li><%= link_to "About Lugnuts", pages_aboutus_path %></li>
+     9: 	<li><%= link_to "Contact Us", pages_contactus_path %></li>
+    10: 	<% if user_signed_in? %>
+    11:       <li><%= link_to "Account", edit_user_registration_path %></li>
+    12:       <li><%= link_to('Log out', destroy_user_session_path, :method => :delete) %></li>
+  app/views/layouts/_nav.html.erb:9:in `_app_views_layouts__nav_html_erb__1938297958130456087_70187728264300'
+  app/views/welcome/homepage.html.erb:17:in `_app_views_welcome_homepage_html_erb___645852214514961912_70187714936540'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (153.1ms)
+
+
+Started GET "/" for ::1 at 2017-02-16 19:48:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#homepage as HTML
+  [1m[35mBlog Load (1.3ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered layouts/_nav.html.erb (198.9ms)
+  Rendered welcome/homepage.html.erb within layouts/application (214.5ms)
+Completed 500 Internal Server Error in 305ms (ActiveRecord: 5.8ms)
+
+ActionView::Template::Error (undefined local variable or method `pages_contactus_path' for #<#<Class:0x007f9319714f18>:0x007f931c8131c8>):
+     6: 	<li><%= link_to "Lugnut Connect", posts_path %></li>
+     7: 	<% end %>
+     8: 	<li><%= link_to "About Lugnuts", pages_aboutus_path %></li>
+     9: 	<li><%= link_to "Contact Us", pages_contactus_path %></li>
+    10: 	<% if user_signed_in? %>
+    11:       <li><%= link_to "Account", edit_user_registration_path %></li>
+    12:       <li><%= link_to('Log out', destroy_user_session_path, :method => :delete) %></li>
+  app/views/layouts/_nav.html.erb:9:in `_app_views_layouts__nav_html_erb__3866877729504587126_70134880941960'
+  app/views/welcome/homepage.html.erb:17:in `_app_views_welcome_homepage_html_erb__3404150817876075713_70134881761860'
+
+
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (227.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (329.6ms)
+
+
+Started GET "/" for ::1 at 2017-02-16 19:49:39 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (0.7ms)
+  [1m[36mBlog Load (0.6ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (2397.8ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.9ms)
+Completed 200 OK in 2589ms (Views: 2581.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 19:49:47 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 195ms (Views: 194.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 19:50:59 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (58.4ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 3977ms (Views: 3976.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ab5c5ab68c4824c8a5cb80ba70e81651551f832ab5362b3ddfacbbc3c1045bb7.css?body=1" for ::1 at 2017-02-16 19:51:03 -0500
+
+
+Started GET "/" for ::1 at 2017-02-16 19:51:22 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.1ms)
+  [1m[35mBlog Load (0.7ms)[0m  SELECT  "blogs".* FROM "blogs" LIMIT 3
+  Rendered welcome/homepage.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 248ms (Views: 246.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 19:51:40 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 3065ms (Views: 3064.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b96fa9a25f9579372f851ae8332b86894b8cae23f8832e243fd60478b9c22968.css?body=1" for ::1 at 2017-02-16 19:51:43 -0500
+
+
+Started GET "/assets/favicon-e460716cfdaf45934388e514168426e4b143ede211a7d98aac078511befd841f.ico" for ::1 at 2017-02-16 19:51:43 -0500
+
+
+Started GET "/" for ::1 at 2017-02-16 19:52:17 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (5.4ms)
+  [1m[35mBlog Load (1.4ms)[0m  SELECT  "blogs".* FROM "blogs" LIMIT 3
+  Rendered welcome/homepage.html.erb within layouts/application (3474.2ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (6.3ms)
+Completed 200 OK in 3660ms (Views: 3630.2ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/application.self-9a9cf6604a5912ce23cbbbeff2a696a1c2566a91a007b5917afc2bc1775fc26d.css?body=1" for ::1 at 2017-02-16 19:52:21 -0500
+
+
+Started GET "/" for ::1 at 2017-02-16 19:52:43 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (54.1ms)
+  [1m[36mBlog Load (0.5ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (63.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 3030ms (Views: 3029.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-b5e56c120c1a79a7a63ba7741416651f0b35d688113b602af64312598a0a159d.css?body=1" for ::1 at 2017-02-16 19:52:46 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2017-02-16 19:52:50 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (150.6ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (6.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (2.5ms)
+Completed 200 OK in 314ms (Views: 286.2ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-16 19:52:52 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.1ms)
+  [1m[35mBlog Load (1.0ms)[0m  SELECT  "blogs".* FROM "blogs" LIMIT 3
+  Rendered welcome/homepage.html.erb within layouts/application (23.6ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 223ms (Views: 220.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 19:52:55 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 161ms (Views: 160.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-16 19:52:57 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendered layouts/_nav.html.erb (1.3ms)
+  [1m[36mBlog Load (0.7ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (28.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 168ms (Views: 166.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 19:53:01 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (4.5ms)
+Completed 200 OK in 151ms (Views: 150.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 19:56:25 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (6.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 83ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 19:56:58 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/favicon-e460716cfdaf45934388e514168426e4b143ede211a7d98aac078511befd841f.ico" for ::1 at 2017-02-16 19:56:58 -0500
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 19:57:53 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 66ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 19:59:45 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 67ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 20:02:08 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.1ms)
+Completed 200 OK in 67ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 20:02:58 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (40.6ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (116.9ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 5204ms (Views: 5202.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c93879f740411dcfff130d5d4b073fbfd67f8511b742162ae4085632c2264e23.css?body=1" for ::1 at 2017-02-16 20:03:03 -0500
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 20:05:03 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (40.3ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (53.4ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.7ms)
+Completed 200 OK in 903ms (Views: 902.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-16 20:05:15 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 146ms (Views: 145.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/aboutus" for ::1 at 2017-02-16 20:06:27 -0500
+Processing by PagesController#aboutus as HTML
+  Rendered pages/aboutus.html.erb within layouts/application (29.3ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (62.2ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 1270ms (Views: 1269.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contactus" for ::1 at 2017-02-16 20:06:30 -0500
+Processing by PagesController#contactus as HTML
+  Rendered pages/contactus.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_header.html.erb (7.5ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.7ms)
+Completed 200 OK in 194ms (Views: 192.9ms | ActiveRecord: 0.0ms)

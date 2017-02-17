@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :blogs
   get 'pages/aboutus'
+  get 'pages/contactus'
 
   get 'welcome/homepage'
 

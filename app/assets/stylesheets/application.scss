@@ -143,7 +143,7 @@ nav {
 
 		.navbar-nav > li > a {
 			color: $lightGray;
-			font: 1.25rem/5rem $fontFamily;
+			font: 1.125rem/4rem $fontFamily;
 			display: inline-block;
 			padding: 0 0 0 2rem;
 			@include transition(all 500ms ease-in-out);
@@ -156,7 +156,7 @@ nav {
 		}
 		.fa {
 			color: $lightGray;
-			font-size: 1.125rem;
+			font-size: 1.1rem;
 			@include transition(all 500ms ease-in-out);
 		}
 	}
@@ -179,7 +179,7 @@ nav {
 	}
 	a {
 		color: $lightGray;
-		font:700 2.5rem/5.5rem $fontFamily;
+		font:700 2rem/4.5rem $fontFamily;
 		display: inline;
 
 		&:hover, &:focus, &:hover + .fa {
@@ -189,7 +189,7 @@ nav {
 		}
 	}
     .fa {
-    	font-size: 2.75rem;
+    	font-size: 2rem;
     	color: $lightGray;
     	@include transition(all 500ms ease-in-out);
     }
@@ -316,6 +316,10 @@ nav {
 
 	&#content-main {
 		padding-bottom: 2rem;
+		i.fa {
+			font-size: 3rem;
+    		padding-right: 1rem;
+		}
 	}
 
 	&#x-marketing {
@@ -368,7 +372,7 @@ footer {
 
 		a {
 			color: $white;
-			font:1.25rem $fontFamily;
+			font:1rem $fontFamily;
 			display: inline;
 			&:hover {
 				background: none;

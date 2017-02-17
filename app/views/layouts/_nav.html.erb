@@ -5,7 +5,8 @@
 	<% if user_signed_in? && current_user.admin == 1 %>
 	<li><%= link_to "Lugnut Connect", posts_path %></li>
 	<% end %>
-	<li><%= link_to "About Us", pages_aboutus_path %></li>
+	<li><%= link_to "About Lugnuts", pages_aboutus_path %></li>
+	<li><%= link_to "Contact Us", pages_contactus_path %></li>
 	<% if user_signed_in? %>
       <li><%= link_to "Account", edit_user_registration_path %></li>
       <li><%= link_to('Log out', destroy_user_session_path, :method => :delete) %></li>

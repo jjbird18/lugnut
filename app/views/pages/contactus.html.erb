@@ -1,13 +1,23 @@
-<% content_for(:title, "About Lugnuts") %>
+<% content_for(:title, "Contact Us") %>
 <div class="container-fluid" id="content-main">
 	<div class="row-fluid">
 		<div class="container">	
 			<div class="row-fluid clearfix">
 				<div class="col-xs-12 text-left">
 					<h1><%= yield(:title) %></h1>
-					<p>Cras mattis sit amet mi sit amet varius. Donec tincidunt lectus justo, ut maximus metus lobortis quis. Duis ipsum eros, interdum eu ultricies in, euismod ut metus. Mauris lobortis ullamcorper erat at molestie. Aliquam eget erat congue, eleifend nunc vel, tempor nulla. Nam sit amet felis urna. In non ex et urna faucibus suscipit at quis dui. Donec in hendrerit nisl. </p>
+					<p>Do you have a big project coming up and don't know where to start? Ask one of our connection experts who are here to help you. Connecting with you is what drives us, so also be sure to join us on the social channel of your choice. </p>
 
-					<p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ac turpis a enim euismod scelerisque eu at tellus. Nulla iaculis est nulla, et commodo eros venenatis a. Integer pharetra sem vitae porttitor rutrum. Mauris pulvinar urna vel felis fermentum, vel tempor eros congue. Etiam consectetur tempus lacus, quis tristique erat fermentum nec. <a href="/">In hac habitasse platea dictumst</a>.</p>
+					<h4 class="text-left">Connection Expert</h4>
+					<p>Jason Stutz<br />
+					<a href="mailto:stutz03@email.franklin.edu?subject=I%20would%20love%20more%20info">stutz03[at]email.franklin.edu</a></p>
+					<h4 class="text-left">Connection Expert</h4>
+					<p>David Lewis<br />
+					<a href="mailto:lewisd02@email.franklin.edu?subject=I%20would%20love%20more%20info">lewisd02[at]email.franklin.edu</a></p>
+					<h4 class="text-left">Social Connection</h4>
+					<%= link_to icon('twitter'), 'https://twitter.com', target: "_blank" %>
+					<%= link_to icon('facebook'), 'https://facebook.com', target: "_blank" %>
+					<%= link_to icon('linkedin'), 'https://linkedin.com', target: "_blank" %>
+					<%= link_to icon('youtube-play'), 'https://youtube.com', target: "_blank" %>
 				</div><!-- /col-xs-12 -->
 			</div><!-- /row -->
 		</div><!-- /container -->
