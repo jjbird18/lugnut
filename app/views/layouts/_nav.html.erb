@@ -4,7 +4,7 @@
 	<% end %>
 	<% if user_signed_in? && current_user.admin == 1 %>
 	<li><%= link_to "Lugnut Connect", posts_path %></li>
-	<li><%= link_to "X-M Management", blogs_path %></li>
+	<li><%= link_to "X-M Manager", blogs_path %></li>
 	<% end %>
 	<li><%= link_to "About Lugnuts", pages_aboutus_path %></li>
 	<li><%= link_to "Contact Us", pages_contactus_path %></li>

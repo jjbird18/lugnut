@@ -17819,3 +17819,964 @@ Processing by BlogsController#index as HTML
   Rendered layouts/_nav.html.erb (0.7ms)
   Rendered layouts/_footer.html.erb (3.4ms)
 Completed 200 OK in 109ms (Views: 106.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blogs" for ::1 at 2017-02-17 22:07:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (66.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#index as HTML
+  [1m[35mUser Load (21.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBlog Load (15.6ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (283.7ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+  Rendered layouts/_header.html.erb (22.8ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (3.7ms)
+Completed 200 OK in 4074ms (Views: 3806.5ms | ActiveRecord: 203.4ms)
+
+
+Started GET "/assets/application.self-5a8f80433fb8ea84c55002a3b97a467e80836f94b82892e59c3b81b568292627.css?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2017-02-17 22:07:47 -0500
+
+
+Started GET "/assets/blogs.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-02-17 22:07:48 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-02-17 22:07:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-02-17 22:07:48 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-02-17 22:07:48 -0500
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-02-17 22:07:48 -0500
+
+
+Started GET "/assets/application.self-73c783a18a9194730cc7cbe67b5cf9270a3fb7007456b3a17aee7bc833b52da1.js?body=1" for ::1 at 2017-02-17 22:07:48 -0500
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-02-17 22:07:48 -0500
+
+
+Started GET "/assets/logo-lugnut-e6c1542b8398a29674f41ffbaceeb7bbc1450d23e71b70510ae87b512727d50e.png" for ::1 at 2017-02-17 22:07:48 -0500
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont-2adefcbc041e7d18fcf2d417879dc5a09997aa64d675b7a3c4b6ce33da13f3fe.woff2?v=4.7.0" for ::1 at 2017-02-17 22:07:48 -0500
+
+
+Started GET "/blogs" for ::1 at 2017-02-17 22:19:36 -0500
+Processing by BlogsController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBlog Load (0.8ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (60.2ms)
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_header.html.erb (8.5ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (4.5ms)
+Completed 200 OK in 2485ms (Views: 2413.6ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-17 22:19:41 -0500
+Processing by WelcomeController#homepage as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (4.5ms)
+  [1m[36mBlog Load (0.5ms)[0m  [1mSELECT  "blogs".* FROM "blogs" LIMIT 3[0m
+  Rendered welcome/homepage.html.erb within layouts/application (25.6ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.5ms)
+Completed 200 OK in 146ms (Views: 144.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo-lugnut-home-438b994698aa3cba5d0c50650fbaa65cb6dee88fc10cd3f873528a39c11ded85.png" for ::1 at 2017-02-17 22:19:41 -0500
+
+
+Started GET "/assets/bg-hero-9cd25f976b8b86823a38a4398a80b63ab73ae92bffe89abf962e8896253a36ca.jpg" for ::1 at 2017-02-17 22:19:41 -0500
+
+
+Started GET "/assets/favicon-f431b6b1e382898b161f2972f728d6c9f4673ec1c1e1a3b7f41df3251918fefc.png" for ::1 at 2017-02-17 22:19:41 -0500
+
+
+Started GET "/blogs" for ::1 at 2017-02-17 22:19:45 -0500
+Processing by BlogsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBlog Load (0.7ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 124ms (Views: 121.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for ::1 at 2017-02-17 22:24:28 -0500
+Processing by BlogsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBlog Load (0.4ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 76ms (Views: 73.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for ::1 at 2017-02-17 22:24:31 -0500
+Processing by BlogsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mBlog Load (0.5ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (5.3ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (3.9ms)
+Completed 200 OK in 102ms (Views: 100.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts" for ::1 at 2017-02-17 22:24:33 -0500
+Processing by PostsController#index as HTML
+  Parameters: {"expect"=>[:show, :index, :edit]}
+  [1m[35mPost Load (134.9ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  [1m[36m (38.5ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered posts/index.html.erb within layouts/application (486.5ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered layouts/_nav.html.erb (3.9ms)
+  Rendered layouts/_header.html.erb (9.6ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (4.6ms)
+Completed 200 OK in 647ms (Views: 441.9ms | ActiveRecord: 180.1ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-02-17 22:24:35 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (18.8ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_comment.html.erb (60.8ms)
+  Rendered comments/_form.html.erb (196.2ms)
+  Rendered posts/show.html.erb within layouts/application (412.0ms)
+  Rendered layouts/_nav.html.erb (11.2ms)
+  Rendered layouts/_header.html.erb (15.6ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.2ms)
+Completed 200 OK in 607ms (Views: 500.0ms | ActiveRecord: 23.9ms)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/config/environment.rb:5)
+  [1m[35m (438.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (16.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5201340851625681945);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CaseinCreateAdminUsers (20170218032800)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CaseinCreateAdminUsers < ActiveRecord::Migration[4.2] (called from load at /Users/lewis/.rvm/gems/ruby-2.2.5/bin/rake:23)
+  [1m[35m (86.1ms)[0m  [1m[35mCREATE TABLE "casein_admin_users" ("id" serial primary key, "login" character varying NOT NULL, "name" character varying, "email" character varying, "access_level" integer DEFAULT 0 NOT NULL, "crypted_password" character varying NOT NULL, "password_salt" character varying NOT NULL, "persistence_token" character varying, "single_access_token" character varying, "perishable_token" character varying, "login_count" integer DEFAULT 0 NOT NULL, "failed_login_count" integer DEFAULT 0 NOT NULL, "last_request_at" timestamp, "current_login_at" timestamp, "last_login_at" timestamp, "current_login_ip" character varying, "last_login_ip" character varying, "time_zone" character varying, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35mSQL (74.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170218032800"]]
+  [1m[35m (12.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (23.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-18 03:28:36 UTC], ["updated_at", 2017-02-18 03:28:36 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5201340851625681945)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/config/environment.rb:5)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCasein::AdminUser Exists (34.9ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) LIMIT $2[0m  [["login", "admin"], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE "casein_admin_users"."persistence_token" = $1 LIMIT $2[0m  [["persistence_token", "9a4895bd8f8aedd27d929604a96f54ed38be86981081ea9746ed44bd154ab43eba6bfc0c8955b0f4ea09684df6118326450d794fbb0d0191d33ee7ff23fc7a8a"], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE "casein_admin_users"."single_access_token" = $1 LIMIT $2[0m  [["single_access_token", "BeecdtrOcz3B75S6MSlq"], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE "casein_admin_users"."login" = $1 LIMIT $2[0m  [["login", "admin"], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "casein_admin_users" ("login", "name", "email", "crypted_password", "password_salt", "persistence_token", "single_access_token", "perishable_token", "time_zone", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["login", "admin"], ["name", "Admin"], ["email", "dlewis39@gmail.com"], ["crypted_password", "400$8$1f$938107bd958a8219$24d91f13bfabfb0659ef2a2bfcc1c1d6ce496bfee9507e166135b917e031f385"], ["password_salt", "T2y4PaKDxwRrH1tKA"], ["persistence_token", "9a4895bd8f8aedd27d929604a96f54ed38be86981081ea9746ed44bd154ab43eba6bfc0c8955b0f4ea09684df6118326450d794fbb0d0191d33ee7ff23fc7a8a"], ["single_access_token", "BeecdtrOcz3B75S6MSlq"], ["perishable_token", "fvs1vLcJ3HANP5SXONUH"], ["time_zone", "UTC"], ["created_at", 2017-02-18 03:31:05 UTC], ["updated_at", 2017-02-18 03:31:05 UTC]]
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/casein_notification/new_user_information.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/casein_notification/new_user_information.erb (3.0ms)
+Casein::CaseinNotification#new_user_information: processed outbound mail in 319.0ms
+Sent mail to dlewis39@gmail.com (52.7ms)
+Date: Fri, 17 Feb 2017 22:31:06 -0500
+From: donotreply@caseincms.com
+To: dlewis39@gmail.com
+Message-ID: <58a7bffa10efa_9123ff9fdc5e1e47049e@Davids-Mac-mini.local.mail>
+Subject: [Casein] New user account
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Admin,<br />
+<br />
+A new user account has been created for you at:<br />
+<br />
+http://0.0.0.0:3000/casein<br />
+<br />
+Username: admin<br />
+Password: password<br />
+<br />
+From<br />
+<br />
+Casein
+  [1m[35m (16.5ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/config/environment.rb:5)
+Started GET "/posts/4" for 127.0.0.1 at 2017-02-17 22:31:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"expect"=>[:show, :index, :edit], "id"=>"4"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 4]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered collection of comments/_comment.html.erb [2 times] (38.7ms)
+  Rendered comments/_form.html.erb (145.1ms)
+  Rendered posts/show.html.erb within layouts/application (335.7ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (4.6ms)
+Completed 200 OK in 11743ms (Views: 11628.8ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/assets/casein/auth_custom.self-99dfcd81f7746dd4fac47cf4ba082d3f5ca9e6ddb26a6bf2aebda801d9d5a5ab.js?body=1" for 127.0.0.1 at 2017-02-17 22:31:39 -0500
+Started GET "/assets/casein/custom.self-efeca08c6fe59142430d3b3b43032a45acd8c04e4db78c3d3d556f19097d9086.js?body=1" for 127.0.0.1 at 2017-02-17 22:31:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-02-17 22:31:42 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KLxpWY/qAThmvAiJXzAvjSJfSafFLj1dUWJ9TGr4catAAswH6MmdcEBBhM6VAX3Qq09FemdsdUCgd0wdM7rrfQ=="}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 119ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-17 22:31:42 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendering welcome/homepage.html.erb within layouts/application
+  Rendered layouts/_nav.html.erb (5.1ms)
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/homepage.html.erb within layouts/application (1164.4ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 1343ms (Views: 1296.5ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-02-17 22:31:47 -0500
+Started GET "/casein" for 127.0.0.1 at 2017-02-17 22:31:47 -0500
+Processing by Casein::CaseinController#index as HTML
+Redirected to http://localhost:3000/casein/admin_user_session/new
+Filter chain halted as :authorise rendered or redirected
+Completed 302 Found in 161ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/casein/admin_user_session/new" for 127.0.0.1 at 2017-02-17 22:31:48 -0500
+Processing by Casein::AdminUserSessionsController#new as HTML
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (29.0ms)
+Completed 200 OK in 344ms (Views: 333.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/casein/login.self-6fed3b9848ad388270f9f05a805959f1ad360d05513ea5a34f253c03ac8e28f3.css?body=1" for 127.0.0.1 at 2017-02-17 22:31:48 -0500
+Started GET "/assets/casein/casein.self-8bc0ffee8206711cb0ec762e36e1c105ca69a8f8aeb31fdccc47dd72a4d0cd3b.js?body=1" for 127.0.0.1 at 2017-02-17 22:31:48 -0500
+Started GET "/assets/bootstrap.self-b38817c3e3a3049abb1fc08dd6ae448b23330f8453226efdb074710209474f75.js?body=1" for 127.0.0.1 at 2017-02-17 22:31:48 -0500
+Started GET "/assets/casein/auth_custom.self-cb3cdda4941c80097bc296ae1b0d0085426e63c0c6df747a01b5df0c7cf1790e.css?body=1" for 127.0.0.1 at 2017-02-17 22:31:48 -0500
+Started GET "/assets/casein/casein-da98950e65d5a2d09b5702055eb041ffe9fb3a4424c08b065e9fb62ce313dcd9.png" for 127.0.0.1 at 2017-02-17 22:31:48 -0500
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-02-17 22:31:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [74 times] (117.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.7ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (292.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_lewis__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__3151357871370422945_70275418625400 at /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (89.7ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (203.4ms)
+Started POST "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:31:52 -0500
+Processing by Casein::AdminUserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RGtGb8SLm7ssuKypYaSUfoOhNL80VQQy/Rtgf9DEhxBmOaMYiaf9M8OeVx8CezOqJIP2mEdjn/eDwPSt4Pqypw==", "casein_admin_user_session"=>{"login"=>"dlewis39@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mCasein::AdminUser Load (1.1ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) ORDER BY "casein_admin_users"."id" ASC LIMIT $2[0m  [["login", "dlewis39@gmail.com"], ["LIMIT", 1]]
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (2.7ms)
+Completed 200 OK in 93ms (Views: 82.5ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:31:58 -0500
+Processing by Casein::AdminUserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F2U+OIHY+4Tm2dVX1ebKuFT3wrMNwAFVSkBJK42ICLQ1N9tPzPSdDAn/LuG2OW1s89UAlH72mpA0m935vbY9Aw==", "casein_admin_user_session"=>{"login"=>"dlewis39@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mCasein::AdminUser Load (0.9ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) ORDER BY "casein_admin_users"."id" ASC LIMIT $2[0m  [["login", "dlewis39@gmail.com"], ["LIMIT", 1]]
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (4.6ms)
+Completed 200 OK in 56ms (Views: 50.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:36:09 -0500
+Processing by Casein::AdminUserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fpN0SKlEVkvISF0JOMgm7ebndik9CoC+f/ppsupaK2FcwZE/5Ggwwydupr9bF4E5QcW0Dk48G3sBIf1g2mQe1g==", "casein_admin_user_session"=>{"login"=>"dlewis39@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mCasein::AdminUser Load (2.0ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) ORDER BY "casein_admin_users"."id" ASC LIMIT $2[0m  [["login", "dlewis39@gmail.com"], ["LIMIT", 1]]
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (32.2ms)
+Completed 200 OK in 492ms (Views: 198.6ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/casein" for 127.0.0.1 at 2017-02-17 22:37:16 -0500
+Processing by Casein::CaseinController#index as HTML
+Redirected to http://localhost:3000/casein/admin_user_session/new
+Filter chain halted as :authorise rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/casein/admin_user_session/new" for 127.0.0.1 at 2017-02-17 22:37:16 -0500
+Processing by Casein::AdminUserSessionsController#new as HTML
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (2.5ms)
+Completed 200 OK in 58ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:37:17 -0500
+Processing by Casein::AdminUserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cuk8C5fOL8TBfHEJoZmCshSIsiByfkflLFCa2CzJZO5Qu9l82uJJTC5air/CRiVms6pwBwFI3CBSiw4KHPdRWQ==", "casein_admin_user_session"=>{"login"=>"dlewis39@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mCasein::AdminUser Load (0.6ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) ORDER BY "casein_admin_users"."id" ASC LIMIT $2[0m  [["login", "dlewis39@gmail.com"], ["LIMIT", 1]]
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (3.8ms)
+Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:37:26 -0500
+Processing by Casein::AdminUserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PJrFTytQW4f9dzdrEiObNuoky3EwmlIv8rkRn5ZGo7oeyCA4Znw9DxJRzN1x/DziTQYJVkOsyeqMYoVNpniWDQ==", "casein_admin_user_session"=>{"login"=>"dlewis39@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mCasein::AdminUser Load (0.9ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) ORDER BY "casein_admin_users"."id" ASC LIMIT $2[0m  [["login", "dlewis39@gmail.com"], ["LIMIT", 1]]
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (3.5ms)
+Completed 200 OK in 48ms (Views: 43.4ms | ActiveRecord: 0.9ms)
+
+
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/config/environment.rb:5)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCasein::AdminUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) LIMIT $2[0m  [["login", "admin"], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE "casein_admin_users"."persistence_token" = $1 LIMIT $2[0m  [["persistence_token", "b05ccd5e54c7c99be29359b286a9c1261da1b261225e1153ab97e0bed32c99f8006da7ba0df90b32f670c495d9f2724bc3cdc9f984bab95505d7fdfb3bd7d868"], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE "casein_admin_users"."single_access_token" = $1 LIMIT $2[0m  [["single_access_token", "dbtrZSuJk4W4m0izjZOJ"], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE "casein_admin_users"."login" = $1 LIMIT $2[0m  [["login", "admin"], ["LIMIT", 1]]
+  [1m[35m (14.4ms)[0m  [1m[31mROLLBACK[0m
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/config/environment.rb:5)
+Started GET "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:38:14 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/casein/admin_user_session"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered collection of /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [74 times] (32.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.0ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.3ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (274.2ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_lewis__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___3724776637211468488_70248448614820 at /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (104.3ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (222.5ms)
+Started GET "/casein" for 127.0.0.1 at 2017-02-17 22:38:22 -0500
+Processing by Casein::CaseinController#index as HTML
+Redirected to http://localhost:3000/casein/admin_user_session/new
+Filter chain halted as :authorise rendered or redirected
+Completed 302 Found in 123ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/casein/admin_user_session/new" for 127.0.0.1 at 2017-02-17 22:38:22 -0500
+Processing by Casein::AdminUserSessionsController#new as HTML
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (33.1ms)
+Completed 200 OK in 3241ms (Views: 3233.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:38:34 -0500
+Processing by Casein::AdminUserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3jmhiwj695oRV68F2jgWo1gGHo8kf3FED7LP9PRsREn8a0T8RdaREv5xVLO557F3/yTcqFdJ6oFxaVsmxFJx/g==", "casein_admin_user_session"=>{"login"=>"dlewis39@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mCasein::AdminUser Load (1.4ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) ORDER BY "casein_admin_users"."id" ASC LIMIT $2[0m  [["login", "dlewis39@gmail.com"], ["LIMIT", 1]]
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (9.2ms)
+Completed 200 OK in 86ms (Views: 69.0ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:38:56 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Casein::AdminUserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yT2VLI+YRnBxMOTs95w40JywbA95+l0ESMig0naR/TLrb3BbwrQg+J4WH1qUQ58EO5KuKArMxsE2EzQARq/IhQ==", "casein_admin_user_session"=>{"login"=>"dlewis39@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (42.1ms)
+Completed 200 OK in 756ms (Views: 631.3ms | ActiveRecord: 6.8ms)
+
+
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/config/environment.rb:5)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCasein::AdminUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) LIMIT $2[0m  [["login", "admin"], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE "casein_admin_users"."persistence_token" = $1 LIMIT $2[0m  [["persistence_token", "883f2f70898abcb1c92b4e1e1cb4a229477afb5efefa54a4fb921d9321dd4fa8ffb9f098ed440f89f64ef1fcabf600e2f2e97993de39668c8a6f208c50e2065d"], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE "casein_admin_users"."single_access_token" = $1 LIMIT $2[0m  [["single_access_token", "Nffe5rL1lNUbwRkLzuu"], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE "casein_admin_users"."login" = $1 LIMIT $2[0m  [["login", "admin"], ["LIMIT", 1]]
+  [1m[35mSQL (28.3ms)[0m  [1m[32mINSERT INTO "casein_admin_users" ("login", "name", "email", "crypted_password", "password_salt", "persistence_token", "single_access_token", "perishable_token", "time_zone", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["login", "admin"], ["name", "Admin"], ["email", "dlewis39@gmail.com"], ["crypted_password", "400$8$42$0ec7456684e675c1$86d528a70d39a74bed38eb7398460d9001f16445aed1b9c2a26f0516a7670322"], ["password_salt", "4eLUrIxCMozhyygtgzB9"], ["persistence_token", "883f2f70898abcb1c92b4e1e1cb4a229477afb5efefa54a4fb921d9321dd4fa8ffb9f098ed440f89f64ef1fcabf600e2f2e97993de39668c8a6f208c50e2065d"], ["single_access_token", "Nffe5rL1lNUbwRkLzuu"], ["perishable_token", "ACROlbgo7VAKwsyWDi2d"], ["time_zone", "UTC"], ["created_at", 2017-02-18 03:40:10 UTC], ["updated_at", 2017-02-18 03:40:10 UTC]]
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/casein_notification/new_user_information.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/casein_notification/new_user_information.erb (2.6ms)
+Casein::CaseinNotification#new_user_information: processed outbound mail in 313.2ms
+Sent mail to dlewis39@gmail.com (9.8ms)
+Date: Fri, 17 Feb 2017 22:40:11 -0500
+From: donotreply@caseincms.com
+To: dlewis39@gmail.com
+Message-ID: <58a7c21b36e51_9413fe52d85e1f08206@Davids-Mac-mini.local.mail>
+Subject: [Casein] New user account
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Admin,<br />
+<br />
+A new user account has been created for you at:<br />
+<br />
+http://0.0.0.0:3000/casein<br />
+<br />
+Username: admin<br />
+Password: 4d29774e7beddd16195ec5aed2f30326<br />
+<br />
+From<br />
+<br />
+Casein
+  [1m[35m (15.8ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:40:26 -0500
+Processing by Casein::AdminUserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2x3eW6iClpvl40x31vhRcZCpeAqC5yYe8xKqoYymjVr5Tzss5a7wEwrFt8G1J/alN4u6LfHRvduNyT5zvJi47Q==", "casein_admin_user_session"=>{"login"=>"admin", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mCasein::AdminUser Load (1.5ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) ORDER BY "casein_admin_users"."id" ASC LIMIT $2[0m  [["login", "admin"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "casein_admin_users" SET "perishable_token" = $1, "login_count" = $2, "last_request_at" = $3, "current_login_at" = $4, "current_login_ip" = $5, "updated_at" = $6 WHERE "casein_admin_users"."id" = $7[0m  [["perishable_token", "2k5py8y8dQaFXFHbN3Zp"], ["login_count", 1], ["last_request_at", 2017-02-18 03:40:26 UTC], ["current_login_at", 2017-02-18 03:40:26 UTC], ["current_login_ip", "127.0.0.1"], ["updated_at", 2017-02-18 03:40:26 UTC], ["id", 2]]
+  [1m[35m (15.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/casein
+Completed 302 Found in 237ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/casein" for 127.0.0.1 at 2017-02-17 22:40:26 -0500
+Processing by Casein::CaseinController#index as HTML
+  [1m[36mCasein::AdminUser Load (0.7ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "casein_admin_users" SET "perishable_token" = $1, "last_request_at" = $2, "updated_at" = $3 WHERE "casein_admin_users"."id" = $4[0m  [["perishable_token", "WRzLP61K3Xr1eDYhvr7"], ["last_request_at", 2017-02-18 03:40:26 UTC], ["updated_at", 2017-02-18 03:40:26 UTC], ["id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/casein/blank
+Completed 302 Found in 18ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/casein/blank" for 127.0.0.1 at 2017-02-17 22:40:26 -0500
+Processing by Casein::CaseinController#blank as HTML
+  [1m[36mCasein::AdminUser Load (0.6ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "casein_admin_users" SET "perishable_token" = $1, "last_request_at" = $2, "updated_at" = $3 WHERE "casein_admin_users"."id" = $4[0m  [["perishable_token", "NQfnHNRbTR4uDOErnqtB"], ["last_request_at", 2017-02-18 03:40:26 UTC], ["updated_at", 2017-02-18 03:40:26 UTC], ["id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/casein/blank.html.erb within layouts/casein_main
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/casein/blank.html.erb within layouts/casein_main (0.5ms)
+  Rendered casein/layouts/_top_navigation.html.erb (1.0ms)
+  Rendered casein/layouts/_tab_navigation.html.erb (0.4ms)
+Completed 200 OK in 832ms (Views: 793.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/casein/casein.self-5e6460f1956854288f329dd7e72fd3e1a562057c612cbff5c88c32b334ab450b.css?body=1" for 127.0.0.1 at 2017-02-17 22:40:27 -0500
+Started GET "/assets/casein/custom.self-552318e16d76c33689d60be9fe1bb40aefeefa33895ee72dd2f19bc37a8ed7d1.css?body=1" for 127.0.0.1 at 2017-02-17 22:40:27 -0500
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/config/environment.rb:5)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCasein::AdminUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) LIMIT $2[0m  [["login", "admin"], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE "casein_admin_users"."persistence_token" = $1 LIMIT $2[0m  [["persistence_token", "bf9a0d93f18e2fd2355e217378a0981a8cc3cbcad1cdfba4d43e898d809c860638ee737360a73302872ad745f515bdef59f2e08e0d09a4703c5e14ebf43bf31b"], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE "casein_admin_users"."single_access_token" = $1 LIMIT $2[0m  [["single_access_token", "LPGKZCqeLuyuhqZwZDQM"], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "casein_admin_users" WHERE "casein_admin_users"."login" = $1 LIMIT $2[0m  [["login", "admin"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "casein_admin_users" ("login", "name", "email", "crypted_password", "password_salt", "persistence_token", "single_access_token", "perishable_token", "time_zone", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["login", "admin"], ["name", "Admin"], ["email", "dlewis39@gmail.com"], ["crypted_password", "400$8$3a$b72986ee56755f0e$552a6cbd8ac4f5e8850d419eadecd7b639238b4ae7542111c743740e8d94b64e"], ["password_salt", "Utx2sAv478doBXJQHxD9"], ["persistence_token", "bf9a0d93f18e2fd2355e217378a0981a8cc3cbcad1cdfba4d43e898d809c860638ee737360a73302872ad745f515bdef59f2e08e0d09a4703c5e14ebf43bf31b"], ["single_access_token", "LPGKZCqeLuyuhqZwZDQM"], ["perishable_token", "jcOYz43LbgygJc4Z7K5"], ["time_zone", "UTC"], ["created_at", 2017-02-18 03:40:59 UTC], ["updated_at", 2017-02-18 03:40:59 UTC]]
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/casein_notification/new_user_information.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/casein_notification/new_user_information.erb (1.8ms)
+Casein::CaseinNotification#new_user_information: processed outbound mail in 245.2ms
+Sent mail to dlewis39@gmail.com (8.5ms)
+Date: Fri, 17 Feb 2017 22:41:00 -0500
+From: donotreply@caseincms.com
+To: dlewis39@gmail.com
+Message-ID: <58a7c24c2dd4a_94a3ff4d8c5e1f0484c7@Davids-Mac-mini.local.mail>
+Subject: [Casein] New user account
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Dear Admin,<br />
+<br />
+A new user account has been created for you at:<br />
+<br />
+http://0.0.0.0:3000/casein<br />
+<br />
+Username: admin<br />
+Password: password<br />
+<br />
+From<br />
+<br />
+Casein
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Started DELETE "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:41:04 -0500
+Processing by Casein::AdminUserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KOyzvGOSt90sHGkpvbVSJCJRahRd7arUAeH/hICAIpwKvlbLLr7RVcM6kp/eavXwhXOoMy7bMRF/OmtWsL4XKw=="}
+  [1m[36mCasein::AdminUser Load (0.8ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/casein/admin_user_session/new
+Filter chain halted as :authorise rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/casein/admin_user_session/new" for 127.0.0.1 at 2017-02-17 22:41:04 -0500
+Processing by Casein::AdminUserSessionsController#new as HTML
+  [1m[36mCasein::AdminUser Load (0.6ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (2.3ms)
+Completed 200 OK in 50ms (Views: 42.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:41:10 -0500
+Processing by Casein::AdminUserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sDiA8sbECb2ml2BQzV6ocIEUp0XpzMkGSxm9gI1y7amSamWFi+hvNUmxm+augQ+kJjZlYpr6UsM1wilSvUzYHg==", "casein_admin_user_session"=>{"login"=>"admin", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mCasein::AdminUser Load (1.1ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCasein::AdminUser Load (1.0ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) ORDER BY "casein_admin_users"."id" ASC LIMIT $2[0m  [["login", "admin"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "casein_admin_users" SET "perishable_token" = $1, "login_count" = $2, "last_request_at" = $3, "current_login_at" = $4, "current_login_ip" = $5, "updated_at" = $6 WHERE "casein_admin_users"."id" = $7[0m  [["perishable_token", "pOT2yOm5yMyZUF5DhRpp"], ["login_count", 1], ["last_request_at", 2017-02-18 03:41:10 UTC], ["current_login_at", 2017-02-18 03:41:10 UTC], ["current_login_ip", "127.0.0.1"], ["updated_at", 2017-02-18 03:41:10 UTC], ["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/casein/admin_user_session
+Completed 302 Found in 157ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:41:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/casein/admin_user_session"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [74 times] (23.2ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (164.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_lewis__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___3724776637211468488_70248468096760 at /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.7ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (181.3ms)
+Started GET "/casein" for 127.0.0.1 at 2017-02-17 22:41:18 -0500
+Processing by Casein::CaseinController#index as HTML
+  [1m[36mCasein::AdminUser Load (0.8ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "casein_admin_users" SET "perishable_token" = $1, "last_request_at" = $2, "updated_at" = $3 WHERE "casein_admin_users"."id" = $4[0m  [["perishable_token", "2H5wm3T8rwzLOkNFAjFs"], ["last_request_at", 2017-02-18 03:41:18 UTC], ["updated_at", 2017-02-18 03:41:18 UTC], ["id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/casein/blank
+Completed 302 Found in 15ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/casein/blank" for 127.0.0.1 at 2017-02-17 22:41:18 -0500
+Processing by Casein::CaseinController#blank as HTML
+  [1m[36mCasein::AdminUser Load (0.5ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "casein_admin_users" SET "perishable_token" = $1, "last_request_at" = $2, "updated_at" = $3 WHERE "casein_admin_users"."id" = $4[0m  [["perishable_token", "d8nXNZ0RtwMay2hxxwys"], ["last_request_at", 2017-02-18 03:41:18 UTC], ["updated_at", 2017-02-18 03:41:18 UTC], ["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/casein/blank.html.erb within layouts/casein_main
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/casein/blank.html.erb within layouts/casein_main (0.4ms)
+  Rendered casein/layouts/_top_navigation.html.erb (0.9ms)
+  Rendered casein/layouts/_tab_navigation.html.erb (0.7ms)
+Completed 200 OK in 66ms (Views: 52.3ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:41:20 -0500
+Processing by Casein::AdminUserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bqTYjPKL21ruIgRHJFUh/UO1umPaDfw+Ot4b4XxVd6lM9j37v6e90gEE//FHioYp5Jd4RKk7Z/tEBY8zTGtCHg=="}
+  [1m[36mCasein::AdminUser Load (0.8ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "casein_admin_users" SET "perishable_token" = $1, "last_request_at" = $2, "updated_at" = $3 WHERE "casein_admin_users"."id" = $4[0m  [["perishable_token", "kMnvz6i57tn2NIlNmkg"], ["last_request_at", 2017-02-18 03:41:20 UTC], ["updated_at", 2017-02-18 03:41:20 UTC], ["id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/casein/admin_user_session/new
+Completed 302 Found in 14ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/casein/admin_user_session/new" for 127.0.0.1 at 2017-02-17 22:41:20 -0500
+Processing by Casein::AdminUserSessionsController#new as HTML
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (2.8ms)
+Completed 200 OK in 50ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/casein" for 127.0.0.1 at 2017-02-17 22:41:24 -0500
+Processing by Casein::CaseinController#index as HTML
+Redirected to http://localhost:3000/casein/admin_user_session/new
+Filter chain halted as :authorise rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/casein/admin_user_session/new" for 127.0.0.1 at 2017-02-17 22:41:24 -0500
+Processing by Casein::AdminUserSessionsController#new as HTML
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/admin_user_sessions/new.html.erb within layouts/casein_auth (2.5ms)
+Completed 200 OK in 53ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/casein/admin_user_session" for 127.0.0.1 at 2017-02-17 22:41:30 -0500
+Processing by Casein::AdminUserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RhZypSmQia6eLUHTBDFPwRLP9nAFGQbYugYK+6WxZeJkRJfSZLzvJnELumVn7ugVte00V3YvnR3E3Z4plY9QVQ==", "casein_admin_user_session"=>{"login"=>"admin", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mCasein::AdminUser Load (1.9ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE LOWER("casein_admin_users"."login") = LOWER($1) ORDER BY "casein_admin_users"."id" ASC LIMIT $2[0m  [["login", "admin"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "casein_admin_users" SET "perishable_token" = $1, "login_count" = $2, "last_request_at" = $3, "current_login_at" = $4, "last_login_at" = $5, "last_login_ip" = $6, "updated_at" = $7 WHERE "casein_admin_users"."id" = $8[0m  [["perishable_token", "wMrcSFXv01WwbfJaS6se"], ["login_count", 2], ["last_request_at", 2017-02-18 03:41:30 UTC], ["current_login_at", 2017-02-18 03:41:30 UTC], ["last_login_at", 2017-02-18 03:41:10 UTC], ["last_login_ip", "127.0.0.1"], ["updated_at", 2017-02-18 03:41:30 UTC], ["id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/casein
+Completed 302 Found in 140ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/casein" for 127.0.0.1 at 2017-02-17 22:41:30 -0500
+Processing by Casein::CaseinController#index as HTML
+  [1m[36mCasein::AdminUser Load (0.6ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "casein_admin_users" SET "perishable_token" = $1, "last_request_at" = $2, "updated_at" = $3 WHERE "casein_admin_users"."id" = $4[0m  [["perishable_token", "RU4I3e3cmgAgCYKT23Tf"], ["last_request_at", 2017-02-18 03:41:30 UTC], ["updated_at", 2017-02-18 03:41:30 UTC], ["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/casein/blank
+Completed 302 Found in 12ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/casein/blank" for 127.0.0.1 at 2017-02-17 22:41:30 -0500
+Processing by Casein::CaseinController#blank as HTML
+  [1m[36mCasein::AdminUser Load (0.6ms)[0m  [1m[34mSELECT  "casein_admin_users".* FROM "casein_admin_users" WHERE "casein_admin_users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "casein_admin_users" SET "perishable_token" = $1, "last_request_at" = $2, "updated_at" = $3 WHERE "casein_admin_users"."id" = $4[0m  [["perishable_token", "z0VMY1kJyzchVPBw3EDC"], ["last_request_at", 2017-02-18 03:41:30 UTC], ["updated_at", 2017-02-18 03:41:30 UTC], ["id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/casein/blank.html.erb within layouts/casein_main
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/casein-5.2.0.0/app/views/casein/casein/blank.html.erb within layouts/casein_main (0.8ms)
+  Rendered casein/layouts/_top_navigation.html.erb (0.9ms)
+  Rendered casein/layouts/_tab_navigation.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 44.8ms | ActiveRecord: 1.8ms)
+
+
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/app/models/user.rb:1)
+Started GET "/casein/blank" for 127.0.0.1 at 2017-02-17 22:52:35 -0500
+  
+ActionController::RoutingError (uninitialized constant Casein::ConfigHelper):
+  
+casein (5.2.0.0) app/controllers/casein/casein_controller.rb:10:in `<class:CaseinController>'
+casein (5.2.0.0) app/controllers/casein/casein_controller.rb:4:in `<module:Casein>'
+casein (5.2.0.0) app/controllers/casein/casein_controller.rb:3:in `<top (required)>'
+activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:12:in `block in loading'
+activesupport (5.0.1) lib/active_support/concurrency/share_lock.rb:150:in `exclusive'
+activesupport (5.0.1) lib/active_support/dependencies/interlock.rb:11:in `loading'
+activesupport (5.0.1) lib/active_support/inflector/methods.rb:270:in `const_get'
+activesupport (5.0.1) lib/active_support/inflector/methods.rb:270:in `block in constantize'
+activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.1) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered collection of /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [74 times] (27.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.1ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (234.7ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_lewis__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___3724776637211468488_70248438368780 at /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (97.3ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (196.1ms)
+Started GET "/steve" for 127.0.0.1 at 2017-02-17 22:52:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/steve"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+request_store (1.3.2) lib/request_store/middleware.rb:9:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [74 times] (22.0ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (156.0ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_lewis__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb___3724776637211468488_70248450227800 at /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.1ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.5/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (179.8ms)
+Started GET "/" for 127.0.0.1 at 2017-02-17 22:52:46 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendering welcome/homepage.html.erb within layouts/application
+  Rendered layouts/_nav.html.erb (7.3ms)
+  [1m[36mBlog Load (1.1ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/homepage.html.erb within layouts/application (111.6ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 1196ms (Views: 1071.7ms | ActiveRecord: 7.5ms)
+
+
