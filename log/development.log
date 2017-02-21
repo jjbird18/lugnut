@@ -25322,3 +25322,74 @@ Completed 200 OK in 5626ms (Views: 5573.3ms | ActiveRecord: 1.4ms)
 
 
 Started GET "/assets/application.self-0767999524b3fc75d8f6b31fde6c1982cd85ab67f7f7a1c863492f2337061562.css?body=1" for 127.0.0.1 at 2017-02-20 23:23:16 -0500
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-02-20 23:25:49 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yXiiY/kvIBe/rUvOcltGz4quHf0kstXn4kCuiLq8yX37NZ1pZuU77JyP1WXzdcUjo0Q3yVTOPgD7niDRJOeZrg=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 218ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-20 23:25:51 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendering welcome/homepage.html.erb within layouts/application
+  Rendered layouts/_nav.html.erb (6.4ms)
+  [1m[36mBlog Load (1.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/homepage.html.erb within layouts/application (158.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (5.5ms)
+Completed 200 OK in 1124ms (Views: 1047.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-02-20 23:25:55 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (275.1ms)
+  Rendered layouts/_nav.html.erb (3.6ms)
+  Rendered layouts/_header.html.erb (25.8ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (7.2ms)
+Completed 200 OK in 505ms (Views: 481.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-02-20 23:25:58 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (39.7ms)
+  Rendered layouts/_nav.html.erb (3.5ms)
+  Rendered layouts/_header.html.erb (10.6ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (6.8ms)
+Completed 200 OK in 210ms (Views: 205.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-02-20 23:26:09 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"liJ5ppBih9hE8MpykFq8nOFYsnZSQJkhUS5b0uHGqyjgmboQleJzyjGXZWKe0BspxAIqUjGqByEkNdQxfENWmw==", "user"=>{"email"=>"stutz03@email.franklin.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "stutz03@email.franklin.edu"], ["LIMIT", 1]]
+  [1m[35mSQL (95.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "stutz03@email.franklin.edu"], ["encrypted_password", "$2a$11$EoduQXRd1L9v1E/z34RVr.vlFBb2wWEDm5RkjDSMOi04SQVdC6gRO"], ["created_at", 2017-02-21 04:26:09 UTC], ["updated_at", 2017-02-21 04:26:09 UTC]]
+  [1m[35m (31.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2017-02-21 04:26:09 UTC], ["last_sign_in_at", 2017-02-21 04:26:09 UTC], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_ip", "127.0.0.1/32"], ["updated_at", 2017-02-21 04:26:09 UTC], ["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 553ms (ActiveRecord: 130.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-20 23:26:09 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendering welcome/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.7ms)
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/homepage.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (6.8ms)
+Completed 200 OK in 118ms (Views: 115.0ms | ActiveRecord: 1.0ms)
+
+
