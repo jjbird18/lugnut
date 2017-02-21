@@ -54,3 +54,6 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
+
+gem 'redis', '~> 3.3', '>= 3.3.3'
+gem 'hiredis', '~> 0.6.1'

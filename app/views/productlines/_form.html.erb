@@ -1,0 +1,11 @@
+<div class="form">
+	<%= simple_form_for @productline do |f| %>
+		<div class="form-inputs">
+			<%= f.input :title, placeholder: "Title" %>
+			<%= f.input :textdescription, placeholder: "Text Description" %>
+		</div>	
+		<div class="form-actions">
+			<%= f.button :submit, "Create line", class: 'cta' %>
+		</div>	
+	<% end %>
+</div>

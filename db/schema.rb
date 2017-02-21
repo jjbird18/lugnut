@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170218032800) do
+ActiveRecord::Schema.define(version: 20170221035717) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,28 +29,6 @@ ActiveRecord::Schema.define(version: 20170218032800) do
     t.datetime "image_updated_at"
   end
 
-  create_table "casein_admin_users", force: :cascade do |t|
-    t.string   "login",                           null: false
-    t.string   "name"
-    t.string   "email"
-    t.integer  "access_level",        default: 0, null: false
-    t.string   "crypted_password",                null: false
-    t.string   "password_salt",                   null: false
-    t.string   "persistence_token"
-    t.string   "single_access_token"
-    t.string   "perishable_token"
-    t.integer  "login_count",         default: 0, null: false
-    t.integer  "failed_login_count",  default: 0, null: false
-    t.datetime "last_request_at"
-    t.datetime "current_login_at"
-    t.datetime "last_login_at"
-    t.string   "current_login_ip"
-    t.string   "last_login_ip"
-    t.string   "time_zone"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "comments", force: :cascade do |t|
     t.text     "comment"
     t.integer  "post_id"
@@ -67,6 +45,30 @@ ActiveRecord::Schema.define(version: 20170218032800) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
+  end
+
+  create_table "productlines", force: :cascade do |t|
+    t.text     "textdescription"
+    t.text     "htmldescription"
+    t.binary   "image"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "title"
+    t.integer  "user_id"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "productcode"
+    t.string   "productname"
+    t.string   "productscale"
+    t.string   "productvendor"
+    t.text     "productdescription"
+    t.integer  "quantityinstock"
+    t.decimal  "buyprice"
+    t.decimal  "msrp"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.integer  "productline_id"
   end
 
   create_table "users", force: :cascade do |t|
