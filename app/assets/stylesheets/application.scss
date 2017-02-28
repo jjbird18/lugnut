@@ -164,6 +164,9 @@ nav {
 				@include transition(all 500ms ease-in-out);
 			}
 		}
+		.navbar-collapse {
+			border-color: transparent;	
+		}
 	}
 	.admin-btn {
 		margin-left: 30%;
@@ -195,6 +198,9 @@ nav {
 			background:none;
 			@include transition(all 500ms ease-in-out);
 		}
+		@include mobile {
+			line-height: 4.0rem;
+		}
 	}
     .fa {
     	font-size: 2rem;
@@ -214,6 +220,9 @@ nav {
 
 		li:first-of-type {
 			padding-top: 5%;
+			@include mobile {
+				padding-top: 20%;
+			}
 		}
 	}
 }
@@ -486,10 +495,12 @@ input.btn.cta {
 		&:first-of-type {
 			border-left: 1px;
 		}
+		@include mobile {
+			border: 0px;
+		}
 	}
 	.post-link {
 		float: left;
-		width: 100px;
 		margin-bottom: 0 auto;
 		padding:0px;
 	}

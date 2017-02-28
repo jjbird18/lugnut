@@ -21,7 +21,11 @@
 			<div class="row-fluid clearfix">
 				<div class="col-xs-12 text-left" id="comments">
 					<h4>Reply to thread</h4>
-					<%= render 'comments/form' %>
+					<% if user_signed_in? %>
+						<%= render 'comments/form' %>
+					<% else %>
+						<%= link_to "Log in to Reply", new_user_session_path, class: 'cta' %>
+					<% end %>
 				</div><!-- /col-xs-12 -->
 			</div><!-- /row -->
 		</div><!-- /container -->

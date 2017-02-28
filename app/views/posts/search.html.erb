@@ -12,18 +12,17 @@
 					<% if (@posts.empty?) %>
 						<p>Sorry no results.</p>
 					<% else %>
-					
 						<% @posts.each do |post| %>
 							<h2><%= link_to post.title, post %></h2>
 							<p><%= link_to truncate(post.content, :length => 200, :separator => ' '), post %></p>
 							<div class="row-fluid post-strip clearfix">
-								<div class="post-link post-info text-center">
+								<div class="col-xs-12 col-sm-2 post-link post-info text-center">
 									<%= link_to "Visit post", post, class: 'cta'  %>
 								</div>
-								<div class="col-xs-2 post-info text-center">
+								<div class="col-xs-12 col-sm-2 post-info text-center">
 									<p>Comments (<%= post.comments.count %>)</p>
 								</div>
-								<div class="col-xs-3 post-info text-center">
+								<div class="col-xs-12 col-sm-3 post-info text-center">
 									<p>Last updated: <%= time_ago_in_words(post.updated_at) %></p>
 								</div>
 							</div>
