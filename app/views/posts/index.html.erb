@@ -8,6 +8,30 @@
 					<p>Looking for answers to those looming car questions? Can't figure out which connected device is right for look? Check out our forum below for answers to all of your questions. Can't find an answer? Bring your topic to the community by starting a new thread.</p>
 				</div><!-- /col-xs-12 -->
 			</div><!-- /row -->
+			<div class="row-fluid clearfix">
+				<div class="col-xs-4">
+				<div class="dropdown">
+				  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Sort by
+				  <span class="caret"></span></button>
+				  <ul class="dropdown-menu">
+				    <li><a href="#"><%= sort_link "title" %></a></li>
+				    <li><a href="#"><%= sort_link "created_at" %></a></li>
+				  </ul>
+				</div>
+				</div>
+				<div class="col-xs-6 pull-right text-left">
+					<%= form_tag search_posts_path, method: :get, class: "navbar-form navbar-right", role: "search" do %>
+			          <div class="clearfix">
+			            <div class="col-xs-8 form-inputs">
+			            	<%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search"  %>
+			            </div>
+			            <div class="col-xs-3">
+			            	<button type="submit" class="search cta"><i class="fa fa-search" aria-hidden="true"></i></button>
+			            </div>
+			          </div>
+			         <% end %>
+				</div><!-- /col-xs-12 -->
+			</div><!-- /row -->
 			<div class="row-fluid clearfix" id="posts-wrap">
 				<div class="col-xs-12 text-left">
 					<% @posts.each do |post| %>

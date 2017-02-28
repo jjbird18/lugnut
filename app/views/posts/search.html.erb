@@ -1,0 +1,41 @@
+<% content_for(:title, 'Search Results') %>
+<div class="container-fluid" id="content-main">
+	<div class="row-fluid" id="posts-container">
+		<div class="container">
+			<div class="row-fluid clearfix">
+				<div class="col-xs-12 text-left">
+					<h1><%= yield(:title) %></h1>
+				</div>
+			</div><!--/row-fluid-->
+			<div class="row-fluid clearfix" id="posts-wrap">
+				<div class="col-xs-12 text-left">
+					<% if (@posts.empty?) %>
+						<p>Sorry no results.</p>
+					<% else %>
+					
+						<% @posts.each do |post| %>
+							<h2><%= link_to post.title, post %></h2>
+							<p><%= link_to truncate(post.content, :length => 200, :separator => ' '), post %></p>
+							<div class="row-fluid post-strip clearfix">
+								<div class="post-link post-info text-center">
+									<%= link_to "Visit post", post, class: 'cta'  %>
+								</div>
+								<div class="col-xs-2 post-info text-center">
+									<p>Comments (<%= post.comments.count %>)</p>
+								</div>
+								<div class="col-xs-3 post-info text-center">
+									<p>Last updated: <%= time_ago_in_words(post.updated_at) %></p>
+								</div>
+							</div>
+						<% end %>
+					<% end %>
+				</div><!-- /col-xs-12 -->
+			</div><!-- /row -->
+			<div class="row-fluid">
+				<div class="col-xs-12 col-sm-4" id="new-thread-btn">
+					<%= link_to "Start a new thread", new_post_path, class: 'cta'  %>
+				</div>
+			</div><!-- /col-xs-12 -->
+		</div><!-- /content-main -->
+	</div><!-- /row -->
+</div><!-- /content-main -->
