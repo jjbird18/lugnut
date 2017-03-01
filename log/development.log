@@ -46010,3 +46010,71 @@ Completed 200 OK in 2954ms (Views: 2948.6ms | ActiveRecord: 2.6ms)
 
 
 Started GET "/assets/application.self-7559944d2629e0dcd2356baf117bff63d0aa2b4a7c75c10d59fe9347f01cf6a0.css?body=1" for 127.0.0.1 at 2017-02-28 19:05:40 -0500
+Started GET "/" for 127.0.0.1 at 2017-02-28 20:19:28 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendering welcome/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (4.9ms)
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/homepage.html.erb within layouts/application (104.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 724ms (Views: 692.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/blogs/3" for 127.0.0.1 at 2017-02-28 20:19:32 -0500
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (15.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/show.html.erb within layouts/application (69.6ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (21.5ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 334ms (Views: 224.2ms | ActiveRecord: 16.7ms)
+
+
+Started GET "/blogs/3" for 127.0.0.1 at 2017-02-28 20:19:37 -0500
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  [1m[36mUser Load (13.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/show.html.erb within layouts/application (21.7ms)
+  Rendered layouts/_nav.html.erb (3.4ms)
+  Rendered layouts/_header.html.erb (10.4ms)
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (8.2ms)
+Completed 200 OK in 191ms (Views: 173.0ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/blogs/1" for 127.0.0.1 at 2017-02-28 20:21:35 -0500
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  [1m[36mUser Load (10.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/show.html.erb within layouts/application (18.6ms)
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_header.html.erb (8.3ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (6.1ms)
+Completed 200 OK in 154ms (Views: 139.6ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/blogs/2" for 127.0.0.1 at 2017-02-28 20:22:16 -0500
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/show.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_nav.html.erb (4.0ms)
+  Rendered layouts/_header.html.erb (14.1ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (7.3ms)
+Completed 200 OK in 163ms (Views: 158.7ms | ActiveRecord: 1.3ms)
+
+
