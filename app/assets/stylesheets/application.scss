@@ -21,7 +21,7 @@
 html {
 	background: $white;
 	margin: 0 auto;
-	font: 14px $fontFamily;
+	font: 16px $fontFamily;
 	@include tablet {
 		font-size: 16px;
 	}
@@ -455,6 +455,14 @@ footer {
     	margin-top: 0px;
     	padding:20px 15px;
     }
+}
+.navbar-form {
+	.form-inputs {
+		@include mobile {
+			padding:0px;
+			margin:0px;
+		}
+	}
 }
 input.btn.cta {
     border-radius: 0px;

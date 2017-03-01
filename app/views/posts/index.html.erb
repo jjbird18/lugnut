@@ -21,9 +21,12 @@
 				</div>
 				<div class="col-xs-12 col-sm-6 pull-right text-left">
 					<%= form_tag search_posts_path, method: :get, class: "navbar-form navbar-right", role: "search" do %>
-			          <div class="clearfix">
-			            <div class="form-inputs">
+			          <div class="clearfix text-right">
+			            <div class="col-xs-12 col-sm-8 form-inputs">
 			            	<%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search"  %>
+			            </div>
+			            <div class="hidden-xs col-sm-3">
+			            	<button type="submit" class="search cta hidden-xs"><i class="fa fa-search" aria-hidden="true"></i></button>
 			            </div>
 			          </div>
 			         <% end %>
@@ -35,7 +38,7 @@
 						<h2><%= link_to post.title, post %></h2>
 						<p><%= link_to truncate(post.content, :length => 200, :separator => ' '), post %></p>
 						<div class="row-fluid post-strip clearfix">
-							<div class="col-xs-12 col-sm-2 post-link post-info text-center">
+							<div class="col-xs-12 col-sm-3 post-link post-info text-center">
 								<%= link_to "Visit post", post, class: 'cta'  %>
 							</div>
 							<div class="col-xs-12 col-sm-2 post-info text-center">
