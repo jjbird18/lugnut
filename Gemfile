@@ -43,6 +43,8 @@ gem 'simple_form', '~> 3.4'
 # Use Capistrano for deployment
 gem 'spring', group: :development
 
+gem 'capistrano', '~> 3.7', '>= 3.7.2', group: :production
+
 gem 'puma'
 
 group :development, :test do
