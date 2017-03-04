@@ -51455,3 +51455,4 @@ Processing by WelcomeController#homepage as HTML
 Completed 200 OK in 181ms (Views: 158.1ms | ActiveRecord: 20.3ms)
 
 
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/app/models/user.rb:1)
