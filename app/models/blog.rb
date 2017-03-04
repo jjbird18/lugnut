@@ -3,6 +3,4 @@ class Blog < ActiveRecord::Base
 
 	has_attached_file :image, styles: { large: "640x480" }
   	validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
-
-  	has_attached_file :image, { preserve_files: true }
 end

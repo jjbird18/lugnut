@@ -78,7 +78,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #In production, :host should be set to the actual host of your application.
-  config.action_mailer.default_url_options = { host: 'immense-beyond-73627.herokuapp.com/', port: 5000 } 
+  config.action_mailer.default_url_options = { host: 'immense-beyond-73627.herokuapp.com/' } 
   Rails.application.routes.default_url_options[:host] = 'immense-beyond-73627.herokuapp.com'
 
   config.action_mailer.delivery_method = :smtp
@@ -94,5 +94,14 @@ Rails.application.configure do
     enable_starttls_auto: true,
     user_name: ENV["GMAIL_USERNAME"],
     password: ENV["GMAIL_PASSWORD"]
+  }
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_credentials: {
+      bucket: ENV.fetch('S3_BUCKET_NAME'),
+      access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
+      secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
+      s3_region: ENV.fetch('AWS_REGION'),
+    }
   }
 end

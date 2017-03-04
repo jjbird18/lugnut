@@ -13,6 +13,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'font-awesome-sass', '~> 4.7.0'
 # Adds images to blog posts
 gem 'paperclip', '~> 5.1'
+gem 'aws-sdk', '~> 2.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
