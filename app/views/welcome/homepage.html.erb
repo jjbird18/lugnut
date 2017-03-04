@@ -55,7 +55,7 @@
 					</div>
 						<% @blogs.take(3).each do |blog| %>
 						    <div class="col-xs-12 col-sm-4 text-left">
-						    	<%= link_to image_tag(blog.image.url(:large), alt: blog.title), blog_path(blog), class: 'blog-img' %>
+						    	<%= link_to image_tag(blog.image_file_name, alt: blog.title), blog_path(blog), class: 'blog-img' %>
 								<div class="row-fluid clearfix">
 									<div class="icon-wrap">
 										<%= image_tag('favicon.png', alt: 'Lugnut Logo') %>
