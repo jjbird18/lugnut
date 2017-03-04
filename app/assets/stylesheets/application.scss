@@ -536,3 +536,14 @@ summary {
 .blog-image-wrap {
 	margin: 0 0 1.5rem 1.5rem;
 }
+/*SCREEN*/
+.progress {
+  max-width: 600px;
+  margin:    0.2em 0 0.2em 0;
+  .bar {
+	  height:  1.2em;
+	  padding-left: 0.2em;
+	  color:   white;
+	  display: none;
+	}
+}

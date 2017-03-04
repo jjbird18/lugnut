@@ -15,8 +15,8 @@
       </div><!-- /row -->
       <div class="row-fluid clearfix">
         <div class="col-xs-12 text-left">
-          	<%= link_to 'Show', @blog %> |
-            <%= link_to 'Back', blogs_path %>
+            <%= link_to 'Show', @blog %> | 
+              <%= link_to "Delete", blog_path(@blog), method: :delete, data: { confirm: "Are you sure?" } %> | <%= link_to 'Back', blogs_path %>
         </div><!-- /col-xs-6 -->
       </div><!-- /row -->
     </div><!-- /container -->
