@@ -51609,3 +51609,530 @@ Processing by BlogsController#edit as HTML
 Completed 200 OK in 119ms (Views: 114.9ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:27:46 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (13.9ms)
+  Rendered blogs/edit.html.erb within layouts/application (67.2ms)
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (106.4ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (5.1ms)
+Completed 200 OK in 1456ms (Views: 1395.6ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/assets/application.self-072c4b1d1b266f96d3fea8ea92f13a4e00125248305e8c90c338292d0e341456.js?body=1" for 127.0.0.1 at 2017-03-04 17:27:49 -0500
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:28:46 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (2.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (10.1ms)
+  Rendered blogs/edit.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_header.html.erb (8.7ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 122ms (Views: 114.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:29:29 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (10.3ms)
+  Rendered blogs/edit.html.erb within layouts/application (33.3ms)
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_header.html.erb (8.7ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 158ms (Views: 128.8ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:29:42 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (9.9ms)
+  Rendered blogs/edit.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 302ms (Views: 298.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-8e55d8b55e335b5846101e4fc0b01500d4943f83abb3dca2ba494b30f5b8019c.js?body=1" for 127.0.0.1 at 2017-03-04 17:29:42 -0500
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:30:47 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (9.0ms)
+  Rendered blogs/edit.html.erb within layouts/application (28.3ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_header.html.erb (39.2ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (4.7ms)
+Completed 200 OK in 391ms (Views: 367.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:31:15 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (9.3ms)
+  Rendered blogs/edit.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_header.html.erb (10.2ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 116ms (Views: 112.1ms | ActiveRecord: 0.9ms)
+
+
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/app/models/user.rb:1)
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:34:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (329.6ms)
+  Rendered blogs/edit.html.erb within layouts/application (371.4ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_header.html.erb (17.1ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (3.5ms)
+Completed 200 OK in 4398ms (Views: 4203.7ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:35:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (76.9ms)
+  Rendered blogs/edit.html.erb within layouts/application (104.9ms)
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_header.html.erb (9.3ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (5.5ms)
+Completed 200 OK in 687ms (Views: 608.0ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:35:53 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (9.0ms)
+  Rendered blogs/edit.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 133ms (Views: 128.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:36:13 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (7.6ms)
+  Rendered blogs/edit.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_header.html.erb (8.0ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 141ms (Views: 135.9ms | ActiveRecord: 1.1ms)
+
+
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/app/models/user.rb:1)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/app/models/user.rb:1)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/app/models/user.rb:1)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/app/models/user.rb:1)
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:39:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (79.8ms)
+  Rendered blogs/edit.html.erb within layouts/application (108.3ms)
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_header.html.erb (8.8ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (5.6ms)
+Completed 200 OK in 743ms (Views: 656.0ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:39:07 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (8.0ms)
+  Rendered blogs/edit.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_header.html.erb (30.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 126ms (Views: 121.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:40:37 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (78.0ms)
+  Rendered blogs/edit.html.erb within layouts/application (106.5ms)
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_header.html.erb (8.2ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (5.2ms)
+Completed 200 OK in 749ms (Views: 668.6ms | ActiveRecord: 13.6ms)
+
+
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/app/models/user.rb:1)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/app/models/user.rb:1)
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:41:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (78.6ms)
+  Rendered blogs/edit.html.erb within layouts/application (106.1ms)
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_header.html.erb (8.8ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (5.7ms)
+Completed 200 OK in 704ms (Views: 634.2ms | ActiveRecord: 14.5ms)
+
+
+Started PATCH "/blogs/3" for 127.0.0.1 at 2017-03-04 17:41:51 -0500
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GzexQzQgmuwcjkp+p36q9fWDqLytXGvtPRZKNWk8Krf3L6MDp0Zd4UCpmU4qM8hbZ1scCC1j2Jbv8vQ1kQXDqw==", "blog"=>{"title"=>"Expert Installation", "description"=>"Get the most out of your new connected device", "main_content"=>"Duis tincidunt nec orci at efficitur. In hac habitasse platea dictumst. Vivamus ultricies fringilla purus. Etiam pharetra quis leo vitae tempor. Nam in efficitur mauris, nec bibendum neque. Quisque sed venenatis ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vulputate fermentum augue, ac tempor ante scelerisque efficitur. In commodo aliquam lectus a efficitur. Donec vestibulum interdum nisl, in molestie elit tincidunt id. Fusce quis odio at tellus consequat vestibulum sit amet non leo. Quisque sit amet dui tortor. Duis cursus nulla a interdum tincidunt. Phasellus at neque varius, tincidunt velit vitae, pellentesque ex.\r\n\r\nDuis eget rutrum mauris. Pellentesque pulvinar sem nec nulla eleifend, nec pharetra urna eleifend. Mauris consectetur ex at finibus consequat. Vestibulum consectetur justo at elit bibendum, vitae gravida mauris dictum. Nulla finibus tortor vel mauris posuere, eget pretium ante lacinia. Nunc maximus maximus tortor, in scelerisque nisl dictum vel. Maecenas convallis sapien velit, in pharetra sem vulputate vestibulum. Nunc ligula ligula, semper vitae quam eget, malesuada egestas mi. Suspendisse ullamcorper pulvinar rhoncus.", "image"=>"//lugnutauto.s3.us-east-2.amazonaws.com/uploads/63917c4a-7cd4-4b1c-97d2-4c01f3423262/img-listing-3.jpg"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'image' for Blog.):
+  
+app/controllers/blogs_controller.rb:45:in `block in update'
+app/controllers/blogs_controller.rb:44:in `update'
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (105.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_lewis__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__2156720959685417319_70214719958200 at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (90.1ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (200.8ms)
+Started GET "/blogs" for 127.0.0.1 at 2017-03-04 17:42:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (74.1ms)
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_header.html.erb (8.6ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (5.5ms)
+Completed 200 OK in 661ms (Views: 603.7ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-04 17:42:37 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendering welcome/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (5.4ms)
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/homepage.html.erb within layouts/application (23.6ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for #<Blog:0x007fb844dca858>):
+    55: 					</div>
+    56: 						<% @blogs.take(3).each do |blog| %>
+    57: 						    <div class="col-xs-12 col-sm-4 text-left">
+    58: 						    	<%= link_to image_tag(blog.image.url(:large), alt: blog.title), blog_path(blog), class: 'blog-img' %>
+    59: 								<div class="row-fluid clearfix">
+    60: 									<div class="icon-wrap">
+    61: 										<%= image_tag('favicon.png', alt: 'Lugnut Logo') %>
+  
+app/views/welcome/homepage.html.erb:58:in `block in _app_views_welcome_homepage_html_erb___1692674956129360396_70214722924060'
+app/views/welcome/homepage.html.erb:56:in `each'
+app/views/welcome/homepage.html.erb:56:in `_app_views_welcome_homepage_html_erb___1692674956129360396_70214722924060'
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.2ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.8ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_lewis__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__2156720959685417319_70214718555460 at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (93.1ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (194.6ms)
+Started GET "/blogs/3" for 127.0.0.1 at 2017-03-04 17:43:43 -0500
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 5.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for #<Blog:0x007fb8498ba020>):
+    15:       <div class="row-fluid clearfix">
+    16:         <div class="col-xs-12 text-left">
+    17:           <div class="col-xs-12 col-sm-5 pull-right blog-image-wrap">
+    18:               <%= image_tag @blog.image.url(:large), alt: @blog.title %>
+    19:             </div>
+    20:             <%= simple_format(@blog.main_content) %>
+    21:         </div><!-- /col-xs-6 -->
+  
+app/views/blogs/show.html.erb:18:in `_app_views_blogs_show_html_erb__3754656021142385591_70214742266540'
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.6ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_lewis__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__2156720959685417319_70214724119080 at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.2ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (171.3ms)
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:44:48 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (75.0ms)
+  Rendered blogs/edit.html.erb within layouts/application (104.2ms)
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_header.html.erb (8.5ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.1ms)
+Completed 200 OK in 224ms (Views: 184.1ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:45:20 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (11.8ms)
+  Rendered blogs/edit.html.erb within layouts/application (33.5ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (6.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 183ms (Views: 112.3ms | ActiveRecord: 10.6ms)
+
+
+Started PATCH "/blogs/3" for 127.0.0.1 at 2017-03-04 17:45:29 -0500
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MOYf9oPh3fE9r/VzNHcEoSawElpXEr4Ku1PmwJx2KUvc/g22EIca/GGIJkO5OmYPtGim7tctDXFpt1jAZE/AVw==", "blog"=>{"title"=>"Expert Installation", "description"=>"Get the most out of your new connected device", "main_content"=>"Duis tincidunt nec orci at efficitur. In hac habitasse platea dictumst. Vivamus ultricies fringilla purus. Etiam pharetra quis leo vitae tempor. Nam in efficitur mauris, nec bibendum neque. Quisque sed venenatis ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vulputate fermentum augue, ac tempor ante scelerisque efficitur. In commodo aliquam lectus a efficitur. Donec vestibulum interdum nisl, in molestie elit tincidunt id. Fusce quis odio at tellus consequat vestibulum sit amet non leo. Quisque sit amet dui tortor. Duis cursus nulla a interdum tincidunt. Phasellus at neque varius, tincidunt velit vitae, pellentesque ex.\r\n\r\nDuis eget rutrum mauris. Pellentesque pulvinar sem nec nulla eleifend, nec pharetra urna eleifend. Mauris consectetur ex at finibus consequat. Vestibulum consectetur justo at elit bibendum, vitae gravida mauris dictum. Nulla finibus tortor vel mauris posuere, eget pretium ante lacinia. Nunc maximus maximus tortor, in scelerisque nisl dictum vel. Maecenas convallis sapien velit, in pharetra sem vulputate vestibulum. Nunc ligula ligula, semper vitae quam eget, malesuada egestas mi. Suspendisse ullamcorper pulvinar rhoncus.", "image"=>"//lugnutauto.s3.us-east-2.amazonaws.com/uploads/7fa42271-a94e-4dad-b244-56523a62f409/img-listing-3.jpg"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.8ms)
+
+
+  
+Paperclip::AdapterRegistry::NoHandlerError (No handler found for "//lugnutauto.s3.us-east-2.amazonaws.com/uploads/7fa42271-a94e-4dad-b244-56523a62f409/img-listing-3.jpg"):
+  
+app/controllers/blogs_controller.rb:45:in `block in update'
+app/controllers/blogs_controller.rb:44:in `update'
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.8ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_lewis__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__2156720959685417319_70214756360060 at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (178.9ms)
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:46:30 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (8.5ms)
+  Rendered blogs/edit.html.erb within layouts/application (30.4ms)
+  Rendered layouts/_nav.html.erb (2.4ms)
+  Rendered layouts/_header.html.erb (8.8ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 135ms (Views: 107.0ms | ActiveRecord: 11.0ms)
+
+
+Started PATCH "/blogs/3" for 127.0.0.1 at 2017-03-04 17:46:36 -0500
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qUJXc3e9S8AZodzjR/ENidktK6V1sZQY0EpAFYuDRRxFWkUz5NuMzUWGD9PKvG8nS/WfEfWOJ2MCrv4Vc7qsAA==", "blog"=>{"title"=>"Expert Installation", "description"=>"Get the most out of your new connected device", "main_content"=>"Duis tincidunt nec orci at efficitur. In hac habitasse platea dictumst. Vivamus ultricies fringilla purus. Etiam pharetra quis leo vitae tempor. Nam in efficitur mauris, nec bibendum neque. Quisque sed venenatis ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vulputate fermentum augue, ac tempor ante scelerisque efficitur. In commodo aliquam lectus a efficitur. Donec vestibulum interdum nisl, in molestie elit tincidunt id. Fusce quis odio at tellus consequat vestibulum sit amet non leo. Quisque sit amet dui tortor. Duis cursus nulla a interdum tincidunt. Phasellus at neque varius, tincidunt velit vitae, pellentesque ex.\r\n\r\nDuis eget rutrum mauris. Pellentesque pulvinar sem nec nulla eleifend, nec pharetra urna eleifend. Mauris consectetur ex at finibus consequat. Vestibulum consectetur justo at elit bibendum, vitae gravida mauris dictum. Nulla finibus tortor vel mauris posuere, eget pretium ante lacinia. Nunc maximus maximus tortor, in scelerisque nisl dictum vel. Maecenas convallis sapien velit, in pharetra sem vulputate vestibulum. Nunc ligula ligula, semper vitae quam eget, malesuada egestas mi. Suspendisse ullamcorper pulvinar rhoncus.", "image_file_name"=>"//lugnutauto.s3.us-east-2.amazonaws.com/uploads/e4733141-9c5e-4fda-845c-47640c866887/img-listing-3.jpg"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "blogs" SET "image_file_name" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["image_file_name", "//lugnutauto.s3.us-east-2.amazonaws.com/uploads/e4733141-9c5e-4fda-845c-47640c866887/img-listing-3.jpg"], ["updated_at", 2017-03-04 22:46:36 UTC], ["id", 3]]
+  [1m[35m (48.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:5000/blogs/3
+Completed 302 Found in 63ms (ActiveRecord: 49.8ms)
+
+
+Started GET "/blogs/3" for 127.0.0.1 at 2017-03-04 17:46:36 -0500
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for #<Blog:0x007fb842bd3790>):
+    15:       <div class="row-fluid clearfix">
+    16:         <div class="col-xs-12 text-left">
+    17:           <div class="col-xs-12 col-sm-5 pull-right blog-image-wrap">
+    18:               <%= image_tag @blog.image.url(:large), alt: @blog.title %>
+    19:             </div>
+    20:             <%= simple_format(@blog.main_content) %>
+    21:         </div><!-- /col-xs-6 -->
+  
+app/views/blogs/show.html.erb:18:in `_app_views_blogs_show_html_erb__3754656021142385591_70214689418200'
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.2ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.5ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_lewis__rvm_gems_ruby_______gems_web_console_______lib_web_console_templates_console_js_erb__2156720959685417319_70214760304700 at /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (85.3ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/lewis/.rvm/gems/ruby-2.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (182.2ms)
+Started GET "/blogs/3" for 127.0.0.1 at 2017-03-04 17:47:14 -0500
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/show.html.erb within layouts/application (22.7ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_header.html.erb (7.5ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 131ms (Views: 100.9ms | ActiveRecord: 12.0ms)
+
+

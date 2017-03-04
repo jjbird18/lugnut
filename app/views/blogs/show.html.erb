@@ -15,7 +15,7 @@
       <div class="row-fluid clearfix">
         <div class="col-xs-12 text-left">
           <div class="col-xs-12 col-sm-5 pull-right blog-image-wrap">
-              <%= image_tag @blog.image.url(:large), alt: @blog.title %>
+              <%= image_tag @blog.image_file_name, alt: @blog.title %>
             </div>
             <%= simple_format(@blog.main_content) %>
         </div><!-- /col-xs-6 -->
