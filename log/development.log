@@ -51456,3 +51456,156 @@ Completed 200 OK in 181ms (Views: 158.1ms | ActiveRecord: 20.3ms)
 
 
 DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/lewis/Documents/Projects/lugnut/app/models/user.rb:1)
+Started GET "/" for 127.0.0.1 at 2017-03-04 17:09:24 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendering welcome/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.8ms)
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/homepage.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (4.9ms)
+Completed 200 OK in 89ms (Views: 85.2ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-03-04 17:09:29 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1TO9OgIjPZcIEhlicUv+p0Mx4XmmQgi9+LSHzRACzrRukM3I+2hQByDeUWU9nHnWtFTK7TpW12pmU03WOjdIEg=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:5000/
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-04 17:09:29 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendering welcome/homepage.html.erb within layouts/application
+  Rendered layouts/_nav.html.erb (1.4ms)
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/homepage.html.erb within layouts/application (22.8ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (5.8ms)
+Completed 200 OK in 112ms (Views: 109.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-03-04 17:09:32 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (6.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (32.4ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (7.8ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (5.8ms)
+Completed 200 OK in 203ms (Views: 201.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-03-04 17:09:40 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AL7YTErg5LifC37l9Qh1vlo9+LO0d18OVT1LXSyL05WX7m7pXD21Y2TzuFvRjT3DPYtxMJ6xAomDiOx4PPLaJA==", "user"=>{"email"=>"dlewis39@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "dlewis39@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", 2017-03-04 22:09:40 UTC], ["last_sign_in_at", 2017-03-04 22:00:43 UTC], ["sign_in_count", 4], ["updated_at", 2017-03-04 22:09:40 UTC], ["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:5000/
+Completed 302 Found in 174ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-04 17:09:40 -0500
+Processing by WelcomeController#homepage as HTML
+  Rendering welcome/homepage.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered welcome/homepage.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (5.6ms)
+Completed 200 OK in 101ms (Views: 97.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs/3" for 127.0.0.1 at 2017-03-04 17:09:42 -0500
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/show.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (9.9ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (7.3ms)
+Completed 200 OK in 198ms (Views: 193.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:09:44 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (22.2ms)
+  Rendered blogs/edit.html.erb within layouts/application (29.5ms)
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (9.1ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (7.4ms)
+Completed 200 OK in 170ms (Views: 165.3ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/blogs/3" for 127.0.0.1 at 2017-03-04 17:09:51 -0500
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7vFSF6RDdpoboNNgdV9RiQfEwIIAxDe79H2lsPzpPtMC6UBXNyWxl0eHAFD4EjMnlRx0NoD7hMAmmRuwBNDXzw==", "blog"=>{"title"=>"Expert Installation", "description"=>"Get the most out of your new connected device", "main_content"=>"Duis tincidunt nec orci at efficitur. In hac habitasse platea dictumst. Vivamus ultricies fringilla purus. Etiam pharetra quis leo vitae tempor. Nam in efficitur mauris, nec bibendum neque. Quisque sed venenatis ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vulputate fermentum augue, ac tempor ante scelerisque efficitur. In commodo aliquam lectus a efficitur. Donec vestibulum interdum nisl, in molestie elit tincidunt id. Fusce quis odio at tellus consequat vestibulum sit amet non leo. Quisque sit amet dui tortor. Duis cursus nulla a interdum tincidunt. Phasellus at neque varius, tincidunt velit vitae, pellentesque ex.\r\n\r\nDuis eget rutrum mauris. Pellentesque pulvinar sem nec nulla eleifend, nec pharetra urna eleifend. Mauris consectetur ex at finibus consequat. Vestibulum consectetur justo at elit bibendum, vitae gravida mauris dictum. Nulla finibus tortor vel mauris posuere, eget pretium ante lacinia. Nunc maximus maximus tortor, in scelerisque nisl dictum vel. Maecenas convallis sapien velit, in pharetra sem vulputate vestibulum. Nunc ligula ligula, semper vitae quam eget, malesuada egestas mi. Suspendisse ullamcorper pulvinar rhoncus.", "image_file_name"=>#<ActionDispatch::Http::UploadedFile:0x007f9e581aaf60 @tempfile=#<Tempfile:/var/folders/1q/y00x3qh11c50hf54rtnmfb2w0000gn/T/RackMultipart20170304-8187-1lzq49x.jpg>, @original_filename="img-listing-3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"blog[image_file_name]\"; filename=\"img-listing-3.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Unpermitted parameter: image_file_name
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:5000/blogs/3
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs/3" for 127.0.0.1 at 2017-03-04 17:09:51 -0500
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/show.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_nav.html.erb (3.2ms)
+  Rendered layouts/_header.html.erb (11.0ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 126ms (Views: 121.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:11:21 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (39.3ms)
+  Rendered blogs/edit.html.erb within layouts/application (45.5ms)
+  Rendered layouts/_nav.html.erb (5.6ms)
+  Rendered layouts/_header.html.erb (10.6ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 262ms (Views: 257.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.self-0603f689070d5b863106f49d89a4ff1694da01701f703a8bef455bc1fbc2cfba.js?body=1" for 127.0.0.1 at 2017-03-04 17:11:21 -0500
+Started GET "/blogs/3/edit" for 127.0.0.1 at 2017-03-04 17:14:31 -0500
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered blogs/_form.html.erb (7.8ms)
+  Rendered blogs/edit.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_header.html.erb (8.6ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 119ms (Views: 114.9ms | ActiveRecord: 1.0ms)
+
+
