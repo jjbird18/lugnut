@@ -70,9 +70,5 @@ $(function() {
 });
 
 $(function () {
-	var $today = new Date();
-	var $Year = $today.getFullYear();
-	$('footer #year').text($Year);
-
-	$('.alert.alert-info').fadeOut(10000); 
+	$('.alert.alert-info').fadeOut(10000);
 });

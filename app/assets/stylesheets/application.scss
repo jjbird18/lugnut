@@ -493,6 +493,12 @@ input.btn.cta {
     padding: 2%;
     margin-bottom: 2%;
 }
+#comment-search {
+	padding-bottom: 1rem;
+	input#box {
+		margin: 0;
+	}
+}
 #posts-wrap {
 	margin-bottom: 2%;
 	.post-strip {

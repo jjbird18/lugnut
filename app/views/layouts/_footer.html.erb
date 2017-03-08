@@ -13,8 +13,17 @@
 		</div><!-- /row -->
 		<div class="row clearfix" id="copyright">
 			<div class="col-xs-12">
-				<h6>&copy; 2017. Lugnut Automotive Services.</h6>
+				<h6>&copy; <span id="year"></span>. Lugnut Automotive Services.</h6>
 			</div><!-- /footer-navigation -->
 		</div><!-- /row -->
 	</div><!-- /container -->
 </footer>
+<script type="text/javascript">
+	$(function () {
+		var $today = new Date();
+		var $Year = $today.getFullYear();
+		$('footer #year').text($Year);
+
+		$('.alert.alert-info').fadeOut(10000);
+	});
+</script>

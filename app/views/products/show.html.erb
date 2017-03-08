@@ -40,5 +40,9 @@
   <%= @product.msrp %>
 </p>
 
+<p>
+  <img src="<%= @product.image_file_name %>" />
+</p>
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
