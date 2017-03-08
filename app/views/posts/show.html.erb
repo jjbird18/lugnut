@@ -4,11 +4,12 @@ $(function () {
 	$('#box').keyup(function(){
 	   var valThis = $(this).val().toLowerCase();
 	    if(valThis == ""){
-	        $('.comment').show();           
+	        $('.comment').show().removeClass('result');        
 	    } else {
 	        $('.comment').each(function(){
 	            var text = $(this).text().toLowerCase();
-	            (text.indexOf(valThis) >= 0) ? $(this).show() : $(this).hide();
+	            var heading = $(this).find('h5').text().toLowerCase();
+	            (heading.indexOf(valThis) >= 0) ? $(this).show().addClass('result') : $(this).hide().removeClass('result');
 	        });
 	   };
 	});

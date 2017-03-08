@@ -492,6 +492,9 @@ input.btn.cta {
     border: 1px solid $medGray;
     padding: 2%;
     margin-bottom: 2%;
+    &.result {
+    	border-color: $orangeRed;
+    }
 }
 #comment-search {
 	padding-bottom: 1rem;
