@@ -1,0 +1,42 @@
+<% content_for(:title, "Contact Us") %>
+<div class="container-fluid" id="content-main">
+  <div class="row-fluid">
+    <div class="container"> 
+      <div class="row-fluid clearfix">
+        <div class="col-xs-12 text-left">
+          <h1><%= yield(:title) %></h1>
+          <p>Do you have a big project coming up and don't know where to start? Ask one of our connection experts who are here to help you. Connecting with you is what drives us, so also be sure to join us on the social channel of your choice. </p>
+          <%= render 'form' %>
+          <h4 class="text-left">Connection Expert</h4>
+          <p>Jason Stutz<br />
+          <a href="mailto:stutz03@email.franklin.edu?subject=I%20would%20love%20more%20info">stutz03[at]email.franklin.edu</a></p>
+          <h4 class="text-left">Connection Expert</h4>
+          <p>David Lewis<br />
+          <a href="mailto:lewisd02@email.franklin.edu?subject=I%20would%20love%20more%20info">lewisd02[at]email.franklin.edu</a></p>
+          <h4 class="text-left">Social Connection</h4>
+          <%= link_to icon('twitter'), 'https://twitter.com', target: "_blank" %>
+          <%= link_to icon('facebook'), 'https://facebook.com', target: "_blank" %>
+          <%= link_to icon('linkedin'), 'https://linkedin.com', target: "_blank" %>
+          <%= link_to icon('youtube-play'), 'https://youtube.com', target: "_blank" %>
+        </div><!-- /col-xs-12 -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /row -->
+</div><!-- /content-main -->
+
+<div class="container-fluid" id="x-marketing">
+  <div class="row-fluid">
+    <div class="container">
+      <div class="row-fluid clearfix">
+        <div class="col-xs-12 col-sm-5">
+          <%= (image_tag('img-x-marketing.jpg', alt: 'Installation Experts')) %>
+        </div><!-- /col-sm-5 -->
+        <div class="col-xs-12 col-sm-6 text-left">
+          <h2>Our Installation Experts</h2>
+          <p>Pellentesque vel arcu ac massa sagittis vehicula id a lectus. Mauris ornare, mi sit amet auctor mattis, sapien metus lobortis enim, vel pretium lacus erat ut dolor. Vivamus ut maximus ante. Proin fermentum, leo id malesuada vestibulum, eros velit eleifend ligula, at aliquam mauris diam eu sapien. Vivamus commodo velit at neque fringilla, vel vehicula purus suscipit. Integer sagittis enim ut tortor faucibus, id tincidunt mi malesuada. </p>
+          <a href="/" class="cta">Schedule today <%= icon('play') %></a>
+        </div><!-- /col-sm-6 -->
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </div><!-- /row -->
+</div><!-- /x-marketing -->

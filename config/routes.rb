@@ -18,11 +18,14 @@ Rails.application.routes.draw do
   resources :products, expect: [:show, :index, :edit] do
   end
 
+  resources :contacts, only: [:new, :create]
+
   root 'welcome#homepage'
   resources :blogs
 
   get 'pages/aboutus' => 'pages#aboutus'
-  get 'pages/contactus' => 'pages#contactus'
+  get 'pages/contactus' => 'contacts#new'
+  get 'contacts' => 'contacts#new'
 
   get 'productlines' => 'productlines#index'
   get 'productlines/:id' => 'productlines#show'
