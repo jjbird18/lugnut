@@ -15,7 +15,7 @@
       <div class="row-fluid clearfix">
         <div class="col-xs-12 text-left">
           <div class="col-xs-12 col-sm-5 pull-right blog-image-wrap">
-              <%= image_tag @blog.image.url(:large), alt: @blog.title %>
+              <%= image_tag @blog.image_file_name, alt: @blog.title %>
             </div>
             <%= simple_format(@blog.main_content) %>
         </div><!-- /col-xs-6 -->
@@ -24,6 +24,7 @@
         <div class="col-xs-12 text-left">
           	<% if user_signed_in? && current_user.id == 1 %>
               <%= link_to 'Edit', edit_blog_path(@blog) %>
+              <%= link_to "Delete", blog_path(@blog), method: :delete, data: { confirm: "Are you sure?" } %>
               <%= link_to 'Back', blogs_path %>
             <% end %>
         </div><!-- /col-xs-6 -->

@@ -1,6 +1,7 @@
 <div class="comment">
 	<p><small><em><%= truncate(comment.user.email, :separator => '@') %> says...</em></small></p>
 	<h5><%= comment.comment %></h5>
+	<p><small><em><%= time_ago_in_words(comment.created_at) %> ago</em></small></p>
 
 	<% if user_signed_in? && comment.user.id == current_user.id %>
 		<h6>This is your comment, so you may... <%= link_to "Edit", edit_post_comment_path(comment.post, comment) %> or 

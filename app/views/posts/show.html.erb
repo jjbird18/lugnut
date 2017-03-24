@@ -1,5 +1,25 @@
 <% content_for(:title, @post.title) %>
+<script>
+$(function () {
+	$('#box').keyup(function(){
+	   var valThis = $(this).val().toLowerCase();
+	    if(valThis == ""){
+	        $('.comment').show().removeClass('result');        
+	    } else {
+	        $('.comment').each(function(){
+	            var text = $(this).text().toLowerCase();
+	            var heading = $(this).find('h5').text().toLowerCase();
+	            (heading.indexOf(valThis) >= 0) ? $(this).show().addClass('result') : $(this).hide().removeClass('result');
+	        });
+	   };
+	});
+});
+</script>
 <div class="container-fluid" id="content-main">
+	<div class="row-fluid">
+		<div class="container">	
+		</div>
+	</div>
 	<div class="row-fluid">
 		<div class="container">	
 			<div class="row-fluid clearfix">
@@ -12,16 +32,27 @@
 					<% end %>
 				</div><!-- /col-xs-12 -->
 			</div><!-- /row -->
+			<div class="row-fluid clearfix" id="comment-search">
+				<div class="col-xs-12 col-sm-8 text-left">
+					<h4 style="text-align:left;">Comments (<%= @post.comments.count %>)</h4>
+				</div>
+				<div class="col-xs-12 col-sm-4 form-inputs">
+					<input placeholder="Filter Comments" class="form-control" id="box" type="text" />
+				</div>
+			</div>
 			<div class="row-fluid clearfix">
 				<div class="col-xs-12 text-left" id="comments">
-					<h4>Comments (<%= @post.comments.count %>)</h4>
 					<%= render @post.comments%>
 				</div><!-- /col-xs-12 -->
 			</div><!-- /row -->
 			<div class="row-fluid clearfix">
-				<div class="col-xs-12 text-left" id="comments">
-					<h4>Reply to thread</h4>
-					<%= render 'comments/form' %>
+				<div class="col-xs-12 text-left">
+					<h4 style="text-align:left;">Reply to thread</h4>
+					<% if user_signed_in? %>
+						<%= render 'comments/form' %>
+					<% else %>
+						<%= link_to "Log in to Reply", new_user_session_path, class: 'cta' %>
+					<% end %>
 				</div><!-- /col-xs-12 -->
 			</div><!-- /row -->
 		</div><!-- /container -->

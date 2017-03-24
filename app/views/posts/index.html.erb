@@ -8,19 +8,43 @@
 					<p>Looking for answers to those looming car questions? Can't figure out which connected device is right for look? Check out our forum below for answers to all of your questions. Can't find an answer? Bring your topic to the community by starting a new thread.</p>
 				</div><!-- /col-xs-12 -->
 			</div><!-- /row -->
+			<div class="row-fluid clearfix">
+				<div class="col-xs-12 col-sm-4">
+					<div class="dropdown">
+					  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Sort by
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#"><%= sort_link "title" %></a></li>
+					    <li><a href="#"><%= sort_link "created_at" %></a></li>
+					  </ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 pull-right text-left">
+					<%= form_tag search_posts_path, method: :get, class: "navbar-form navbar-right", role: "search" do %>
+			          <div class="clearfix text-right">
+			            <div class="col-xs-12 col-sm-8 form-inputs">
+			            	<%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search"  %>
+			            </div>
+			            <div class="hidden-xs col-sm-3">
+			            	<button type="submit" class="search cta hidden-xs"><i class="fa fa-search" aria-hidden="true"></i></button>
+			            </div>
+			          </div>
+			         <% end %>
+				</div><!-- /col-xs-12 -->
+			</div><!-- /row -->
 			<div class="row-fluid clearfix" id="posts-wrap">
 				<div class="col-xs-12 text-left">
 					<% @posts.each do |post| %>
 						<h2><%= link_to post.title, post %></h2>
 						<p><%= link_to truncate(post.content, :length => 200, :separator => ' '), post %></p>
 						<div class="row-fluid post-strip clearfix">
-							<div class="post-link post-info text-center">
+							<div class="col-xs-12 col-sm-3 post-link post-info text-center">
 								<%= link_to "Visit post", post, class: 'cta'  %>
 							</div>
-							<div class="col-xs-2 post-info text-center">
+							<div class="col-xs-12 col-sm-2 post-info text-center">
 								<p>Comments (<%= post.comments.count %>)</p>
 							</div>
-							<div class="col-xs-3 post-info text-center">
+							<div class="col-xs-12 col-sm-3 post-info text-center">
 								<p>Last updated: <%= time_ago_in_words(post.updated_at) %></p>
 							</div>
 						</div>

@@ -21,7 +21,7 @@
 html {
 	background: $white;
 	margin: 0 auto;
-	font: 14px $fontFamily;
+	font: 16px $fontFamily;
 	@include tablet {
 		font-size: 16px;
 	}
@@ -164,6 +164,12 @@ nav {
 				@include transition(all 500ms ease-in-out);
 			}
 		}
+		.navbar-collapse {
+			border-color: transparent;	
+		}
+	}
+	.admin-btn {
+		margin-left: 30%;
 	}
 }
 #homepage-navigation {
@@ -192,6 +198,9 @@ nav {
 			background:none;
 			@include transition(all 500ms ease-in-out);
 		}
+		@include mobile {
+			line-height: 4.0rem;
+		}
 	}
     .fa {
     	font-size: 2rem;
@@ -211,6 +220,9 @@ nav {
 
 		li:first-of-type {
 			padding-top: 5%;
+			@include mobile {
+				padding-top: 20%;
+			}
 		}
 	}
 }
@@ -238,6 +250,7 @@ nav {
     	width: 70%;
     	margin-left: 20px;
     	float:left;
+    	padding-bottom: 10%;
     }
     .blog-img img {
     	border:1px solid $lightGray;
@@ -324,6 +337,10 @@ nav {
 		i.fa {
 			font-size: 3rem;
     		padding-right: 1rem;
+    		&.fa-search {
+    			font-size: 2rem;
+    			padding-right: 0;
+    		}
 		}
 	}
 
@@ -367,6 +384,13 @@ nav {
 		font-size: 1rem;
 	    padding: 3px 0px;
 	    width: 100%;
+	}
+	&.search {
+		width: auto;
+		padding: 0.25rem 0.65rem 0.25rem 0.25rem;
+		border: 0px;
+		text-align: center;
+		border-radius: 0 5px 5px 0;
 	}
 }
 footer {
@@ -421,18 +445,38 @@ footer {
 .user_remember_me, .form-inputs label {
 	@extend %visuallyhidden;
 }
-.form-inputs input, .form-inputs textarea {
+.form-inputs input, .form-inputs textarea, select#product_productline_id {
     width: 100%;
     display: block;
     padding: 15px;
     font: 400 1.5rem $fontFamily;
     margin-top: 1.5rem;
     border: 1px solid $lightGray;
+    #posts-container & {
+    	margin-top: 0px;
+    	padding:20px 15px;
+    }
+}
+.navbar-form {
+	.form-inputs {
+		@include mobile {
+			padding:0px;
+			margin:0px;
+		}
+	}
 }
 input.btn.cta {
     border-radius: 0px;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+.dropdown button.btn.dropdown-toggle {
+    background: $white;
+    color: $medGray;
+    border: 1px solid $lightGray;
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem;
+    text-align: left;
 }
 .alert.alert-info {
 	position: fixed;
@@ -448,8 +492,18 @@ input.btn.cta {
     border: 1px solid $medGray;
     padding: 2%;
     margin-bottom: 2%;
+    &.result {
+    	border-color: $orangeRed;
+    }
+}
+#comment-search {
+	padding-bottom: 1rem;
+	input#box {
+		margin: 0;
+	}
 }
 #posts-wrap {
+	margin-bottom: 2%;
 	.post-strip {
 		margin-bottom: 2%;
 	}
@@ -459,10 +513,12 @@ input.btn.cta {
 		&:first-of-type {
 			border-left: 1px;
 		}
+		@include mobile {
+			border: 0px;
+		}
 	}
 	.post-link {
 		float: left;
-		width: 100px;
 		margin-bottom: 0 auto;
 		padding:0px;
 	}
@@ -488,4 +544,15 @@ summary {
 }
 .blog-image-wrap {
 	margin: 0 0 1.5rem 1.5rem;
+}
+/*SCREEN*/
+.progress {
+  max-width: 600px;
+  margin:    0.2em 0 0.2em 0;
+  .bar {
+	  height:  1.2em;
+	  padding-left: 0.2em;
+	  color:   white;
+	  display: none;
+	}
 }

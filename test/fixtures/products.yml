@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  productcode: MyString
+  productname: MyString
+  productscale: MyString
+  productvendor: MyString
+  productdescription: MyText
+  quantityinstock: 1
+  buyprice: 9.99
+  msrp: 9.99
+
+two:
+  productcode: MyString
+  productname: MyString
+  productscale: MyString
+  productvendor: MyString
+  productdescription: MyText
+  quantityinstock: 1
+  buyprice: 9.99
+  msrp: 9.99

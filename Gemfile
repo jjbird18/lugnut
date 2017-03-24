@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.5'
+ruby "2.2.6"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.1'
@@ -13,12 +13,16 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'font-awesome-sass', '~> 4.7.0'
 # Adds images to blog posts
 gem 'paperclip', '~> 5.1'
+gem 'aws-sdk', '~> 2.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+
+#contact us form
+gem 'mail_form', '~> 1.6'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -43,6 +47,8 @@ gem 'simple_form', '~> 3.4'
 # Use Capistrano for deployment
 gem 'spring', group: :development
 
+gem 'capistrano', '~> 3.7', '>= 3.7.2', group: :production
+
 gem 'puma'
 
 group :development, :test do
@@ -54,3 +60,6 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
+
+gem 'redis', '~> 3.3', '>= 3.3.3'
+gem 'hiredis', '~> 0.6.1'

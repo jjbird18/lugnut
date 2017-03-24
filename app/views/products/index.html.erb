@@ -1,0 +1,26 @@
+<% content_for(:title, "Products") %>
+<div class="container-fluid" id="content-main">
+  <div class="row-fluid" id="posts-container">
+    <div class="container"> 
+      <div class="row-fluid clearfix">
+        <div class="col-xs-12 text-left">
+          <h1><%= yield(:title) %></h1>
+          <p>View the products or add a new product below.</p>
+        </div><!-- /col-xs-12 -->
+      </div><!-- /row -->
+      <div class="row-fluid clearfix" id="posts-wrap">
+        <div class="col-xs-12 text-left">
+          <% @products.each do |p| %>
+            <h2><%= link_to p.productname, p %></h2>
+            <p><%= p.productdescription %></p>
+          <% end %>
+        </div><!-- /col-xs-12 -->
+      </div><!-- /row -->
+      <div class="row-fluid">
+      <div class="col-xs-12 col-sm-4" id="new-thread-btn">
+        <%= link_to "New Product", new_product_path, class: 'cta'  %>
+      </div>
+      </div>
+    </div><!-- /container -->
+  </div><!-- /row -->
+</div><!-- /content-main -->

@@ -1,0 +1,21 @@
+<div class="form">
+ <%= simple_form_for @product, html: { multipart: true, class: 'directUpload', data: { 'form-data' => (@s3_direct_post.fields), 'url' => @s3_direct_post.url, 'host' => URI.parse(@s3_direct_post.url).host } } do |f| %>
+    <div class="form-inputs">
+      <%= f.input :productcode, placeholder: "Code" %>
+      <%= f.input :productname, placeholder: "Name" %>
+      <% options = options_from_collection_for_select(@productlines, 'id', 'title') %>
+      <%= f.select :productline_id,  options %>
+      <%= f.input :productscale, placeholder: "Scale" %>
+      <%= f.input :productvendor, placeholder: "Vendor" %>
+      <%= f.input :productdescription, placeholder: "Description" %>
+      <%= f.input :quantityinstock, placeholder: "Quantity In Stock" %>
+      <%= f.input :buyprice, placeholder: "Buy Price" %>
+      <%= f.input :msrp, placeholder: "MSRP" %>
+      <%= f.label :image_file_name %><br />
+      <%= f.file_field :image_file_name %>
+    </div>  
+    <div class="form-actions">
+      <%= f.button :submit, "Create Product", class: 'cta' %>
+    </div>  
+  <% end %>
+</div>
