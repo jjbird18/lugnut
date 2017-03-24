@@ -45,9 +45,8 @@ gem 'simple_form', '~> 3.4'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'spring', group: :development
 
-gem 'capistrano', '~> 3.7', '>= 3.7.2', group: :production
+
 
 gem 'puma'
 
@@ -61,5 +60,4 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
-gem 'redis', '~> 3.3', '>= 3.3.3'
-gem 'hiredis', '~> 0.6.1'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

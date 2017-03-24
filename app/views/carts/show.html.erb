@@ -1,2 +1,73 @@
-<h1>Carts#show</h1>
-<p>Find me in app/views/carts/show.html.erb</p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <table class="table table-hover">
+              <h2>Your Cart</h2>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Total</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <% @cart.items.each do |item| %>
+                    <tr>
+                        <td class="col-sm-8 col-md-6">
+                        <div class="media">
+                          <!-- Thumbnail images goes here -->
+                            <div class="media-body">
+                                <h4 class="media-heading"><%= link_to item.product.productname, item.product %></h4>
+                            </div>
+                        </div></td>
+                        <td class="col-sm-1 col-md-1" style="text-align: center">
+                        <%= number_to_currency item.product.buyprice %>
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong><%= number_to_currency item.product.buyprice %></strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong><%= number_to_currency @cart.total_price %></strong></td>
+                        <td class="col-sm-1 col-md-1">
+                        <p><%= link_to 'remove', remove_cart_path(item.product_id), method: :delete %></p>
+
+                    </tr>
+                  <% end %>
+
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Subtotal</h5></td>
+                        <!-- Subtotal -->
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Estimated shipping</h5></td>
+                        <!-- Shipping total -->
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h3>Total</h3></td>
+                      <!-- Item Total -->
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+                        </button></td>
+                        <td>
+
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

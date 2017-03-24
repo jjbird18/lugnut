@@ -2,6 +2,8 @@ class ProductsController < ApplicationController
   before_action :find_product, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_s3_direct_post, only: [:new, :edit, :create, :update]
+  before_action :initialize_cart
+
 
 
   @productlines = Productline.all
@@ -20,11 +22,11 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
 
-  def create 
+  def create
     @product = Product.all.build(product_params)
 
     if @product.save
-      
+
       redirect_to @product
     else
       render 'new'
@@ -60,4 +62,3 @@ class ProductsController < ApplicationController
       @s3_direct_post = S3_BUCKET_NAME.presigned_post(key: "uploads/#{SecureRandom.uuid}/${filename}", success_action_status: '201', acl: 'public-read')
     end
 end
-

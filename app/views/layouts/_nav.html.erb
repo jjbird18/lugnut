@@ -8,6 +8,13 @@
 	<% if user_signed_in? %>
       <li><%= link_to "Account", edit_user_registration_path %></li>
       <li><%= link_to('Log out', destroy_user_session_path, :method => :delete) %></li>
+				<% if @cart %>
+					<% if @cart.empty? %>
+					<li><%= link_to "Your cart is empty." %></li>
+				<% else %>
+					<li><%= link_to "You have #{pluralize @cart.count, "item"}.", cart_path %><li>
+				<% end %>
+			<% end %>
     <% else %>
       <li><%= link_to "Log in", new_user_session_path, class: "active" %> <%= icon('user-circle') %></li>
     <% end %>
